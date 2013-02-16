@@ -3,16 +3,19 @@ namespace StatsInfoSystem
 {
     public class ProductGroup
     {
+        public int Id { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
     }
     public class ProductCategory
     {
+        public int Id { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
     }
     public class Product
     {
+        public int Id { get; set; }
         public string Code { get; set; }
         public string NameTh { get; set; }
         public string NameEn { get; set; }
