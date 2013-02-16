@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using StatsInfoSystem;
 
 namespace StsConsole
 {
@@ -9,6 +6,21 @@ namespace StsConsole
     {
         static void Main(string[] args)
         {
+            InsertProductGroup();
+        }
+
+        private static void InsertProductGroup()
+        {
+            var group = new ProductGroup
+            {
+                Code = "PG01",
+                Name = "Wooden Salad Bowl & Servers"
+            };
+            using (var context = new StsContext())
+            {
+                context.ProductGroups.Add(group);
+                context.SaveChanges();
+            }
         }
     }
 }
