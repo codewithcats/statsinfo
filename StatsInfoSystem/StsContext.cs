@@ -2,7 +2,7 @@
 
 namespace StatsInfoSystem
 {
-    class StsContext : DbContext
+    public class StsContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
     }
