@@ -1,17 +1,17 @@
 ﻿
 namespace StatsInfoSystem
 {
-    class ProductGroup
+    public class ProductGroup
     {
         public string Code { get; set; }
         public string Name { get; set; }
     }
-    class ProductCategory
+    public class ProductCategory
     {
         public string Code { get; set; }
         public string Name { get; set; }
     }
-    class Product
+    public class Product
     {
         public string Code { get; set; }
         public string NameTh { get; set; }
