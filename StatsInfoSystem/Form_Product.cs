@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Collections;
 using System.IO;
-namespace StatisticInformationSystem
+namespace StatsInfoSystem
 {
     public partial class Form_Product : UserControl
     {
@@ -23,19 +23,12 @@ namespace StatisticInformationSystem
         public Form_Product()
         {
             InitializeComponent();
-            //listBut = new Button[]{button1,button2,button3};
-            //listPanel = new Panel[]{panel1,panel2,panel3};
-            //listCon = new Control[] {textBox2,textBox3,textBox4,textBox5};
-            //listGB = new GroupBox[] { groupBox8,groupBox11,groupBox2,groupBox5};
-            //listLB = new ListBox[] { listBox1,listBox2,listBox3,listBox4};
-            //foreach (Panel p in listPanel)  p.Location = panel1.Location;
-            //this.Height = 500;
-            //ArrayList list = ProductGroup.getList();
-            //foreach (ProductGroup pg in list) comboBox2.Items.Add(pg);
-            //list = ProductCategory.getList();
-            //foreach (ProductCategory pc in list) comboBox3.Items.Add(pc);
-            //openFileDialog1.Title = "Select file";
-            //openFileDialog1.Filter = "Excel Sheet(*.xls)|*.xls|All Files(*.*)|*.*";
+            using (var context = new StsContext())
+            {
+                productCat_listBox.DataSource = context.ProductCategories.ToArray();
+                productCat_listBox.DisplayMember = "Name";
+                productCat_listBox.ValueMember = "Id";
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
