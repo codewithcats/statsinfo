@@ -252,5 +252,12 @@ namespace StatsInfoSystem
             productCatCode_txtBox.Clear();
             productCatName_txtBox.Clear();
         }
+
+        private void productCat_listBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var category = (ProductCategory)productCat_listBox.SelectedItem;
+            productCatCode_txtBox.Text = category.Code;
+            productCatName_txtBox.Text = category.Name;
+        }
     }
 }
