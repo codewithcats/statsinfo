@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Product));
             this.button1 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.xlsImport_btn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.xlsImport_openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.productCat_listBox = new System.Windows.Forms.ListBox();
@@ -106,10 +106,10 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
+            this.addProductCat_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.productCatName_txtBox = new System.Windows.Forms.TextBox();
+            this.productCatCode_txtBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.button29 = new System.Windows.Forms.Button();
@@ -152,14 +152,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button14
+            // xlsImport_btn
             // 
-            this.button14.Location = new System.Drawing.Point(373, 28);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(36, 31);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "...";
-            this.button14.UseVisualStyleBackColor = true;
+            this.xlsImport_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xlsImport_btn.Location = new System.Drawing.Point(373, 28);
+            this.xlsImport_btn.Name = "xlsImport_btn";
+            this.xlsImport_btn.Size = new System.Drawing.Size(36, 31);
+            this.xlsImport_btn.TabIndex = 2;
+            this.xlsImport_btn.Text = "...";
+            this.xlsImport_btn.UseVisualStyleBackColor = true;
+            this.xlsImport_btn.Click += new System.EventHandler(this.OpenXlsImportOpenFileDialog);
             // 
             // button3
             // 
@@ -177,6 +179,7 @@
             // 
             // button16
             // 
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
             this.button16.Location = new System.Drawing.Point(284, 95);
             this.button16.Name = "button16";
@@ -189,6 +192,7 @@
             // 
             // button15
             // 
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
             this.button15.Location = new System.Drawing.Point(284, 28);
             this.button15.Name = "button15";
@@ -201,56 +205,63 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(20, 33);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 20);
+            this.label21.Size = new System.Drawing.Size(57, 13);
             this.label21.TabIndex = 0;
             this.label21.Text = "เปิดข้อมูล :";
             // 
             // textBox21
             // 
+            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox21.Location = new System.Drawing.Point(102, 124);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(137, 26);
+            this.textBox21.Size = new System.Drawing.Size(137, 20);
             this.textBox21.TabIndex = 10;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(20, 127);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(81, 20);
+            this.label25.Size = new System.Drawing.Size(63, 13);
             this.label25.TabIndex = 9;
             this.label25.Text = "วันที่นำเข้า :";
             // 
             // textBox20
             // 
+            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox20.Location = new System.Drawing.Point(102, 92);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(137, 26);
+            this.textBox20.Size = new System.Drawing.Size(137, 20);
             this.textBox20.TabIndex = 8;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(20, 95);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 20);
+            this.label24.Size = new System.Drawing.Size(39, 13);
             this.label24.TabIndex = 7;
             this.label24.Text = "ขนาด :";
             // 
             // textBox17
             // 
+            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox17.Location = new System.Drawing.Point(102, 30);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(265, 26);
+            this.textBox17.Size = new System.Drawing.Size(265, 20);
             this.textBox17.TabIndex = 1;
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.button14);
+            this.groupBox9.Controls.Add(this.xlsImport_btn);
             this.groupBox9.Controls.Add(this.textBox17);
             this.groupBox9.Controls.Add(this.label21);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(17, 17);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(423, 78);
@@ -260,33 +271,37 @@
             // 
             // textBox19
             // 
+            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox19.Location = new System.Drawing.Point(102, 60);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(137, 26);
+            this.textBox19.Size = new System.Drawing.Size(137, 20);
             this.textBox19.TabIndex = 6;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(20, 63);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(44, 20);
+            this.label23.Size = new System.Drawing.Size(35, 13);
             this.label23.TabIndex = 5;
             this.label23.Text = "ชนิด :";
             // 
             // textBox18
             // 
+            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox18.Location = new System.Drawing.Point(102, 28);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(137, 26);
+            this.textBox18.Size = new System.Drawing.Size(137, 20);
             this.textBox18.TabIndex = 4;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(20, 31);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 20);
+            this.label22.Size = new System.Drawing.Size(46, 13);
             this.label22.TabIndex = 3;
             this.label22.Text = "ชื่อไฟล์ :";
             // 
@@ -549,17 +564,18 @@
             // 
             // listBox2
             // 
+            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 20;
             this.listBox2.Location = new System.Drawing.Point(15, 25);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(402, 324);
+            this.listBox2.Size = new System.Drawing.Size(402, 316);
             this.listBox2.TabIndex = 0;
             this.listBox2.SizeChanged += new System.EventHandler(this.listBox1_SizeChanged);
             // 
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.listBox2);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(446, 17);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(423, 373);
@@ -888,10 +904,10 @@
             this.tabPage2.Controls.Add(this.groupBox10);
             this.tabPage2.Controls.Add(this.groupBox9);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(963, 396);
+            this.tabPage2.Size = new System.Drawing.Size(844, 319);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "นำเข้าข้อมูลสินค้า";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -906,9 +922,9 @@
             this.panel1.Size = new System.Drawing.Size(856, 353);
             this.panel1.TabIndex = 14;
             // 
-            // openFileDialog1
+            // xlsImport_openFileDialog
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.xlsImport_openFileDialog.FileName = "xlsFile";
             // 
             // panel4
             // 
@@ -933,12 +949,12 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "ข้อมูลประเภทสินค้า";
             // 
-            // ProductCat_ListBox
+            // productCat_listBox
             // 
             this.productCat_listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productCat_listBox.FormattingEnabled = true;
             this.productCat_listBox.Location = new System.Drawing.Point(6, 19);
-            this.productCat_listBox.Name = "ProductCat_ListBox";
+            this.productCat_listBox.Name = "productCat_listBox";
             this.productCat_listBox.Size = new System.Drawing.Size(453, 121);
             this.productCat_listBox.TabIndex = 0;
             // 
@@ -947,10 +963,10 @@
             this.groupBox14.Controls.Add(this.button25);
             this.groupBox14.Controls.Add(this.button26);
             this.groupBox14.Controls.Add(this.button27);
-            this.groupBox14.Controls.Add(this.button28);
+            this.groupBox14.Controls.Add(this.addProductCat_btn);
             this.groupBox14.Controls.Add(this.label7);
-            this.groupBox14.Controls.Add(this.textBox6);
-            this.groupBox14.Controls.Add(this.textBox7);
+            this.groupBox14.Controls.Add(this.productCatName_txtBox);
+            this.groupBox14.Controls.Add(this.productCatCode_txtBox);
             this.groupBox14.Controls.Add(this.label8);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(213, 12);
@@ -996,17 +1012,18 @@
             this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button27.UseVisualStyleBackColor = true;
             // 
-            // button28
+            // addProductCat_btn
             // 
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.Image = ((System.Drawing.Image)(resources.GetObject("button28.Image")));
-            this.button28.Location = new System.Drawing.Point(19, 87);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(54, 54);
-            this.button28.TabIndex = 37;
-            this.button28.Text = "เพิ่ม";
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button28.UseVisualStyleBackColor = true;
+            this.addProductCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addProductCat_btn.Image = ((System.Drawing.Image)(resources.GetObject("addProductCat_btn.Image")));
+            this.addProductCat_btn.Location = new System.Drawing.Point(19, 87);
+            this.addProductCat_btn.Name = "addProductCat_btn";
+            this.addProductCat_btn.Size = new System.Drawing.Size(54, 54);
+            this.addProductCat_btn.TabIndex = 37;
+            this.addProductCat_btn.Text = "เพิ่ม";
+            this.addProductCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.addProductCat_btn.UseVisualStyleBackColor = true;
+            this.addProductCat_btn.Click += new System.EventHandler(this.addProductCat);
             // 
             // label7
             // 
@@ -1018,21 +1035,21 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "รหัสประเภทสินค้า :";
             // 
-            // textBox6
+            // productCatName_txtBox
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(119, 59);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(134, 20);
-            this.textBox6.TabIndex = 5;
+            this.productCatName_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productCatName_txtBox.Location = new System.Drawing.Point(119, 59);
+            this.productCatName_txtBox.Name = "productCatName_txtBox";
+            this.productCatName_txtBox.Size = new System.Drawing.Size(134, 20);
+            this.productCatName_txtBox.TabIndex = 5;
             // 
-            // textBox7
+            // productCatCode_txtBox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(119, 27);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(134, 20);
-            this.textBox7.TabIndex = 3;
+            this.productCatCode_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productCatCode_txtBox.Location = new System.Drawing.Point(119, 27);
+            this.productCatCode_txtBox.Name = "productCatCode_txtBox";
+            this.productCatCode_txtBox.Size = new System.Drawing.Size(134, 20);
+            this.productCatCode_txtBox.TabIndex = 3;
             // 
             // label8
             // 
@@ -1172,7 +1189,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button xlsImport_btn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
@@ -1240,7 +1257,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog xlsImport_openFileDialog;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.ListBox productCat_listBox;
@@ -1248,10 +1265,10 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button addProductCat_btn;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox productCatName_txtBox;
+        private System.Windows.Forms.TextBox productCatCode_txtBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.Button button29;

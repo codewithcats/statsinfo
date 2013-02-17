@@ -26,7 +26,7 @@ namespace StatsInfoSystem
             using (var context = new StsContext())
             {
                 productCat_listBox.DataSource = context.ProductCategories.ToArray();
-                productCat_listBox.DisplayMember = "Name";
+                productCat_listBox.DisplayMember = "DisplayName";
                 productCat_listBox.ValueMember = "Id";
             }
         }
@@ -224,6 +224,33 @@ namespace StatsInfoSystem
         {
             //textBox23.Text = "";
             //textBox22.Text = "";
+        }
+
+        private void OpenXlsImportOpenFileDialog(object sender, EventArgs e)
+        {
+            if (xlsImport_openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                //Excel.Workbook
+            }
+            
+        }
+
+        private void addProductCat(object sender, EventArgs e)
+        {
+            var category = new ProductCategory
+            {
+                Code = productCatCode_txtBox.Text,
+                Name = productCatName_txtBox.Text
+            };
+            using (var context = new StsContext())
+            {
+                context.ProductCategories.Add(category);
+                context.SaveChanges();
+                productCat_listBox.DataSource = context.ProductCategories.ToArray();
+            }
+            MessageBox.Show("บันทึกข้อมูลเรียบร้อยแล้ว");
+            productCatCode_txtBox.Clear();
+            productCatName_txtBox.Clear();
         }
     }
 }
