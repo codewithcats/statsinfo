@@ -6,5 +6,10 @@ namespace StatsInfoSystem
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductGroup> ProductGroups { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new ProductConfiguration());
+        }
     }
 }

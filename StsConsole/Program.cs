@@ -1,4 +1,5 @@
 ﻿using StatsInfoSystem;
+using System.Data.Entity;
 
 namespace StsConsole
 {
@@ -6,6 +7,8 @@ namespace StsConsole
     {
         static void Main(string[] args)
         {
+            Database.SetInitializer(
+                new DropCreateDatabaseIfModelChanges<StsContext>());
             InsertProductGroup();
         }
 
