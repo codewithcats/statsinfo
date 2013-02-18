@@ -6,6 +6,13 @@ namespace StatsInfoSystem
         public int Id { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
+        public string DisplayName
+        {
+            get
+            {
+                return "[" + this.Code + "] " + this.Name;
+            }
+        }
     }
     public class ProductCategory
     {
@@ -29,6 +36,13 @@ namespace StatsInfoSystem
         public decimal Price { get; set; }
         public string Description { get; set; }
         public ProductCategory Category { get; set; }
-        public ProductGroup group { get; set; }
+        public ProductGroup Group { get; set; }
+        public string DisplayName
+        {
+            get
+            {
+                return "[" + this.Code + "] " + this.NameTh;
+            }
+        }
     }
 }

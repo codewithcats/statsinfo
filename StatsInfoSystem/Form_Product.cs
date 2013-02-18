@@ -28,6 +28,11 @@ namespace StatsInfoSystem
                 productCat_listBox.DataSource = context.ProductCategories.ToArray();
                 productCat_listBox.DisplayMember = "DisplayName";
                 productCat_listBox.ValueMember = "Id";
+                productGrp_listBox.DataSource = context.ProductGroups.ToArray();
+                productGrp_listBox.DisplayMember = "DisplayName";
+                productGrp_listBox.ValueMember = "Id";
+                productImport_listBox.DisplayMember = "DisplayName";
+                productImport_listBox.ValueMember = "Id";
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -230,7 +235,7 @@ namespace StatsInfoSystem
         {
             if (xlsImport_openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                //Excel.Workbook
+                importFileName_txtBox.Text = xlsImport_openFileDialog.FileName;
             }
             
         }
@@ -278,6 +283,7 @@ namespace StatsInfoSystem
         private void deleteProductCat_btn_Click(object sender, EventArgs e)
         {
             var category = (ProductCategory)productCat_listBox.SelectedItem;
+            if (category == null) return;
             using (var context = new StsContext())
             {
                 var c = context.ProductCategories.Find(category.Id);
@@ -329,6 +335,89 @@ namespace StatsInfoSystem
                                 select c;
                     productCat_listBox.DataSource = query.ToArray();
                 }
+            }
+        }
+
+        private void importFromXls_btn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String xlsName = null;
+                if ((xlsName = xlsImport_openFileDialog.FileName) != null)
+                {
+                    using (var context = new StsContext())
+                    {
+                        var excel = new Microsoft.Office.Interop.Excel.Application();
+                        var workbooks = excel.Workbooks.Open(xlsName);
+                        var sheet = workbooks.Sheets["prodcat"];
+                        var range = sheet.UsedRange;
+                        var i = 0;
+                        foreach (var row in range.Rows)
+                        {
+                            if (i++ == 0) continue;
+                            var productCat = new ProductCategory
+                            {
+                                Code = row.Cells[1, 1].Value.ToString(),
+                                Name = row.Cells[1, 2].Value.ToString()
+                            };
+                            context.ProductCategories.Add(productCat);
+                        }
+                        context.SaveChanges();
+                        productCat_listBox.DataSource = context.ProductCategories.ToArray();
+                        
+                        sheet = workbooks.Sheets["prodgroup"];
+                        range = sheet.UsedRange;
+                        i = 0;
+                        foreach (var row in range.Rows)
+                        {
+                            if (i++ == 0) continue;
+                            var productGroup = new ProductGroup
+                            {
+                                Code = row.Cells[1, 1].Value.ToString(),
+                                Name = row.Cells[1, 2].Value.ToString()
+                            };
+                            context.ProductGroups.Add(productGroup);
+                        }
+                        context.SaveChanges();
+                        productGrp_listBox.DataSource = context.ProductGroups.ToArray();
+
+                        sheet = workbooks.Sheets["product"];
+                        range = sheet.UsedRange;
+                        i = 0;
+                        foreach (var row in range.Rows)
+                        {
+                            if (i++ == 0) continue;
+                            var product = new Product
+                            {
+                                Code = row.Cells[1, 1].Value.ToString(),
+                                NameTh = row.Cells[1, 2].Value.ToString(),
+                                NameEn = row.Cells[1, 3].Value.ToString(),
+                                Price = Decimal.Parse(row.Cells[1, 4].Value.ToString()),
+                                Description = row.Cells[1, 5].Value == null ? null : row.Cells[1, 5].Value.ToString()
+                            };
+                            string groupId = row.Cells[1, 6].Value.ToString();
+                            var grpQuery = from g in context.ProductGroups
+                                    where g.Code == groupId
+                                    select g;
+                            var group = grpQuery.Single();
+                            product.Group = group;
+                            string catId = row.Cells[1, 7].Value.ToString();
+                            var catQuery = from c in context.ProductCategories
+                                where c.Code == catId
+                                select c;
+                            var category = catQuery.Single();
+                            product.Category = category;
+                            context.Products.Add(product);
+                        }
+                        context.SaveChanges();
+                        productImport_listBox.DataSource = context.Products.ToArray();
+                    }
+                    MessageBox.Show("นำเข้าข้อมูลเรียบร้อยแล้ว");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
             }
         }
     }
