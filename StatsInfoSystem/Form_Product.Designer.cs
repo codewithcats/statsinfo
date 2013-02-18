@@ -105,7 +105,7 @@
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.updateProductCat_btn = new System.Windows.Forms.Button();
             this.addProductCat_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.productCatName_txtBox = new System.Windows.Forms.TextBox();
@@ -963,7 +963,7 @@
             // 
             this.groupBox14.Controls.Add(this.button25);
             this.groupBox14.Controls.Add(this.button26);
-            this.groupBox14.Controls.Add(this.button27);
+            this.groupBox14.Controls.Add(this.updateProductCat_btn);
             this.groupBox14.Controls.Add(this.addProductCat_btn);
             this.groupBox14.Controls.Add(this.label7);
             this.groupBox14.Controls.Add(this.productCatName_txtBox);
@@ -1001,17 +1001,18 @@
             this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button26.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // updateProductCat_btn
             // 
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.Image = ((System.Drawing.Image)(resources.GetObject("button27.Image")));
-            this.button27.Location = new System.Drawing.Point(79, 87);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(54, 54);
-            this.button27.TabIndex = 38;
-            this.button27.Text = "แก้ไข";
-            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button27.UseVisualStyleBackColor = true;
+            this.updateProductCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateProductCat_btn.Image = ((System.Drawing.Image)(resources.GetObject("updateProductCat_btn.Image")));
+            this.updateProductCat_btn.Location = new System.Drawing.Point(79, 87);
+            this.updateProductCat_btn.Name = "updateProductCat_btn";
+            this.updateProductCat_btn.Size = new System.Drawing.Size(54, 54);
+            this.updateProductCat_btn.TabIndex = 38;
+            this.updateProductCat_btn.Text = "แก้ไข";
+            this.updateProductCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.updateProductCat_btn.UseVisualStyleBackColor = true;
+            this.updateProductCat_btn.Click += new System.EventHandler(this.updateProductCat_btn_Click);
             // 
             // addProductCat_btn
             // 
@@ -1265,7 +1266,7 @@
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button updateProductCat_btn;
         private System.Windows.Forms.Button addProductCat_btn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox productCatName_txtBox;

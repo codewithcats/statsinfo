@@ -248,6 +248,11 @@ namespace StatsInfoSystem
                 context.SaveChanges();
                 productCat_listBox.DataSource = context.ProductCategories.ToArray();
             }
+            showSuccessProductCatMsgAndClearInput();
+        }
+
+        private void showSuccessProductCatMsgAndClearInput()
+        {
             MessageBox.Show("บันทึกข้อมูลเรียบร้อยแล้ว");
             productCatCode_txtBox.Clear();
             productCatName_txtBox.Clear();
@@ -258,6 +263,20 @@ namespace StatsInfoSystem
             var category = (ProductCategory)productCat_listBox.SelectedItem;
             productCatCode_txtBox.Text = category.Code;
             productCatName_txtBox.Text = category.Name;
+        }
+
+        private void updateProductCat_btn_Click(object sender, EventArgs e)
+        {
+            var category = (ProductCategory)productCat_listBox.SelectedItem;
+            using (var context = new StsContext())
+            {
+                var c = context.ProductCategories.Find(category.Id);
+                c.Code = productCatCode_txtBox.Text;
+                c.Name = productCatName_txtBox.Text;
+                context.SaveChanges();
+                productCat_listBox.DataSource = context.ProductCategories.ToArray();
+            }
+            showSuccessProductCatMsgAndClearInput();
         }
     }
 }
