@@ -254,8 +254,11 @@ namespace StatsInfoSystem
         private void productCat_listBox_SelectedValueChanged(object sender, EventArgs e)
         {
             var category = (ProductCategory)productCat_listBox.SelectedItem;
-            productCatCode_txtBox.Text = category.Code;
-            productCatName_txtBox.Text = category.Name;
+            if (category != null)
+            {
+                productCatCode_txtBox.Text = category.Code;
+                productCatName_txtBox.Text = category.Name;
+            }
         }
 
         private void updateProductCat_btn_Click(object sender, EventArgs e)
@@ -280,7 +283,13 @@ namespace StatsInfoSystem
                 var c = context.ProductCategories.Find(category.Id);
                 context.ProductCategories.Remove(c);
                 context.SaveChanges();
-                productCat_listBox.DataSource = context.ProductCategories.ToArray();
+                var categories = context.ProductCategories.ToArray();
+                if (categories.Length < 1)
+                {
+                    productCatCode_txtBox.Clear();
+                    productCatName_txtBox.Clear();
+                }
+                productCat_listBox.DataSource = categories;
             }
         }
 
