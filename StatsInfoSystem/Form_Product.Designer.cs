@@ -33,13 +33,13 @@
             this.xlsImport_btn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.importFromXls_btn = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.importFileName_txtBox = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -61,12 +61,12 @@
             this.textBox33 = new System.Windows.Forms.TextBox();
             this.textBox34 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.productGrp_listBox = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.productImport_listBox = new System.Windows.Forms.ListBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -190,17 +190,18 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
-            // button15
+            // importFromXls_btn
             // 
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(284, 28);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(105, 60);
-            this.button15.TabIndex = 11;
-            this.button15.Text = "นำเข้าข้อมูล";
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button15.UseVisualStyleBackColor = true;
+            this.importFromXls_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importFromXls_btn.Image = ((System.Drawing.Image)(resources.GetObject("importFromXls_btn.Image")));
+            this.importFromXls_btn.Location = new System.Drawing.Point(284, 28);
+            this.importFromXls_btn.Name = "importFromXls_btn";
+            this.importFromXls_btn.Size = new System.Drawing.Size(105, 60);
+            this.importFromXls_btn.TabIndex = 11;
+            this.importFromXls_btn.Text = "นำเข้าข้อมูล";
+            this.importFromXls_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.importFromXls_btn.UseVisualStyleBackColor = true;
+            this.importFromXls_btn.Click += new System.EventHandler(this.importFromXls_btn_Click);
             // 
             // label21
             // 
@@ -248,18 +249,18 @@
             this.label24.TabIndex = 7;
             this.label24.Text = "ขนาด :";
             // 
-            // textBox17
+            // importFileName_txtBox
             // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(102, 30);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(265, 20);
-            this.textBox17.TabIndex = 1;
+            this.importFileName_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importFileName_txtBox.Location = new System.Drawing.Point(102, 30);
+            this.importFileName_txtBox.Name = "importFileName_txtBox";
+            this.importFileName_txtBox.Size = new System.Drawing.Size(265, 20);
+            this.importFileName_txtBox.TabIndex = 1;
             // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.xlsImport_btn);
-            this.groupBox9.Controls.Add(this.textBox17);
+            this.groupBox9.Controls.Add(this.importFileName_txtBox);
             this.groupBox9.Controls.Add(this.label21);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(17, 17);
@@ -496,20 +497,20 @@
             this.label43.TabIndex = 6;
             this.label43.Text = "ชื่อกลุ่มสินค้า :";
             // 
-            // listBox3
+            // productGrp_listBox
             // 
-            this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(6, 19);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(453, 121);
-            this.listBox3.TabIndex = 0;
-            this.listBox3.SelectedValueChanged += new System.EventHandler(this.listBox3_SelectedValueChanged);
-            this.listBox3.SizeChanged += new System.EventHandler(this.listBox1_SizeChanged);
+            this.productGrp_listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productGrp_listBox.FormattingEnabled = true;
+            this.productGrp_listBox.Location = new System.Drawing.Point(6, 19);
+            this.productGrp_listBox.Name = "productGrp_listBox";
+            this.productGrp_listBox.Size = new System.Drawing.Size(453, 121);
+            this.productGrp_listBox.TabIndex = 0;
+            this.productGrp_listBox.SelectedValueChanged += new System.EventHandler(this.listBox3_SelectedValueChanged);
+            this.productGrp_listBox.SizeChanged += new System.EventHandler(this.listBox1_SizeChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.listBox3);
+            this.groupBox2.Controls.Add(this.productGrp_listBox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(7, 167);
             this.groupBox2.Name = "groupBox2";
@@ -547,7 +548,7 @@
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button16);
-            this.groupBox10.Controls.Add(this.button15);
+            this.groupBox10.Controls.Add(this.importFromXls_btn);
             this.groupBox10.Controls.Add(this.textBox21);
             this.groupBox10.Controls.Add(this.label25);
             this.groupBox10.Controls.Add(this.textBox20);
@@ -562,23 +563,23 @@
             this.groupBox10.TabIndex = 1;
             this.groupBox10.TabStop = false;
             // 
-            // listBox2
+            // productImport_listBox
             // 
-            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(15, 25);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(402, 316);
-            this.listBox2.TabIndex = 0;
-            this.listBox2.SizeChanged += new System.EventHandler(this.listBox1_SizeChanged);
+            this.productImport_listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productImport_listBox.FormattingEnabled = true;
+            this.productImport_listBox.Location = new System.Drawing.Point(15, 25);
+            this.productImport_listBox.Name = "productImport_listBox";
+            this.productImport_listBox.Size = new System.Drawing.Size(369, 264);
+            this.productImport_listBox.TabIndex = 0;
+            this.productImport_listBox.SizeChanged += new System.EventHandler(this.listBox1_SizeChanged);
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.listBox2);
+            this.groupBox11.Controls.Add(this.productImport_listBox);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(446, 17);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(423, 373);
+            this.groupBox11.Size = new System.Drawing.Size(392, 296);
             this.groupBox11.TabIndex = 2;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "จำนวนนำเข้าข้อมูลลูกค้า 0 รายการ";
@@ -1197,13 +1198,13 @@
         private System.Windows.Forms.Button xlsImport_btn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button importFromXls_btn;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox importFileName_txtBox;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label23;
@@ -1225,12 +1226,12 @@
         private System.Windows.Forms.TextBox textBox33;
         private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox productGrp_listBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox productImport_listBox;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.ListBox listBox1;
