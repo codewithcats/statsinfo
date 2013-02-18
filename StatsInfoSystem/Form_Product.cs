@@ -248,14 +248,7 @@ namespace StatsInfoSystem
                 context.SaveChanges();
                 productCat_listBox.DataSource = context.ProductCategories.ToArray();
             }
-            showSuccessProductCatMsgAndClearInput();
-        }
-
-        private void showSuccessProductCatMsgAndClearInput()
-        {
             MessageBox.Show("บันทึกข้อมูลเรียบร้อยแล้ว");
-            productCatCode_txtBox.Clear();
-            productCatName_txtBox.Clear();
         }
 
         private void productCat_listBox_SelectedValueChanged(object sender, EventArgs e)
@@ -276,7 +269,58 @@ namespace StatsInfoSystem
                 context.SaveChanges();
                 productCat_listBox.DataSource = context.ProductCategories.ToArray();
             }
-            showSuccessProductCatMsgAndClearInput();
+            MessageBox.Show("บันทึกข้อมูลเรียบร้อยแล้ว");
+        }
+
+        private void deleteProductCat_btn_Click(object sender, EventArgs e)
+        {
+            var category = (ProductCategory)productCat_listBox.SelectedItem;
+            using (var context = new StsContext())
+            {
+                var c = context.ProductCategories.Find(category.Id);
+                context.ProductCategories.Remove(c);
+                context.SaveChanges();
+                productCat_listBox.DataSource = context.ProductCategories.ToArray();
+            }
+        }
+
+        private void productCatSearchCancel_btn_Click(object sender, EventArgs e)
+        {
+            productCatSearchKey_txtBox.Clear();
+            using (var context = new StsContext())
+            {
+                productCat_listBox.DataSource = context.ProductCategories.ToArray();
+            }
+        }
+
+        private void productCatSearchSubmit_btn_Click(object sender, EventArgs e)
+        {
+            var keyword = productCatSearchKey_txtBox.Text;
+            var index = productCatSearchIndex_cmb.SelectedIndex;
+            using (var context = new StsContext())
+            {
+                if (index == 0)
+                {
+                    var query = from c in context.ProductCategories
+                                where c.Code.Contains(keyword) || c.Name.Contains(keyword)
+                                select c;
+                    productCat_listBox.DataSource = query.ToArray();
+                }
+                else if (index == 1)
+                {
+                    var query = from c in context.ProductCategories
+                                where c.Code.Contains(keyword)
+                                select c;
+                    productCat_listBox.DataSource = query.ToArray();
+                }
+                else if (index == 2)
+                {
+                    var query = from c in context.ProductCategories
+                                where c.Name.Contains(keyword)
+                                select c;
+                    productCat_listBox.DataSource = query.ToArray();
+                }
+            }
         }
     }
 }

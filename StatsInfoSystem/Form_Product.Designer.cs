@@ -104,7 +104,7 @@
             this.productCat_listBox = new System.Windows.Forms.ListBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
+            this.deleteProductCat_btn = new System.Windows.Forms.Button();
             this.updateProductCat_btn = new System.Windows.Forms.Button();
             this.addProductCat_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -112,11 +112,11 @@
             this.productCatCode_txtBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.button29 = new System.Windows.Forms.Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.productCatSearchCancel_btn = new System.Windows.Forms.Button();
+            this.productCatSearchIndex_cmb = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button30 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.productCatSearchSubmit_btn = new System.Windows.Forms.Button();
+            this.productCatSearchKey_txtBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox9.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -962,7 +962,7 @@
             // groupBox14
             // 
             this.groupBox14.Controls.Add(this.button25);
-            this.groupBox14.Controls.Add(this.button26);
+            this.groupBox14.Controls.Add(this.deleteProductCat_btn);
             this.groupBox14.Controls.Add(this.updateProductCat_btn);
             this.groupBox14.Controls.Add(this.addProductCat_btn);
             this.groupBox14.Controls.Add(this.label7);
@@ -989,17 +989,18 @@
             this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button25.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // deleteProductCat_btn
             // 
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
-            this.button26.Location = new System.Drawing.Point(139, 87);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(54, 54);
-            this.button26.TabIndex = 39;
-            this.button26.Text = "ลบข้อมูล";
-            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button26.UseVisualStyleBackColor = true;
+            this.deleteProductCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteProductCat_btn.Image = ((System.Drawing.Image)(resources.GetObject("deleteProductCat_btn.Image")));
+            this.deleteProductCat_btn.Location = new System.Drawing.Point(139, 87);
+            this.deleteProductCat_btn.Name = "deleteProductCat_btn";
+            this.deleteProductCat_btn.Size = new System.Drawing.Size(54, 54);
+            this.deleteProductCat_btn.TabIndex = 39;
+            this.deleteProductCat_btn.Text = "ลบข้อมูล";
+            this.deleteProductCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.deleteProductCat_btn.UseVisualStyleBackColor = true;
+            this.deleteProductCat_btn.Click += new System.EventHandler(this.deleteProductCat_btn_Click);
             // 
             // updateProductCat_btn
             // 
@@ -1065,11 +1066,11 @@
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.button29);
-            this.groupBox15.Controls.Add(this.comboBox5);
+            this.groupBox15.Controls.Add(this.productCatSearchCancel_btn);
+            this.groupBox15.Controls.Add(this.productCatSearchIndex_cmb);
             this.groupBox15.Controls.Add(this.label9);
-            this.groupBox15.Controls.Add(this.button30);
-            this.groupBox15.Controls.Add(this.textBox8);
+            this.groupBox15.Controls.Add(this.productCatSearchSubmit_btn);
+            this.groupBox15.Controls.Add(this.productCatSearchKey_txtBox);
             this.groupBox15.Controls.Add(this.label10);
             this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.Location = new System.Drawing.Point(7, 12);
@@ -1079,31 +1080,32 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "ค้นหาข้อมูลประเภทสินค้า";
             // 
-            // button29
+            // productCatSearchCancel_btn
             // 
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.Image = ((System.Drawing.Image)(resources.GetObject("button29.Image")));
-            this.button29.Location = new System.Drawing.Point(109, 87);
-            this.button29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(85, 46);
-            this.button29.TabIndex = 14;
-            this.button29.Text = "ยกเลิก";
-            this.button29.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button29.UseVisualStyleBackColor = true;
+            this.productCatSearchCancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productCatSearchCancel_btn.Image = ((System.Drawing.Image)(resources.GetObject("productCatSearchCancel_btn.Image")));
+            this.productCatSearchCancel_btn.Location = new System.Drawing.Point(109, 87);
+            this.productCatSearchCancel_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.productCatSearchCancel_btn.Name = "productCatSearchCancel_btn";
+            this.productCatSearchCancel_btn.Size = new System.Drawing.Size(85, 46);
+            this.productCatSearchCancel_btn.TabIndex = 14;
+            this.productCatSearchCancel_btn.Text = "ยกเลิก";
+            this.productCatSearchCancel_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.productCatSearchCancel_btn.UseVisualStyleBackColor = true;
+            this.productCatSearchCancel_btn.Click += new System.EventHandler(this.productCatSearchCancel_btn_Click);
             // 
-            // comboBox5
+            // productCatSearchIndex_cmb
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "กลุ่มลูกค้าทั้งหมด",
-            "รหัสกลุ่มลูกค้า",
-            "ชื่อกลุ่มลูกค้า"});
-            this.comboBox5.Location = new System.Drawing.Point(72, 18);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(120, 21);
-            this.comboBox5.TabIndex = 11;
+            this.productCatSearchIndex_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productCatSearchIndex_cmb.FormattingEnabled = true;
+            this.productCatSearchIndex_cmb.Items.AddRange(new object[] {
+            "ทั้งหมด",
+            "รหัสประเภทสินค้า",
+            "ชื่อประเภทสินค้า"});
+            this.productCatSearchIndex_cmb.Location = new System.Drawing.Point(72, 18);
+            this.productCatSearchIndex_cmb.Name = "productCatSearchIndex_cmb";
+            this.productCatSearchIndex_cmb.Size = new System.Drawing.Size(120, 21);
+            this.productCatSearchIndex_cmb.TabIndex = 11;
             // 
             // label9
             // 
@@ -1115,26 +1117,27 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "คำค้นหา :";
             // 
-            // button30
+            // productCatSearchSubmit_btn
             // 
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.Image = ((System.Drawing.Image)(resources.GetObject("button30.Image")));
-            this.button30.Location = new System.Drawing.Point(26, 87);
-            this.button30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(79, 46);
-            this.button30.TabIndex = 13;
-            this.button30.Text = "ค้นหา";
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button30.UseVisualStyleBackColor = true;
+            this.productCatSearchSubmit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productCatSearchSubmit_btn.Image = ((System.Drawing.Image)(resources.GetObject("productCatSearchSubmit_btn.Image")));
+            this.productCatSearchSubmit_btn.Location = new System.Drawing.Point(26, 87);
+            this.productCatSearchSubmit_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.productCatSearchSubmit_btn.Name = "productCatSearchSubmit_btn";
+            this.productCatSearchSubmit_btn.Size = new System.Drawing.Size(79, 46);
+            this.productCatSearchSubmit_btn.TabIndex = 13;
+            this.productCatSearchSubmit_btn.Text = "ค้นหา";
+            this.productCatSearchSubmit_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.productCatSearchSubmit_btn.UseVisualStyleBackColor = true;
+            this.productCatSearchSubmit_btn.Click += new System.EventHandler(this.productCatSearchSubmit_btn_Click);
             // 
-            // textBox8
+            // productCatSearchKey_txtBox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(72, 43);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(120, 20);
-            this.textBox8.TabIndex = 1;
+            this.productCatSearchKey_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productCatSearchKey_txtBox.Location = new System.Drawing.Point(72, 43);
+            this.productCatSearchKey_txtBox.Name = "productCatSearchKey_txtBox";
+            this.productCatSearchKey_txtBox.Size = new System.Drawing.Size(120, 20);
+            this.productCatSearchKey_txtBox.TabIndex = 1;
             // 
             // label10
             // 
@@ -1265,7 +1268,7 @@
         private System.Windows.Forms.ListBox productCat_listBox;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button deleteProductCat_btn;
         private System.Windows.Forms.Button updateProductCat_btn;
         private System.Windows.Forms.Button addProductCat_btn;
         private System.Windows.Forms.Label label7;
@@ -1273,11 +1276,11 @@
         private System.Windows.Forms.TextBox productCatCode_txtBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Button productCatSearchCancel_btn;
+        private System.Windows.Forms.ComboBox productCatSearchIndex_cmb;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button productCatSearchSubmit_btn;
+        private System.Windows.Forms.TextBox productCatSearchKey_txtBox;
         private System.Windows.Forms.Label label10;
     }
 }
