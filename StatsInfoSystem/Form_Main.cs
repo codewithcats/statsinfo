@@ -48,6 +48,7 @@ namespace StatsInfoSystem
         }
         private void showPage(Control c)
         {
+            panel1.Controls.Clear();
             panel1.Controls.Add(c);
             changeVisible(true);
         }
@@ -62,9 +63,9 @@ namespace StatsInfoSystem
             toolStrip1.Items[1].Visible = value;
         }
         private void toolStripLabel8_Click(object sender, EventArgs e) { this.changeVisible(false); }
-        private void ขอมลลกคาToolStripMenuItem_Click(object sender, EventArgs e) 
+        private void customerMenuItem_Click(object sender, EventArgs e) 
         { 
-            //showPage(new Form_Customer()); 
+            showPage(new Form_Customer()); 
         }
         private void toolStripLabel5_Click(object sender, EventArgs e)
         {
@@ -74,9 +75,9 @@ namespace StatsInfoSystem
         { 
             //showPage(new Form_Sale2(currentUser)); 
         }
-        private void ขอมลสนคาToolStripMenuItem_Click(object sender, EventArgs e) 
-        { 
-            //showPage(new Form_Help()); 
+        private void productMenuItem_Click(object sender, EventArgs e) 
+        {
+            showPage(new Form_Product());
         }
         private void ระบบพยากรณยอดขายสนคาToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -126,20 +127,32 @@ namespace StatsInfoSystem
         { 
             //showPage(new Form_Factor()); 
         }
-        private void toolStripLabel2_Click(object sender, EventArgs e)
+        private void changeUserMenu_Click(object sender, EventArgs e)
         {
-            //เปลี่ยนผู้ใช้งานระบบ
-            //if (MessageBox.Show("คุณต้องการเปลี่ยนผู้ใช้งานระบบ ใช่หรือไม่", "ยืนยันการเปลี่ยนผู้ใช้งานระบบ", MessageBoxButtons.YesNo,
-            //    MessageBoxIcon.Question) == DialogResult.No) return;
-            //changer user account
+            var result = MessageBox.Show("คุณต้องการเปลี่ยนผู้ใช้งานระบบ ใช่หรือไม่", "ยืนยันการเปลี่ยนผู้ใช้งานระบบ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No) return;
+            else if (result == DialogResult.Yes)
+            {
+                setNewLogin();
+            }
         }
         private void ระบบวเคราะหจดสำดบคสคของลกคาToolStripMenuItem_Click(object sender, EventArgs e)
         { 
             //showPage(new Form_Forcast_Order()); 
         }
-        private void ขอมลพนกงานผใชระบบToolStripMenuItem_Click(object sender, EventArgs e) 
+        private void userFormMenu_click(object sender, EventArgs e) 
         { 
-            //showPage(new Form_Employee()); 
+            showPage(new Form_Employee()); 
+        }
+
+        private void basicAnalysisMenu_Click(object sender, EventArgs e)
+        {
+            showPage(new Frm10_6Descrip_Cus());
+        }
+
+        private void sellAnalysisMenu_Click(object sender, EventArgs e)
+        {
+            showPage(new Frm10_3Reg());
         }
     }
 }

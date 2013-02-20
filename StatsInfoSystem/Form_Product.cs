@@ -34,6 +34,9 @@ namespace StatsInfoSystem
                 productGrp_listBox.ValueMember = "Id";
                 productImport_listBox.DisplayMember = "DisplayName";
                 productImport_listBox.ValueMember = "Id";
+                listBox1.DataSource = context.Products.ToArray();
+                listBox1.DisplayMember = "DisplayName";
+                listBox1.ValueMember = "Id";
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -57,9 +60,6 @@ namespace StatsInfoSystem
         }
         private void button5_Click(object sender, EventArgs e)
         {   //ข้อมูลลูกค้า ยกเลิก
-            comboBox1.Text = "";
-            comboBox1.SelectedIndex = -1;
-            textBox1.Text = "";
         }
         private void listBox1_SelectedValueChanged(object sender, EventArgs e)
         {   //แสดงข้อมูลลูกค้า เมื่อเลือก
@@ -412,87 +412,7 @@ namespace StatsInfoSystem
                         }
                         context.SaveChanges();
                         productImport_listBox.DataSource = context.Products.ToArray();
-
-                        sheet = workbooks.Sheets["cusarea"];
-                        range = sheet.UsedRange;
-                        i = 0;
-                        foreach (var row in range.Rows)
-                        {
-                            if (i++ == 0) continue;
-                            var area = new CustomerArea
-                            {
-                                Code = row.Cells[1, 1].Value.ToString(),
-                                Name = row.Cells[1, 2].Value.ToString()
-                            };
-                            context.CustomerAreas.Add(area);
-                        }
-                        context.SaveChanges();
-
-                        sheet = workbooks.Sheets["cusgroup"];
-                        range = sheet.UsedRange;
-                        i = 0;
-                        foreach (var row in range.Rows)
-                        {
-                            if (i++ == 0) continue;
-                            var group = new CustomerGroup
-                            {
-                                Code = row.Cells[1, 1].Value.ToString(),
-                                Name = row.Cells[1, 2].Value.ToString()
-                            };
-                            context.CustomerGroups.Add(group);
-                        }
-                        context.SaveChanges();
-
-                        sheet = workbooks.Sheets["customer"];
-                        range = sheet.UsedRange;
-                        CultureInfo provider = CultureInfo.InvariantCulture;
-                        i = 0;
-                        foreach (var row in range.Rows)
-                        {
-                            if (i++ == 0) continue;
-                            var code = row.Cells[1, 1].Value.ToString();
-                            var name = row.Cells[1, 2].Value.ToString();
-                            var cname = row.Cells[1, 3].Value == null ? null : row.Cells[1, 3].Value.ToString();
-                            var address = row.Cells[1, 4].Value == null ? null : row.Cells[1, 4].Value.ToString();
-                            var phone = row.Cells[1, 5].Value == null ? null : row.Cells[1, 5].Value.ToString();
-                            var fax = row.Cells[1, 6].Value == null ? null : row.Cells[1, 6].Value.ToString();
-                            var email = row.Cells[1, 7].Value == null ? null : row.Cells[1, 7].Value.ToString();
-                            var orderAverage = Decimal.Parse(row.Cells[1, 10].Value.ToString());
-                            var customer = new Customer
-                            {
-                                Code = code,
-                                Name = name,
-                                ContactName = cname,
-                                Address = address,
-                                Phone = phone,
-                                Fax = fax,
-                                Email = email,
-                                StartDate = DateTime.Parse(row.Cells[1, 8].Value.ToString()),
-                                Order = Decimal.Parse(row.Cells[1, 9].Value.ToString()),
-                                OrderAverage = orderAverage,
-                                Buy = Decimal.Parse(row.Cells[1, 11].Value.ToString()),
-                                BuyAverage = Decimal.Parse(row.Cells[1, 12].Value.ToString()),
-                                QuanBuy = Decimal.Parse(row.Cells[1, 13].Value.ToString()),
-                                QuanBuyAverage = Decimal.Parse(row.Cells[1, 14].Value.ToString()),
-                                //ContactMonth = Convert.ToInt32(row.Cells[1, 15].Value.ToString()),
-                                CreditLimit = row.Cells[1, 16].Value == null ? null : row.Cells[1, 16].Value.ToString(),
-                                //Late = row.Cells[1, 17].Value == null ? null : Convert.ToInt32(row.Cells[1, 7].Value.ToString())
-                            };
-                            string groupId = row.Cells[1, 18].Value.ToString();
-                            var grpQuery = from g in context.CustomerGroups
-                                           where g.Code == groupId
-                                           select g;
-                            var group = grpQuery.Single();
-                            customer.Group = group;
-                            string areaId = row.Cells[1, 19].Value.ToString();
-                            var areaQuery = from a in context.CustomerAreas
-                                           where a.Code == areaId
-                                           select a;
-                            var area = areaQuery.Single();
-                            customer.Area = area;
-                            context.Customers.Add(customer);
-                            context.SaveChanges();
-                        }
+                        listBox1.DataSource = context.Products.ToArray();
                         
                     }
                     MessageBox.Show("นำเข้าข้อมูลเรียบร้อยแล้ว");
@@ -501,6 +421,18 @@ namespace StatsInfoSystem
             catch (Exception ex)
             {
                 MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+            }
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            var product = (Product)listBox1.SelectedItem;
+            using (var context = new StsContext())
+            {
+                var p = context.Products.Find(product.Id);
+                context.Products.Remove(p);
+                context.SaveChanges();
+                listBox1.DataSource = context.Products.ToArray();
             }
         }
     }
