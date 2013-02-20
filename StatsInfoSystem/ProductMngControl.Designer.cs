@@ -31,24 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductMngControl));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.product_listBox = new System.Windows.Forms.ListBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.category_cmb = new System.Windows.Forms.ComboBox();
+            this.grp_cmb = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.name_txt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.code_txt = new System.Windows.Forms.TextBox();
+            this.prict_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.description_txt = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.productImport_listBox = new System.Windows.Forms.ListBox();
@@ -92,7 +92,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.listBox1);
+            this.tabPage1.Controls.Add(this.product_listBox);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -103,16 +103,18 @@
             this.tabPage1.Text = "เพิ่มและปรับปรุงข้อมูลสินค้าทั้งหมด";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // product_listBox
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.product_listBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 6);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(228, 368);
-            this.listBox1.TabIndex = 0;
+            this.product_listBox.DisplayMember = "DisplayName";
+            this.product_listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product_listBox.FormattingEnabled = true;
+            this.product_listBox.Location = new System.Drawing.Point(6, 6);
+            this.product_listBox.Name = "product_listBox";
+            this.product_listBox.Size = new System.Drawing.Size(228, 368);
+            this.product_listBox.TabIndex = 0;
+            this.product_listBox.ValueMember = "Id";
             // 
             // groupBox7
             // 
@@ -123,18 +125,18 @@
             this.groupBox7.Controls.Add(this.button12);
             this.groupBox7.Controls.Add(this.button11);
             this.groupBox7.Controls.Add(this.button10);
-            this.groupBox7.Controls.Add(this.comboBox3);
-            this.groupBox7.Controls.Add(this.comboBox2);
+            this.groupBox7.Controls.Add(this.category_cmb);
+            this.groupBox7.Controls.Add(this.grp_cmb);
             this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.label19);
             this.groupBox7.Controls.Add(this.label6);
             this.groupBox7.Controls.Add(this.label3);
-            this.groupBox7.Controls.Add(this.textBox3);
+            this.groupBox7.Controls.Add(this.name_txt);
             this.groupBox7.Controls.Add(this.label5);
-            this.groupBox7.Controls.Add(this.textBox2);
-            this.groupBox7.Controls.Add(this.textBox4);
+            this.groupBox7.Controls.Add(this.code_txt);
+            this.groupBox7.Controls.Add(this.prict_txt);
             this.groupBox7.Controls.Add(this.label4);
-            this.groupBox7.Controls.Add(this.textBox5);
+            this.groupBox7.Controls.Add(this.description_txt);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(240, 6);
             this.groupBox7.Name = "groupBox7";
@@ -190,23 +192,23 @@
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // category_cmb
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(110, 224);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(177, 21);
-            this.comboBox3.TabIndex = 36;
+            this.category_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.category_cmb.FormattingEnabled = true;
+            this.category_cmb.Location = new System.Drawing.Point(110, 224);
+            this.category_cmb.Name = "category_cmb";
+            this.category_cmb.Size = new System.Drawing.Size(177, 21);
+            this.category_cmb.TabIndex = 36;
             // 
-            // comboBox2
+            // grp_cmb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(110, 197);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(177, 21);
-            this.comboBox2.TabIndex = 35;
+            this.grp_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grp_cmb.FormattingEnabled = true;
+            this.grp_cmb.Location = new System.Drawing.Point(110, 197);
+            this.grp_cmb.Name = "grp_cmb";
+            this.grp_cmb.Size = new System.Drawing.Size(177, 21);
+            this.grp_cmb.TabIndex = 35;
             // 
             // label20
             // 
@@ -248,13 +250,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "รหัสสินค้า";
             // 
-            // textBox3
+            // name_txt
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(110, 45);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 5;
+            this.name_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_txt.Location = new System.Drawing.Point(110, 45);
+            this.name_txt.Name = "name_txt";
+            this.name_txt.Size = new System.Drawing.Size(183, 20);
+            this.name_txt.TabIndex = 5;
             // 
             // label5
             // 
@@ -266,21 +268,21 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "ราคาขายสินค้า";
             // 
-            // textBox2
+            // code_txt
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(110, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 3;
+            this.code_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.code_txt.Location = new System.Drawing.Point(110, 18);
+            this.code_txt.Name = "code_txt";
+            this.code_txt.Size = new System.Drawing.Size(183, 20);
+            this.code_txt.TabIndex = 3;
             // 
-            // textBox4
+            // prict_txt
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(110, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 20);
-            this.textBox4.TabIndex = 7;
+            this.prict_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prict_txt.Location = new System.Drawing.Point(110, 71);
+            this.prict_txt.Name = "prict_txt";
+            this.prict_txt.Size = new System.Drawing.Size(183, 20);
+            this.prict_txt.TabIndex = 7;
             // 
             // label4
             // 
@@ -292,14 +294,14 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "ชื่อสินค้า";
             // 
-            // textBox5
+            // description_txt
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(110, 97);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(183, 89);
-            this.textBox5.TabIndex = 9;
+            this.description_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description_txt.Location = new System.Drawing.Point(110, 97);
+            this.description_txt.Multiline = true;
+            this.description_txt.Name = "description_txt";
+            this.description_txt.Size = new System.Drawing.Size(183, 89);
+            this.description_txt.TabIndex = 9;
             // 
             // tabPage2
             // 
@@ -515,24 +517,24 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox product_listBox;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox category_cmb;
+        private System.Windows.Forms.ComboBox grp_cmb;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox name_txt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox code_txt;
+        private System.Windows.Forms.TextBox prict_txt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox description_txt;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.ListBox productImport_listBox;

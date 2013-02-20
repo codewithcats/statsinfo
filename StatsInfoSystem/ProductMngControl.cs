@@ -14,6 +14,10 @@ namespace StatsInfoSystem
         public ProductMngControl()
         {
             InitializeComponent();
+            using (var context = new StsContext())
+            {
+                product_listBox.DataSource = context.Products.ToArray();
+            }
         }
     }
 }
