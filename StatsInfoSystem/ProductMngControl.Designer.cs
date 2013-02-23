@@ -115,6 +115,7 @@
             this.product_listBox.Size = new System.Drawing.Size(228, 368);
             this.product_listBox.TabIndex = 0;
             this.product_listBox.ValueMember = "Id";
+            this.product_listBox.SelectedIndexChanged += new System.EventHandler(this.product_listBox_SelectedIndexChanged);
             // 
             // groupBox7
             // 
@@ -194,21 +195,25 @@
             // 
             // category_cmb
             // 
+            this.category_cmb.DisplayMember = "DisplayName";
             this.category_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category_cmb.FormattingEnabled = true;
             this.category_cmb.Location = new System.Drawing.Point(110, 224);
             this.category_cmb.Name = "category_cmb";
             this.category_cmb.Size = new System.Drawing.Size(177, 21);
             this.category_cmb.TabIndex = 36;
+            this.category_cmb.ValueMember = "Id";
             // 
             // grp_cmb
             // 
+            this.grp_cmb.DisplayMember = "DisplayName";
             this.grp_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_cmb.FormattingEnabled = true;
             this.grp_cmb.Location = new System.Drawing.Point(110, 197);
             this.grp_cmb.Name = "grp_cmb";
             this.grp_cmb.Size = new System.Drawing.Size(177, 21);
             this.grp_cmb.TabIndex = 35;
+            this.grp_cmb.ValueMember = "Id";
             // 
             // label20
             // 
