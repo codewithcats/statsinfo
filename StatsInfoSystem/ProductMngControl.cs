@@ -18,6 +18,7 @@ namespace StatsInfoSystem
             {
                 product_listBox.DataSource = context.Products.ToArray();
                 category_cmb.DataSource = context.ProductCategories.ToArray();
+                productCat_listBox.DataSource = context.ProductCategories.ToArray();
                 RefreshProductGroup(context);
             }
         }
@@ -94,6 +95,21 @@ namespace StatsInfoSystem
                 context.SaveChanges();
                 RefreshProductGroup(context);
             }
+        }
+
+        private void showProduct_btn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void showGrp_btn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
+        }
+
+        private void showCat_btn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
         }
     }
 }

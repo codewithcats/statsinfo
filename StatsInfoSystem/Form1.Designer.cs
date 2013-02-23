@@ -36,14 +36,14 @@
             this.productMngControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productMngControl1.Location = new System.Drawing.Point(0, 0);
             this.productMngControl1.Name = "productMngControl1";
-            this.productMngControl1.Size = new System.Drawing.Size(556, 408);
+            this.productMngControl1.Size = new System.Drawing.Size(664, 408);
             this.productMngControl1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 408);
+            this.ClientSize = new System.Drawing.Size(664, 408);
             this.Controls.Add(this.productMngControl1);
             this.Name = "Form1";
             this.Text = "Form1";
