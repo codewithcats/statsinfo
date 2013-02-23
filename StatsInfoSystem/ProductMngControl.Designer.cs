@@ -70,8 +70,7 @@
             this.productGroup_tabpage = new System.Windows.Forms.TabPage();
             this.productGrp_panel = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.delGrp_btn = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
@@ -547,8 +546,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.delGrp_btn);
             this.groupBox3.Controls.Add(this.button8);
             this.groupBox3.Controls.Add(this.button9);
             this.groupBox3.Controls.Add(this.label41);
@@ -563,35 +561,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "เพิ่มและปรับปรุงข้อมูลกลุ่มสินค้า";
             // 
-            // button6
+            // delGrp_btn
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(199, 87);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(54, 54);
-            this.button6.TabIndex = 40;
-            this.button6.Text = "ล้างข้อมูล";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(139, 87);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(54, 54);
-            this.button7.TabIndex = 39;
-            this.button7.Text = "ลบข้อมูล";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.delGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delGrp_btn.Image = ((System.Drawing.Image)(resources.GetObject("delGrp_btn.Image")));
+            this.delGrp_btn.Location = new System.Drawing.Point(199, 83);
+            this.delGrp_btn.Name = "delGrp_btn";
+            this.delGrp_btn.Size = new System.Drawing.Size(54, 54);
+            this.delGrp_btn.TabIndex = 39;
+            this.delGrp_btn.Text = "ลบข้อมูล";
+            this.delGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.delGrp_btn.UseVisualStyleBackColor = true;
+            this.delGrp_btn.Click += new System.EventHandler(this.delGrp_btn_Click);
             // 
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(79, 87);
+            this.button8.Location = new System.Drawing.Point(139, 83);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(54, 54);
             this.button8.TabIndex = 38;
@@ -603,7 +590,7 @@
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(19, 87);
+            this.button9.Location = new System.Drawing.Point(79, 83);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(54, 54);
             this.button9.TabIndex = 37;
@@ -816,8 +803,7 @@
         private System.Windows.Forms.Panel productGrp_panel;
         private System.Windows.Forms.ListBox productGrp_list;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button delGrp_btn;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label41;
