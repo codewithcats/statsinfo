@@ -72,7 +72,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.delGrp_btn = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.addGrp_btn = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.grpName_txt = new System.Windows.Forms.TextBox();
             this.grpCode_txt = new System.Windows.Forms.TextBox();
@@ -548,7 +548,7 @@
             // 
             this.groupBox3.Controls.Add(this.delGrp_btn);
             this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.addGrp_btn);
             this.groupBox3.Controls.Add(this.label41);
             this.groupBox3.Controls.Add(this.grpName_txt);
             this.groupBox3.Controls.Add(this.grpCode_txt);
@@ -586,17 +586,18 @@
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // addGrp_btn
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(79, 83);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(54, 54);
-            this.button9.TabIndex = 37;
-            this.button9.Text = "เพิ่ม";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button9.UseVisualStyleBackColor = true;
+            this.addGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addGrp_btn.Image = ((System.Drawing.Image)(resources.GetObject("addGrp_btn.Image")));
+            this.addGrp_btn.Location = new System.Drawing.Point(79, 83);
+            this.addGrp_btn.Name = "addGrp_btn";
+            this.addGrp_btn.Size = new System.Drawing.Size(54, 54);
+            this.addGrp_btn.TabIndex = 37;
+            this.addGrp_btn.Text = "เพิ่ม";
+            this.addGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.addGrp_btn.UseVisualStyleBackColor = true;
+            this.addGrp_btn.Click += new System.EventHandler(this.addGrp_btn_Click);
             // 
             // label41
             // 
@@ -805,7 +806,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button delGrp_btn;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button addGrp_btn;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox grpName_txt;
         private System.Windows.Forms.TextBox grpCode_txt;

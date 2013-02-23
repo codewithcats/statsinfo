@@ -64,5 +64,23 @@ namespace StatsInfoSystem
             grp_cmb.DataSource = context.ProductGroups.ToArray();
             productGrp_list.DataSource = context.ProductGroups.ToArray();
         }
+
+        private void addGrp_btn_Click(object sender, EventArgs e)
+        {
+            var g = new ProductGroup { Code = grpCode_txt.Text, Name = grpName_txt.Text };
+            using (var context = new StsContext())
+            {
+                var gq = from _g in context.ProductGroups where _g.Code.Equals(g.Code) select _g;
+                var gcount = gq.Count();
+                if (gcount > 0)
+                {
+                    MessageBox.Show("ไม่สามารถเพิ่มกลุ่มสินค้าได้ เนื่องจากรหัสกลุ่มนี้มีอยู่ในฐานข้อมูลแล้ว");
+                    return;
+                }
+                context.ProductGroups.Add(g);
+                context.SaveChanges();
+                RefreshProductGroup(context);
+            }
+        }
     }
 }
