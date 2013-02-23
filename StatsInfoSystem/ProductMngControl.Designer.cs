@@ -75,8 +75,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.grpName_txt = new System.Windows.Forms.TextBox();
+            this.grpCode_txt = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button17 = new System.Windows.Forms.Button();
@@ -552,8 +552,8 @@
             this.groupBox3.Controls.Add(this.button8);
             this.groupBox3.Controls.Add(this.button9);
             this.groupBox3.Controls.Add(this.label41);
-            this.groupBox3.Controls.Add(this.textBox33);
-            this.groupBox3.Controls.Add(this.textBox34);
+            this.groupBox3.Controls.Add(this.grpName_txt);
+            this.groupBox3.Controls.Add(this.grpCode_txt);
             this.groupBox3.Controls.Add(this.label43);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(213, 12);
@@ -621,21 +621,21 @@
             this.label41.TabIndex = 4;
             this.label41.Text = "รหัสกลุ่มสินค้า :";
             // 
-            // textBox33
+            // grpName_txt
             // 
-            this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox33.Location = new System.Drawing.Point(101, 59);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(152, 20);
-            this.textBox33.TabIndex = 5;
+            this.grpName_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpName_txt.Location = new System.Drawing.Point(101, 59);
+            this.grpName_txt.Name = "grpName_txt";
+            this.grpName_txt.Size = new System.Drawing.Size(152, 20);
+            this.grpName_txt.TabIndex = 5;
             // 
-            // textBox34
+            // grpCode_txt
             // 
-            this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox34.Location = new System.Drawing.Point(101, 27);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(152, 20);
-            this.textBox34.TabIndex = 3;
+            this.grpCode_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCode_txt.Location = new System.Drawing.Point(101, 27);
+            this.grpCode_txt.Name = "grpCode_txt";
+            this.grpCode_txt.Size = new System.Drawing.Size(152, 20);
+            this.grpCode_txt.TabIndex = 3;
             // 
             // label43
             // 
@@ -743,6 +743,7 @@
             this.productGrp_list.Size = new System.Drawing.Size(533, 199);
             this.productGrp_list.TabIndex = 17;
             this.productGrp_list.ValueMember = "Id";
+            this.productGrp_list.SelectedIndexChanged += new System.EventHandler(this.productGrp_list_SelectedIndexChanged);
             // 
             // ProductMngControl
             // 
@@ -820,8 +821,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox grpName_txt;
+        private System.Windows.Forms.TextBox grpCode_txt;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button17;

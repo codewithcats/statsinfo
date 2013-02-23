@@ -34,5 +34,12 @@ namespace StatsInfoSystem
             category_cmb.SelectedItem = product.Category;
             grp_cmb.SelectedItem = product.Group;
         }
+
+        private void productGrp_list_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var group = (ProductGroup)productGrp_list.SelectedItem;
+            grpCode_txt.Text = group.Code;
+            grpName_txt.Text = group.Name;
+        }
     }
 }
