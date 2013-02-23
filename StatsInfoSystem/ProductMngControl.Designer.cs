@@ -71,7 +71,7 @@
             this.productGrp_panel = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.delGrp_btn = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.editGrp_btn = new System.Windows.Forms.Button();
             this.addGrp_btn = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.grpName_txt = new System.Windows.Forms.TextBox();
@@ -547,7 +547,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.delGrp_btn);
-            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.editGrp_btn);
             this.groupBox3.Controls.Add(this.addGrp_btn);
             this.groupBox3.Controls.Add(this.label41);
             this.groupBox3.Controls.Add(this.grpName_txt);
@@ -574,17 +574,18 @@
             this.delGrp_btn.UseVisualStyleBackColor = true;
             this.delGrp_btn.Click += new System.EventHandler(this.delGrp_btn_Click);
             // 
-            // button8
+            // editGrp_btn
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(139, 83);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(54, 54);
-            this.button8.TabIndex = 38;
-            this.button8.Text = "แก้ไข";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button8.UseVisualStyleBackColor = true;
+            this.editGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editGrp_btn.Image = ((System.Drawing.Image)(resources.GetObject("editGrp_btn.Image")));
+            this.editGrp_btn.Location = new System.Drawing.Point(139, 83);
+            this.editGrp_btn.Name = "editGrp_btn";
+            this.editGrp_btn.Size = new System.Drawing.Size(54, 54);
+            this.editGrp_btn.TabIndex = 38;
+            this.editGrp_btn.Text = "แก้ไข";
+            this.editGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.editGrp_btn.UseVisualStyleBackColor = true;
+            this.editGrp_btn.Click += new System.EventHandler(this.editGrp_btn_Click);
             // 
             // addGrp_btn
             // 
@@ -805,7 +806,7 @@
         private System.Windows.Forms.ListBox productGrp_list;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button delGrp_btn;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button editGrp_btn;
         private System.Windows.Forms.Button addGrp_btn;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox grpName_txt;

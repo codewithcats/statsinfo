@@ -82,5 +82,18 @@ namespace StatsInfoSystem
                 RefreshProductGroup(context);
             }
         }
+
+        private void editGrp_btn_Click(object sender, EventArgs e)
+        {
+            var g = (ProductGroup)productGrp_list.SelectedItem;
+            using (var context = new StsContext())
+            {
+                g = context.ProductGroups.Find(g.Id);
+                g.Code = grpCode_txt.Text;
+                g.Name = grpName_txt.Text;
+                context.SaveChanges();
+                RefreshProductGroup(context);
+            }
+        }
     }
 }
