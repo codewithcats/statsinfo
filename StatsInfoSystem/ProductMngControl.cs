@@ -111,5 +111,12 @@ namespace StatsInfoSystem
         {
             tabControl1.SelectedIndex = 2;
         }
+
+        private void productCat_listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var cat = (ProductCategory)productCat_listBox.SelectedItem;
+            productCatCode_txtBox.Text = cat.Code;
+            productCatName_txtBox.Text = cat.Name;
+        }
     }
 }

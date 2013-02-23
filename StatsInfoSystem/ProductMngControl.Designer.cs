@@ -839,6 +839,7 @@
             this.productCat_listBox.Size = new System.Drawing.Size(566, 212);
             this.productCat_listBox.TabIndex = 0;
             this.productCat_listBox.ValueMember = "Id";
+            this.productCat_listBox.SelectedIndexChanged += new System.EventHandler(this.productCat_listBox_SelectedIndexChanged);
             // 
             // groupBox14
             // 
