@@ -19,6 +19,8 @@ namespace StatsInfoSystem
                 product_listBox.DataSource = context.Products.ToArray();
                 category_cmb.DataSource = context.ProductCategories.ToArray();
                 grp_cmb.DataSource = context.ProductGroups.ToArray();
+
+                productGrp_list.DataSource = context.ProductGroups.ToArray();
             }
         }
 

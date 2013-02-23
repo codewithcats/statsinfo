@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductMngControl));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.product_tabpage = new System.Windows.Forms.TabPage();
             this.product_listBox = new System.Windows.Forms.ListBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button13 = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             this.prict_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.description_txt = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.import_tabpage = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.productImport_listBox = new System.Windows.Forms.ListBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
@@ -67,13 +67,36 @@
             this.xlsImport_btn = new System.Windows.Forms.Button();
             this.importFileName_txtBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.productGroup_tabpage = new System.Windows.Forms.TabPage();
+            this.productGrp_panel = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.button18 = new System.Windows.Forms.Button();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.productGrp_list = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.product_tabpage.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.import_tabpage.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.productGroup_tabpage.SuspendLayout();
+            this.productGrp_panel.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -81,8 +104,9 @@
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.product_tabpage);
+            this.tabControl1.Controls.Add(this.productGroup_tabpage);
+            this.tabControl1.Controls.Add(this.import_tabpage);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -90,18 +114,18 @@
             this.tabControl1.Size = new System.Drawing.Size(557, 409);
             this.tabControl1.TabIndex = 1;
             // 
-            // tabPage1
+            // product_tabpage
             // 
-            this.tabPage1.Controls.Add(this.product_listBox);
-            this.tabPage1.Controls.Add(this.groupBox7);
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(549, 383);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "เพิ่มและปรับปรุงข้อมูลสินค้าทั้งหมด";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.product_tabpage.Controls.Add(this.product_listBox);
+            this.product_tabpage.Controls.Add(this.groupBox7);
+            this.product_tabpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product_tabpage.Location = new System.Drawing.Point(4, 22);
+            this.product_tabpage.Name = "product_tabpage";
+            this.product_tabpage.Padding = new System.Windows.Forms.Padding(3);
+            this.product_tabpage.Size = new System.Drawing.Size(549, 383);
+            this.product_tabpage.TabIndex = 0;
+            this.product_tabpage.Text = "สินค้า";
+            this.product_tabpage.UseVisualStyleBackColor = true;
             // 
             // product_listBox
             // 
@@ -308,19 +332,19 @@
             this.description_txt.Size = new System.Drawing.Size(183, 89);
             this.description_txt.TabIndex = 9;
             // 
-            // tabPage2
+            // import_tabpage
             // 
-            this.tabPage2.Controls.Add(this.groupBox11);
-            this.tabPage2.Controls.Add(this.groupBox10);
-            this.tabPage2.Controls.Add(this.groupBox9);
-            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(844, 383);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "นำเข้าข้อมูลสินค้า";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.import_tabpage.Controls.Add(this.groupBox11);
+            this.import_tabpage.Controls.Add(this.groupBox10);
+            this.import_tabpage.Controls.Add(this.groupBox9);
+            this.import_tabpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.import_tabpage.Location = new System.Drawing.Point(4, 22);
+            this.import_tabpage.Name = "import_tabpage";
+            this.import_tabpage.Padding = new System.Windows.Forms.Padding(3);
+            this.import_tabpage.Size = new System.Drawing.Size(549, 383);
+            this.import_tabpage.TabIndex = 1;
+            this.import_tabpage.Text = "นำเข้าข้อมูลสินค้า";
+            this.import_tabpage.UseVisualStyleBackColor = true;
             // 
             // groupBox11
             // 
@@ -497,6 +521,229 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "เปิดข้อมูล :";
             // 
+            // productGroup_tabpage
+            // 
+            this.productGroup_tabpage.Controls.Add(this.productGrp_panel);
+            this.productGroup_tabpage.Location = new System.Drawing.Point(4, 22);
+            this.productGroup_tabpage.Name = "productGroup_tabpage";
+            this.productGroup_tabpage.Padding = new System.Windows.Forms.Padding(3);
+            this.productGroup_tabpage.Size = new System.Drawing.Size(549, 383);
+            this.productGroup_tabpage.TabIndex = 2;
+            this.productGroup_tabpage.Text = "กลุ่มสินค้า";
+            this.productGroup_tabpage.UseVisualStyleBackColor = true;
+            // 
+            // productGrp_panel
+            // 
+            this.productGrp_panel.Controls.Add(this.productGrp_list);
+            this.productGrp_panel.Controls.Add(this.groupBox3);
+            this.productGrp_panel.Controls.Add(this.groupBox4);
+            this.productGrp_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productGrp_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productGrp_panel.Location = new System.Drawing.Point(3, 3);
+            this.productGrp_panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.productGrp_panel.Name = "productGrp_panel";
+            this.productGrp_panel.Size = new System.Drawing.Size(543, 377);
+            this.productGrp_panel.TabIndex = 16;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.label41);
+            this.groupBox3.Controls.Add(this.textBox33);
+            this.groupBox3.Controls.Add(this.textBox34);
+            this.groupBox3.Controls.Add(this.label43);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(213, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(262, 149);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "เพิ่มและปรับปรุงข้อมูลกลุ่มสินค้า";
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(199, 87);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(54, 54);
+            this.button6.TabIndex = 40;
+            this.button6.Text = "ล้างข้อมูล";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(139, 87);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(54, 54);
+            this.button7.TabIndex = 39;
+            this.button7.Text = "ลบข้อมูล";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(79, 87);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(54, 54);
+            this.button8.TabIndex = 38;
+            this.button8.Text = "แก้ไข";
+            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(19, 87);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(54, 54);
+            this.button9.TabIndex = 37;
+            this.button9.Text = "เพิ่ม";
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(18, 30);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(78, 13);
+            this.label41.TabIndex = 4;
+            this.label41.Text = "รหัสกลุ่มสินค้า :";
+            // 
+            // textBox33
+            // 
+            this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox33.Location = new System.Drawing.Point(101, 59);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(152, 20);
+            this.textBox33.TabIndex = 5;
+            // 
+            // textBox34
+            // 
+            this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox34.Location = new System.Drawing.Point(101, 27);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(152, 20);
+            this.textBox34.TabIndex = 3;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(18, 62);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(72, 13);
+            this.label43.TabIndex = 6;
+            this.label43.Text = "ชื่อกลุ่มสินค้า :";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button17);
+            this.groupBox4.Controls.Add(this.comboBox6);
+            this.groupBox4.Controls.Add(this.label44);
+            this.groupBox4.Controls.Add(this.button18);
+            this.groupBox4.Controls.Add(this.textBox37);
+            this.groupBox4.Controls.Add(this.label45);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(7, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(200, 149);
+            this.groupBox4.TabIndex = 15;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "ค้นหาข้อมูลกลุ่มสินค้า";
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
+            this.button17.Location = new System.Drawing.Point(107, 87);
+            this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(85, 46);
+            this.button17.TabIndex = 14;
+            this.button17.Text = "ยกเลิก";
+            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "กลุ่มลูกค้าทั้งหมด",
+            "รหัสกลุ่มลูกค้า",
+            "ชื่อกลุ่มลูกค้า"});
+            this.comboBox6.Location = new System.Drawing.Point(72, 18);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(120, 21);
+            this.comboBox6.TabIndex = 11;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(14, 46);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(52, 13);
+            this.label44.TabIndex = 2;
+            this.label44.Text = "คำค้นหา :";
+            // 
+            // button18
+            // 
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
+            this.button18.Location = new System.Drawing.Point(24, 87);
+            this.button18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(79, 46);
+            this.button18.TabIndex = 13;
+            this.button18.Text = "ค้นหา";
+            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox37.Location = new System.Drawing.Point(72, 43);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(120, 20);
+            this.textBox37.TabIndex = 1;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(6, 21);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(60, 13);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "สืบค้นตาม :";
+            // 
+            // productGrp_list
+            // 
+            this.productGrp_list.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.productGrp_list.DisplayMember = "DisplayName";
+            this.productGrp_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productGrp_list.FormattingEnabled = true;
+            this.productGrp_list.Location = new System.Drawing.Point(7, 167);
+            this.productGrp_list.Name = "productGrp_list";
+            this.productGrp_list.Size = new System.Drawing.Size(533, 199);
+            this.productGrp_list.TabIndex = 17;
+            this.productGrp_list.ValueMember = "Id";
+            // 
             // ProductMngControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,15 +752,21 @@
             this.Name = "ProductMngControl";
             this.Size = new System.Drawing.Size(556, 410);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.product_tabpage.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.import_tabpage.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.productGroup_tabpage.ResumeLayout(false);
+            this.productGrp_panel.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -521,7 +774,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage product_tabpage;
         private System.Windows.Forms.ListBox product_listBox;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button13;
@@ -540,7 +793,7 @@
         private System.Windows.Forms.TextBox prict_txt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox description_txt;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage import_tabpage;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.ListBox productImport_listBox;
         private System.Windows.Forms.GroupBox groupBox10;
@@ -558,6 +811,25 @@
         private System.Windows.Forms.Button xlsImport_btn;
         private System.Windows.Forms.TextBox importFileName_txtBox;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TabPage productGroup_tabpage;
+        private System.Windows.Forms.Panel productGrp_panel;
+        private System.Windows.Forms.ListBox productGrp_list;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.Label label45;
 
     }
 }
