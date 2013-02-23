@@ -893,6 +893,7 @@
             this.addProductCat_btn.Text = "เพิ่ม";
             this.addProductCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.addProductCat_btn.UseVisualStyleBackColor = true;
+            this.addProductCat_btn.Click += new System.EventHandler(this.addProductCat_btn_Click);
             // 
             // label7
             // 

@@ -17,8 +17,7 @@ namespace StatsInfoSystem
             using (var context = new StsContext())
             {
                 product_listBox.DataSource = context.Products.ToArray();
-                category_cmb.DataSource = context.ProductCategories.ToArray();
-                productCat_listBox.DataSource = context.ProductCategories.ToArray();
+                RefreshProductCategory(context);
                 RefreshProductGroup(context);
             }
         }
@@ -117,6 +116,30 @@ namespace StatsInfoSystem
             var cat = (ProductCategory)productCat_listBox.SelectedItem;
             productCatCode_txtBox.Text = cat.Code;
             productCatName_txtBox.Text = cat.Name;
+        }
+
+        private void addProductCat_btn_Click(object sender, EventArgs e)
+        {
+            var c = new ProductCategory { Code = productCatCode_txtBox.Text, Name = productCatName_txtBox.Text };
+            using (var context = new StsContext())
+            {
+                var cq = from _c in context.ProductCategories where _c.Code.Equals(c.Code) select _c;
+                var ccount = cq.Count();
+                if (ccount > 0)
+                {
+                    MessageBox.Show("ไม่สามารถเพิ่มประเภทสินค้าได้ เนื่องจากรหัสประเภทนี้มีอยู่ในฐานข้อมูลแล้ว");
+                    return;
+                }
+                context.ProductCategories.Add(c);
+                context.SaveChanges();
+                RefreshProductCategory(context);
+            }
+        }
+
+        private void RefreshProductCategory(StsContext context)
+        {
+            category_cmb.DataSource = context.ProductCategories.ToArray();
+            productCat_listBox.DataSource = context.ProductCategories.ToArray(); 
         }
     }
 }
