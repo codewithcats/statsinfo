@@ -58,8 +58,6 @@
             this.customerCredit_txtBox = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.customerLate_txtBox = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.customerMonth_txtBox = new System.Windows.Forms.TextBox();
             this.customerStartDate_dt = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.customerEmail_txtBox = new System.Windows.Forms.TextBox();
@@ -76,6 +74,26 @@
             this.customerPhone_txtBox = new System.Windows.Forms.TextBox();
             this.customer_list = new System.Windows.Forms.ListBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.label8 = new System.Windows.Forms.Label();
+            this.customerCount_lbl = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.customerGrp_list = new System.Windows.Forms.ListBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.button18 = new System.Windows.Forms.Button();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -83,11 +101,16 @@
             this.groupBox9.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -98,6 +121,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.customerCount_lbl);
+            this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.customer_list);
             this.tabPage1.Controls.Add(this.tabControl2);
             this.tabPage1.Controls.Add(this.groupBox1);
@@ -284,8 +309,6 @@
             this.tabPage3.Controls.Add(this.customerCredit_txtBox);
             this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.customerLate_txtBox);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.customerMonth_txtBox);
             this.tabPage3.Controls.Add(this.customerStartDate_dt);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.customerEmail_txtBox);
@@ -355,25 +378,27 @@
             // 
             this.customerArea_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerArea_cmb.FormattingEnabled = true;
-            this.customerArea_cmb.Location = new System.Drawing.Point(169, 363);
+            this.customerArea_cmb.Location = new System.Drawing.Point(169, 331);
             this.customerArea_cmb.Name = "customerArea_cmb";
             this.customerArea_cmb.Size = new System.Drawing.Size(177, 21);
             this.customerArea_cmb.TabIndex = 63;
             // 
             // customerGrp_cmb
             // 
+            this.customerGrp_cmb.DisplayMember = "DisplayName";
             this.customerGrp_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerGrp_cmb.FormattingEnabled = true;
-            this.customerGrp_cmb.Location = new System.Drawing.Point(169, 331);
+            this.customerGrp_cmb.Location = new System.Drawing.Point(169, 299);
             this.customerGrp_cmb.Name = "customerGrp_cmb";
             this.customerGrp_cmb.Size = new System.Drawing.Size(177, 21);
             this.customerGrp_cmb.TabIndex = 62;
+            this.customerGrp_cmb.ValueMember = "Id";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(26, 367);
+            this.label20.Location = new System.Drawing.Point(26, 335);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(55, 13);
             this.label20.TabIndex = 61;
@@ -383,7 +408,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(26, 335);
+            this.label19.Location = new System.Drawing.Point(26, 303);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(52, 13);
             this.label19.TabIndex = 60;
@@ -393,7 +418,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(26, 272);
+            this.label18.Location = new System.Drawing.Point(26, 240);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(129, 13);
             this.label18.TabIndex = 59;
@@ -402,7 +427,7 @@
             // customerCredit_txtBox
             // 
             this.customerCredit_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerCredit_txtBox.Location = new System.Drawing.Point(169, 300);
+            this.customerCredit_txtBox.Location = new System.Drawing.Point(169, 268);
             this.customerCredit_txtBox.Name = "customerCredit_txtBox";
             this.customerCredit_txtBox.Size = new System.Drawing.Size(177, 20);
             this.customerCredit_txtBox.TabIndex = 58;
@@ -411,7 +436,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(26, 304);
+            this.label17.Location = new System.Drawing.Point(26, 272);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(98, 13);
             this.label17.TabIndex = 57;
@@ -420,28 +445,10 @@
             // customerLate_txtBox
             // 
             this.customerLate_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerLate_txtBox.Location = new System.Drawing.Point(169, 268);
+            this.customerLate_txtBox.Location = new System.Drawing.Point(169, 236);
             this.customerLate_txtBox.Name = "customerLate_txtBox";
             this.customerLate_txtBox.Size = new System.Drawing.Size(177, 20);
             this.customerLate_txtBox.TabIndex = 56;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(26, 238);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(115, 13);
-            this.label16.TabIndex = 55;
-            this.label16.Text = "ระยะเวลาการเป็นลูกค้า";
-            // 
-            // customerMonth_txtBox
-            // 
-            this.customerMonth_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerMonth_txtBox.Location = new System.Drawing.Point(169, 235);
-            this.customerMonth_txtBox.Name = "customerMonth_txtBox";
-            this.customerMonth_txtBox.Size = new System.Drawing.Size(177, 20);
-            this.customerMonth_txtBox.TabIndex = 54;
             // 
             // customerStartDate_dt
             // 
@@ -574,15 +581,245 @@
             this.customer_list.DisplayMember = "Name";
             this.customer_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_list.FormattingEnabled = true;
-            this.customer_list.Location = new System.Drawing.Point(6, 147);
+            this.customer_list.Location = new System.Drawing.Point(6, 173);
             this.customer_list.Name = "customer_list";
-            this.customer_list.Size = new System.Drawing.Size(243, 355);
+            this.customer_list.Size = new System.Drawing.Size(243, 329);
             this.customer_list.TabIndex = 16;
             this.customer_list.ValueMember = "Id";
             // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 151);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 13);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "จำนวนลูกค้า:";
+            // 
+            // customerCount_lbl
+            // 
+            this.customerCount_lbl.AutoSize = true;
+            this.customerCount_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerCount_lbl.Location = new System.Drawing.Point(75, 151);
+            this.customerCount_lbl.Name = "customerCount_lbl";
+            this.customerCount_lbl.Size = new System.Drawing.Size(14, 13);
+            this.customerCount_lbl.TabIndex = 45;
+            this.customerCount_lbl.Text = "0";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.panel2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(655, 513);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "กลุ่มลูกค้า";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.customerGrp_list);
+            this.panel2.Controls.Add(this.groupBox3);
+            this.panel2.Controls.Add(this.groupBox4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(649, 507);
+            this.panel2.TabIndex = 10;
+            // 
+            // customerGrp_list
+            // 
+            this.customerGrp_list.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customerGrp_list.DisplayMember = "DisplayName";
+            this.customerGrp_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerGrp_list.FormattingEnabled = true;
+            this.customerGrp_list.Location = new System.Drawing.Point(3, 197);
+            this.customerGrp_list.Name = "customerGrp_list";
+            this.customerGrp_list.Size = new System.Drawing.Size(643, 303);
+            this.customerGrp_list.TabIndex = 0;
+            this.customerGrp_list.ValueMember = "Id";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.label41);
+            this.groupBox3.Controls.Add(this.textBox33);
+            this.groupBox3.Controls.Add(this.textBox34);
+            this.groupBox3.Controls.Add(this.label43);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(250, 4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(308, 187);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "เพิ่มและปรับปรุงข้อมูลกลุ่มลูกค้า";
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(231, 86);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(64, 64);
+            this.button7.TabIndex = 39;
+            this.button7.Text = "ลบข้อมูล";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(161, 86);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(64, 64);
+            this.button8.TabIndex = 38;
+            this.button8.Text = "แก้ไข";
+            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(91, 85);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(64, 64);
+            this.button9.TabIndex = 37;
+            this.button9.Text = "เพิ่ม";
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(18, 30);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(77, 13);
+            this.label41.TabIndex = 4;
+            this.label41.Text = "รหัสกลุ่มลูกค้า :";
+            // 
+            // textBox33
+            // 
+            this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox33.Location = new System.Drawing.Point(118, 59);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(177, 20);
+            this.textBox33.TabIndex = 5;
+            // 
+            // textBox34
+            // 
+            this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox34.Location = new System.Drawing.Point(118, 27);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(177, 20);
+            this.textBox34.TabIndex = 3;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(18, 62);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(71, 13);
+            this.label43.TabIndex = 6;
+            this.label43.Text = "ชื่อกลุ่มลูกค้า :";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button17);
+            this.groupBox4.Controls.Add(this.comboBox6);
+            this.groupBox4.Controls.Add(this.label44);
+            this.groupBox4.Controls.Add(this.button18);
+            this.groupBox4.Controls.Add(this.textBox37);
+            this.groupBox4.Controls.Add(this.label45);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(3, 3);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(241, 187);
+            this.groupBox4.TabIndex = 15;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "ค้นหาข้อมูลกลุ่มลูกค้า";
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
+            this.button17.Location = new System.Drawing.Point(133, 87);
+            this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(99, 43);
+            this.button17.TabIndex = 14;
+            this.button17.Text = "ยกเลิก";
+            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "กลุ่มลูกค้าทั้งหมด",
+            "รหัสกลุ่มลูกค้า",
+            "ชื่อกลุ่มลูกค้า"});
+            this.comboBox6.Location = new System.Drawing.Point(72, 27);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(162, 21);
+            this.comboBox6.TabIndex = 11;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(14, 62);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(52, 13);
+            this.label44.TabIndex = 2;
+            this.label44.Text = "คำค้นหา :";
+            // 
+            // button18
+            // 
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
+            this.button18.Location = new System.Drawing.Point(26, 87);
+            this.button18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(99, 43);
+            this.button18.TabIndex = 13;
+            this.button18.Text = "ค้นหา";
+            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox37.Location = new System.Drawing.Point(72, 59);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(162, 20);
+            this.textBox37.TabIndex = 1;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(6, 30);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(60, 13);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "สืบค้นตาม :";
             // 
             // CustomerMngControl
             // 
@@ -593,6 +830,7 @@
             this.Size = new System.Drawing.Size(660, 535);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -601,6 +839,12 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -623,8 +867,6 @@
         private System.Windows.Forms.TextBox customerCredit_txtBox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox customerLate_txtBox;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox customerMonth_txtBox;
         private System.Windows.Forms.DateTimePicker customerStartDate_dt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox customerEmail_txtBox;
@@ -654,5 +896,25 @@
         private System.Windows.Forms.TextBox importFileName_txtBox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Label customerCount_lbl;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ListBox customerGrp_list;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.Label label45;
     }
 }

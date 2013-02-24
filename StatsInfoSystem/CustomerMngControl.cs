@@ -18,12 +18,21 @@ namespace StatsInfoSystem
             using (var context = new StsContext())
             {
                 RefreshCustomer(context);
+                RefreshCustomerGroup(context);
             }
+        }
+
+        private void RefreshCustomerGroup(StsContext context)
+        {
+            var ds = context.CustomerGroups.ToArray();
+            customerGrp_list.DataSource = ds;
+            customerGrp_cmb.DataSource = ds;
         }
 
         private void RefreshCustomer(StsContext context)
         {
             customer_list.DataSource = context.Customers.ToArray();
+            customerCount_lbl.Text = context.Customers.Count().ToString();
         }
 
         private void browse_btn_Click(object sender, EventArgs e)
@@ -101,13 +110,13 @@ namespace StatsInfoSystem
                                 var phone = row.Cells[1, 5].Value == null ? null : row.Cells[1, 5].Value.ToString();
                                 var fax = row.Cells[1, 6].Value == null ? null : row.Cells[1, 6].Value.ToString();
                                 var email = row.Cells[1, 7].Value == null ? null : row.Cells[1, 7].Value.ToString();
-                                var orderAverage = row.Cells[1, 10].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 10].Value.ToString());
+                                //var orderAverage = row.Cells[1, 10].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 10].Value.ToString());
                                 var startDate = row.Cells[1, 8].Value == null ? new Decimal(0) : DateTime.Parse(row.Cells[1, 8].Value.ToString());
-                                var buy = row.Cells[1, 11].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 11].Value.ToString());
-                                var buyAv = row.Cells[1, 12].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 12].Value.ToString());
-                                var qbuy = row.Cells[1, 13].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 13].Value.ToString());
-                                var qbuyAv = row.Cells[1, 14].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 14].Value.ToString());
-                                var month = row.Cells[1, 15].Value == null ? 0 : Convert.ToInt32(row.Cells[1, 15].Value.ToString());
+                                //var buy = row.Cells[1, 11].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 11].Value.ToString());
+                                //var buyAv = row.Cells[1, 12].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 12].Value.ToString());
+                                //var qbuy = row.Cells[1, 13].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 13].Value.ToString());
+                                //var qbuyAv = row.Cells[1, 14].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 14].Value.ToString());
+                                //var month = row.Cells[1, 15].Value == null ? 0 : Convert.ToInt32(row.Cells[1, 15].Value.ToString());
                                 var late = row.Cells[1, 17].Value == null ? 0 : Convert.ToInt32(row.Cells[1, 17].Value.ToString());
                                 var customer = new Customer
                                 {
@@ -120,12 +129,12 @@ namespace StatsInfoSystem
                                     Email = email,
                                     StartDate = startDate,
                                     Order = row.Cells[1, 9].Value == null ? new Decimal(0) : Decimal.Parse(row.Cells[1, 9].Value.ToString()),
-                                    OrderAverage = orderAverage,
-                                    Buy = buy,
-                                    BuyAverage = buyAv,
-                                    QuanBuy = qbuy,
-                                    QuanBuyAverage = qbuyAv,
-                                    ContactMonth = month,
+                                    //OrderAverage = orderAverage,
+                                    //Buy = buy,
+                                    //BuyAverage = buyAv,
+                                    //QuanBuy = qbuy,
+                                    //QuanBuyAverage = qbuyAv,
+                                    //ContactMonth = month,
                                     CreditLimit = row.Cells[1, 16].Value == null ? null : row.Cells[1, 16].Value.ToString(),
                                     Late = late
                                 };
@@ -164,6 +173,7 @@ namespace StatsInfoSystem
                             }
                         }
                         RefreshCustomer(context);
+                        RefreshCustomerGroup(context);
                     }
                     MessageBox.Show("นำเข้าข้อมูลเรียบร้อยแล้ว");
                 }
