@@ -105,6 +105,12 @@
     <Compile Include="Frm10_6Descrip_Cus.designer.cs">
       <DependentUpon>Frm10_6Descrip_Cus.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadingIndicator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadingIndicator.Designer.cs">
+      <DependentUpon>LoadingIndicator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="ProductConfiguration.cs" />
     <Compile Include="ProductMngControl.cs">
@@ -115,6 +121,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sale.cs" />
+    <Compile Include="SaleMngControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaleMngControl.Designer.cs">
+      <DependentUpon>SaleMngControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="StsContext.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="CustomerMngControl.resx">
@@ -144,6 +157,9 @@
     <EmbeddedResource Include="Frm10_6Descrip_Cus.resx">
       <DependentUpon>Frm10_6Descrip_Cus.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoadingIndicator.resx">
+      <DependentUpon>LoadingIndicator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductMngControl.resx">
       <DependentUpon>ProductMngControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +173,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SaleMngControl.resx">
+      <DependentUpon>SaleMngControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

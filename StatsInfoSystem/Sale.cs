@@ -7,6 +7,7 @@ namespace StatsInfoSystem
 {
     public class Sale
     {
+        public int Id { get; set; }
         public string Code { get; set; }
         public DateTime Date { get; set; }
         public Decimal Amount { get; set; }
@@ -18,6 +19,7 @@ namespace StatsInfoSystem
 
     public class SaleLine
     {
+        public int Id { get; set; }
         public string Code { get; set; }
         public Sale Sale { get; set; }
         public Product Product { get; set; }

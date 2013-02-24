@@ -28,32 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.customerMngControl1 = new StatsInfoSystem.CustomerMngControl();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ขอมลลกคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ขอมลการขายสนคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.productMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // customerMngControl1
+            // menuStrip1
             // 
-            this.customerMngControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerMngControl1.Location = new System.Drawing.Point(0, 0);
-            this.customerMngControl1.Name = "customerMngControl1";
-            this.customerMngControl1.Size = new System.Drawing.Size(664, 533);
-            this.customerMngControl1.TabIndex = 0;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem
+            // 
+            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ขอมลลกคาToolStripMenuItem,
+            this.ขอมลการขายสนคาToolStripMenuItem,
+            this.productMenuItem});
+            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Name = "ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem";
+            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Size = new System.Drawing.Size(171, 20);
+            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Text = "ระบบเก็บรวบรวมและปรับปรุงข้อมูล";
+            // 
+            // ขอมลลกคาToolStripMenuItem
+            // 
+            this.ขอมลลกคาToolStripMenuItem.Name = "ขอมลลกคาToolStripMenuItem";
+            this.ขอมลลกคาToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.ขอมลลกคาToolStripMenuItem.Text = "ข้อมูลลูกค้า";
+            this.ขอมลลกคาToolStripMenuItem.Click += new System.EventHandler(this.customerMenuItem_Click);
+            // 
+            // ขอมลการขายสนคาToolStripMenuItem
+            // 
+            this.ขอมลการขายสนคาToolStripMenuItem.Name = "ขอมลการขายสนคาToolStripMenuItem";
+            this.ขอมลการขายสนคาToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.ขอมลการขายสนคาToolStripMenuItem.Text = "ข้อมูลการขายสินค้า";
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 24);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(784, 537);
+            this.mainPanel.TabIndex = 1;
+            // 
+            // productMenuItem
+            // 
+            this.productMenuItem.Name = "productMenuItem";
+            this.productMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.productMenuItem.Text = "ข้อมูลสินค้า";
+            this.productMenuItem.Click += new System.EventHandler(this.productMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 533);
-            this.Controls.Add(this.customerMngControl1);
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private CustomerMngControl customerMngControl1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลลกคาToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลการขายสนคาToolStripMenuItem;
+        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.ToolStripMenuItem productMenuItem;
+
 
 
 

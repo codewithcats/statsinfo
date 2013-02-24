@@ -16,7 +16,7 @@ namespace StatsInfoSystem
             InitializeComponent();
             using (var context = new StsContext())
             {
-                product_listBox.DataSource = context.Products.ToArray();
+                RefreshProduct(context);
                 RefreshProductCategory(context);
                 RefreshProductGroup(context);
             }
@@ -140,6 +140,115 @@ namespace StatsInfoSystem
         {
             category_cmb.DataSource = context.ProductCategories.ToArray();
             productCat_listBox.DataSource = context.ProductCategories.ToArray(); 
+        }
+
+        private void browse_btn_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                importFileName_txtBox.Text = openFileDialog.FileName;
+            }
+        }
+
+        private void importFromXls_btn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String xlsName = null;
+                if ((xlsName = openFileDialog.FileName) != null)
+                {
+                    using (var context = new StsContext())
+                    {
+                        var excel = new Microsoft.Office.Interop.Excel.Application();
+                        var workbooks = excel.Workbooks.Open(xlsName);
+                        var sheet = workbooks.Sheets["prodcat"];
+                        var range = sheet.UsedRange;
+                        var i = 0;
+                        foreach (var row in range.Rows)
+                        {
+                            if (i++ == 0) continue;
+                            string code = row.Cells[1, 1].Value.ToString();
+                            var catq = from c in context.ProductCategories where c.Code.Equals(code) select c;
+                            if (catq.Count() > 0) continue;
+                            var cat = new ProductCategory() { 
+                                Code = code,
+                                Name = row.Cells[1, 2].Value.ToString()
+                            };
+                            context.ProductCategories.Add(cat);
+                        }
+                        context.SaveChanges();
+
+                        sheet = workbooks.Sheets["prodgroup"];
+                        range = sheet.UsedRange;
+                        i = 0;
+                        foreach (var row in range.Rows)
+                        {
+                            if (i++ == 0) continue;
+                            string code = row.Cells[1, 1].Value.ToString();
+                            var grpq = from g in context.ProductGroups where g.Code.Equals(code) select g;
+                            if (grpq.Count() > 0) continue;
+                            var grp = new ProductGroup()
+                            {
+                                Code = code,
+                                Name = row.Cells[1, 2].Value.ToString()
+                            };
+                            context.ProductGroups.Add(grp);
+                        }
+                        context.SaveChanges();
+
+                        sheet = workbooks.Sheets["product"];
+                        range = sheet.UsedRange;
+                        i = 0;
+                        foreach (var row in range.Rows)
+                        {
+                            if (i++ == 0) continue;
+                            string code = row.Cells[1, 1].Value.ToString();
+                            var pq = from p in context.Products where p.Code.Equals(code) select p;
+                            if (pq.Count() > 0) continue;
+                            try
+                            {
+                                var product = new Product()
+                                {
+                                    Code = code,
+                                    NameTh = row.Cells[1, 2].Value.ToString(),
+                                    NameEn = row.Cells[1, 3].Value.ToString(),
+                                    Price = Decimal.Parse(row.Cells[1, 4].Value.ToString()),
+                                    Description = row.Cells[1, 5].Value == null ? null : row.Cells[1, 4].Value.ToString()
+                                };
+                                string groupId = row.Cells[1, 6].Value.ToString();
+                                var grpQuery = from g in context.ProductGroups
+                                               where g.Code == groupId
+                                               select g;
+                                var group = grpQuery.Single();
+                                product.Group = group;
+                                string catId = row.Cells[1, 7].Value.ToString();
+                                var catQuery = from c in context.ProductCategories
+                                               where c.Code == catId
+                                               select c;
+                                var category = catQuery.Single();
+                                product.Category = category;
+                                context.Products.Add(product);
+                            }
+                            catch { continue; }
+                        }
+                        context.SaveChanges();
+
+                        RefreshProductCategory(context);
+                        RefreshProductGroup(context);
+                        RefreshProduct(context);
+                    }
+                    MessageBox.Show("นำเข้าข้อมูลเรียบร้อยแล้ว");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+            }
+        }
+
+        private void RefreshProduct(StsContext context)
+        {
+            product_listBox.DataSource = context.Products.ToArray();
         }
     }
 }

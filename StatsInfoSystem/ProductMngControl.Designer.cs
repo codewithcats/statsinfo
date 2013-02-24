@@ -49,26 +49,9 @@
             this.prict_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.description_txt = new System.Windows.Forms.TextBox();
-            this.import_tabpage = new System.Windows.Forms.TabPage();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.productImport_listBox = new System.Windows.Forms.ListBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.importFromXls_btn = new System.Windows.Forms.Button();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.xlsImport_btn = new System.Windows.Forms.Button();
-            this.importFileName_txtBox = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.productGroup_tabpage = new System.Windows.Forms.TabPage();
             this.productGrp_panel = new System.Windows.Forms.Panel();
+            this.productGrp_list = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.delGrp_btn = new System.Windows.Forms.Button();
             this.editGrp_btn = new System.Windows.Forms.Button();
@@ -84,11 +67,6 @@
             this.button18 = new System.Windows.Forms.Button();
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.productGrp_list = new System.Windows.Forms.ListBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.showProduct_btn = new System.Windows.Forms.Button();
-            this.showCat_btn = new System.Windows.Forms.Button();
-            this.showGrp_btn = new System.Windows.Forms.Button();
             this.productCat_tabpage = new System.Windows.Forms.TabPage();
             this.productCat_listBox = new System.Windows.Forms.ListBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
@@ -106,21 +84,30 @@
             this.productCatSearchSubmit_btn = new System.Windows.Forms.Button();
             this.productCatSearchKey_txtBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.import_tabpage = new System.Windows.Forms.TabPage();
+            this.importFromXls_btn = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.browse_btn = new System.Windows.Forms.Button();
+            this.importFileName_txtBox = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.showProduct_btn = new System.Windows.Forms.Button();
+            this.showCat_btn = new System.Windows.Forms.Button();
+            this.showGrp_btn = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1.SuspendLayout();
             this.product_tabpage.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.import_tabpage.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox9.SuspendLayout();
             this.productGroup_tabpage.SuspendLayout();
             this.productGrp_panel.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.productCat_tabpage.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
+            this.import_tabpage.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -357,195 +344,6 @@
             this.description_txt.Size = new System.Drawing.Size(183, 89);
             this.description_txt.TabIndex = 9;
             // 
-            // import_tabpage
-            // 
-            this.import_tabpage.Controls.Add(this.groupBox11);
-            this.import_tabpage.Controls.Add(this.groupBox10);
-            this.import_tabpage.Controls.Add(this.groupBox9);
-            this.import_tabpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.import_tabpage.Location = new System.Drawing.Point(4, 22);
-            this.import_tabpage.Name = "import_tabpage";
-            this.import_tabpage.Padding = new System.Windows.Forms.Padding(3);
-            this.import_tabpage.Size = new System.Drawing.Size(578, 383);
-            this.import_tabpage.TabIndex = 1;
-            this.import_tabpage.Text = "นำเข้าข้อมูลสินค้า";
-            this.import_tabpage.UseVisualStyleBackColor = true;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.productImport_listBox);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.Location = new System.Drawing.Point(446, 17);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(392, 296);
-            this.groupBox11.TabIndex = 2;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "จำนวนนำเข้าข้อมูลลูกค้า 0 รายการ";
-            // 
-            // productImport_listBox
-            // 
-            this.productImport_listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productImport_listBox.FormattingEnabled = true;
-            this.productImport_listBox.Location = new System.Drawing.Point(15, 25);
-            this.productImport_listBox.Name = "productImport_listBox";
-            this.productImport_listBox.Size = new System.Drawing.Size(369, 264);
-            this.productImport_listBox.TabIndex = 0;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.button16);
-            this.groupBox10.Controls.Add(this.importFromXls_btn);
-            this.groupBox10.Controls.Add(this.textBox21);
-            this.groupBox10.Controls.Add(this.label25);
-            this.groupBox10.Controls.Add(this.textBox20);
-            this.groupBox10.Controls.Add(this.label24);
-            this.groupBox10.Controls.Add(this.textBox19);
-            this.groupBox10.Controls.Add(this.label23);
-            this.groupBox10.Controls.Add(this.textBox18);
-            this.groupBox10.Controls.Add(this.label22);
-            this.groupBox10.Location = new System.Drawing.Point(17, 101);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(423, 174);
-            this.groupBox10.TabIndex = 1;
-            this.groupBox10.TabStop = false;
-            // 
-            // button16
-            // 
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.Location = new System.Drawing.Point(284, 95);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(105, 60);
-            this.button16.TabIndex = 12;
-            this.button16.Text = "ยกเลิก";
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // importFromXls_btn
-            // 
-            this.importFromXls_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.importFromXls_btn.Image = ((System.Drawing.Image)(resources.GetObject("importFromXls_btn.Image")));
-            this.importFromXls_btn.Location = new System.Drawing.Point(284, 28);
-            this.importFromXls_btn.Name = "importFromXls_btn";
-            this.importFromXls_btn.Size = new System.Drawing.Size(105, 60);
-            this.importFromXls_btn.TabIndex = 11;
-            this.importFromXls_btn.Text = "นำเข้าข้อมูล";
-            this.importFromXls_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.importFromXls_btn.UseVisualStyleBackColor = true;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(102, 124);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(137, 20);
-            this.textBox21.TabIndex = 10;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(20, 127);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(63, 13);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "วันที่นำเข้า :";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(102, 92);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(137, 20);
-            this.textBox20.TabIndex = 8;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(20, 95);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(39, 13);
-            this.label24.TabIndex = 7;
-            this.label24.Text = "ขนาด :";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(102, 60);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(137, 20);
-            this.textBox19.TabIndex = 6;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(20, 63);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(35, 13);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "ชนิด :";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(102, 28);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(137, 20);
-            this.textBox18.TabIndex = 4;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(20, 31);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(46, 13);
-            this.label22.TabIndex = 3;
-            this.label22.Text = "ชื่อไฟล์ :";
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.xlsImport_btn);
-            this.groupBox9.Controls.Add(this.importFileName_txtBox);
-            this.groupBox9.Controls.Add(this.label21);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(17, 17);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(423, 78);
-            this.groupBox9.TabIndex = 0;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "รายการข้อมูล";
-            // 
-            // xlsImport_btn
-            // 
-            this.xlsImport_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xlsImport_btn.Location = new System.Drawing.Point(373, 28);
-            this.xlsImport_btn.Name = "xlsImport_btn";
-            this.xlsImport_btn.Size = new System.Drawing.Size(36, 31);
-            this.xlsImport_btn.TabIndex = 2;
-            this.xlsImport_btn.Text = "...";
-            this.xlsImport_btn.UseVisualStyleBackColor = true;
-            // 
-            // importFileName_txtBox
-            // 
-            this.importFileName_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.importFileName_txtBox.Location = new System.Drawing.Point(102, 30);
-            this.importFileName_txtBox.Name = "importFileName_txtBox";
-            this.importFileName_txtBox.Size = new System.Drawing.Size(265, 20);
-            this.importFileName_txtBox.TabIndex = 1;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(20, 33);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 13);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "เปิดข้อมูล :";
-            // 
             // productGroup_tabpage
             // 
             this.productGroup_tabpage.Controls.Add(this.productGrp_panel);
@@ -569,6 +367,21 @@
             this.productGrp_panel.Name = "productGrp_panel";
             this.productGrp_panel.Size = new System.Drawing.Size(572, 377);
             this.productGrp_panel.TabIndex = 16;
+            // 
+            // productGrp_list
+            // 
+            this.productGrp_list.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.productGrp_list.DisplayMember = "DisplayName";
+            this.productGrp_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productGrp_list.FormattingEnabled = true;
+            this.productGrp_list.Location = new System.Drawing.Point(7, 167);
+            this.productGrp_list.Name = "productGrp_list";
+            this.productGrp_list.Size = new System.Drawing.Size(545, 199);
+            this.productGrp_list.TabIndex = 17;
+            this.productGrp_list.ValueMember = "Id";
+            this.productGrp_list.SelectedIndexChanged += new System.EventHandler(this.productGrp_list_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -744,74 +557,6 @@
             this.label45.Size = new System.Drawing.Size(60, 13);
             this.label45.TabIndex = 0;
             this.label45.Text = "สืบค้นตาม :";
-            // 
-            // productGrp_list
-            // 
-            this.productGrp_list.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.productGrp_list.DisplayMember = "DisplayName";
-            this.productGrp_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productGrp_list.FormattingEnabled = true;
-            this.productGrp_list.Location = new System.Drawing.Point(7, 167);
-            this.productGrp_list.Name = "productGrp_list";
-            this.productGrp_list.Size = new System.Drawing.Size(545, 199);
-            this.productGrp_list.TabIndex = 17;
-            this.productGrp_list.ValueMember = "Id";
-            this.productGrp_list.SelectedIndexChanged += new System.EventHandler(this.productGrp_list_SelectedIndexChanged);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.showProduct_btn);
-            this.panel1.Controls.Add(this.showCat_btn);
-            this.panel1.Controls.Add(this.showGrp_btn);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(88, 410);
-            this.panel1.TabIndex = 2;
-            // 
-            // showProduct_btn
-            // 
-            this.showProduct_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showProduct_btn.Image = ((System.Drawing.Image)(resources.GetObject("showProduct_btn.Image")));
-            this.showProduct_btn.Location = new System.Drawing.Point(4, 5);
-            this.showProduct_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.showProduct_btn.Name = "showProduct_btn";
-            this.showProduct_btn.Size = new System.Drawing.Size(80, 80);
-            this.showProduct_btn.TabIndex = 14;
-            this.showProduct_btn.Text = "ข้อมูลสินค้า";
-            this.showProduct_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.showProduct_btn.UseVisualStyleBackColor = true;
-            this.showProduct_btn.Click += new System.EventHandler(this.showProduct_btn_Click);
-            // 
-            // showCat_btn
-            // 
-            this.showCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showCat_btn.Image = ((System.Drawing.Image)(resources.GetObject("showCat_btn.Image")));
-            this.showCat_btn.Location = new System.Drawing.Point(4, 185);
-            this.showCat_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.showCat_btn.Name = "showCat_btn";
-            this.showCat_btn.Size = new System.Drawing.Size(80, 80);
-            this.showCat_btn.TabIndex = 16;
-            this.showCat_btn.Text = "ประเภทสินค้า";
-            this.showCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.showCat_btn.UseVisualStyleBackColor = true;
-            this.showCat_btn.Click += new System.EventHandler(this.showCat_btn_Click);
-            // 
-            // showGrp_btn
-            // 
-            this.showGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showGrp_btn.Image = ((System.Drawing.Image)(resources.GetObject("showGrp_btn.Image")));
-            this.showGrp_btn.Location = new System.Drawing.Point(4, 95);
-            this.showGrp_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.showGrp_btn.Name = "showGrp_btn";
-            this.showGrp_btn.Size = new System.Drawing.Size(80, 80);
-            this.showGrp_btn.TabIndex = 15;
-            this.showGrp_btn.Text = "กลุ่มสินค้า";
-            this.showGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.showGrp_btn.UseVisualStyleBackColor = true;
-            this.showGrp_btn.Click += new System.EventHandler(this.showGrp_btn_Click);
             // 
             // productCat_tabpage
             // 
@@ -1014,6 +759,131 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "สืบค้นตาม :";
             // 
+            // import_tabpage
+            // 
+            this.import_tabpage.Controls.Add(this.importFromXls_btn);
+            this.import_tabpage.Controls.Add(this.groupBox9);
+            this.import_tabpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.import_tabpage.Location = new System.Drawing.Point(4, 22);
+            this.import_tabpage.Name = "import_tabpage";
+            this.import_tabpage.Padding = new System.Windows.Forms.Padding(3);
+            this.import_tabpage.Size = new System.Drawing.Size(578, 383);
+            this.import_tabpage.TabIndex = 1;
+            this.import_tabpage.Text = "นำเข้าข้อมูลสินค้า";
+            this.import_tabpage.UseVisualStyleBackColor = true;
+            // 
+            // importFromXls_btn
+            // 
+            this.importFromXls_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importFromXls_btn.Image = ((System.Drawing.Image)(resources.GetObject("importFromXls_btn.Image")));
+            this.importFromXls_btn.Location = new System.Drawing.Point(335, 101);
+            this.importFromXls_btn.Name = "importFromXls_btn";
+            this.importFromXls_btn.Size = new System.Drawing.Size(105, 60);
+            this.importFromXls_btn.TabIndex = 11;
+            this.importFromXls_btn.Text = "นำเข้าข้อมูล";
+            this.importFromXls_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.importFromXls_btn.UseVisualStyleBackColor = true;
+            this.importFromXls_btn.Click += new System.EventHandler(this.importFromXls_btn_Click);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.browse_btn);
+            this.groupBox9.Controls.Add(this.importFileName_txtBox);
+            this.groupBox9.Controls.Add(this.label21);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.Location = new System.Drawing.Point(17, 17);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(423, 78);
+            this.groupBox9.TabIndex = 0;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "รายการข้อมูล";
+            // 
+            // browse_btn
+            // 
+            this.browse_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.browse_btn.Location = new System.Drawing.Point(373, 28);
+            this.browse_btn.Name = "browse_btn";
+            this.browse_btn.Size = new System.Drawing.Size(36, 31);
+            this.browse_btn.TabIndex = 2;
+            this.browse_btn.Text = "...";
+            this.browse_btn.UseVisualStyleBackColor = true;
+            this.browse_btn.Click += new System.EventHandler(this.browse_btn_Click);
+            // 
+            // importFileName_txtBox
+            // 
+            this.importFileName_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importFileName_txtBox.Location = new System.Drawing.Point(102, 30);
+            this.importFileName_txtBox.Name = "importFileName_txtBox";
+            this.importFileName_txtBox.Size = new System.Drawing.Size(265, 20);
+            this.importFileName_txtBox.TabIndex = 1;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(20, 33);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 13);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "เปิดข้อมูล :";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.showProduct_btn);
+            this.panel1.Controls.Add(this.showCat_btn);
+            this.panel1.Controls.Add(this.showGrp_btn);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(88, 410);
+            this.panel1.TabIndex = 2;
+            // 
+            // showProduct_btn
+            // 
+            this.showProduct_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showProduct_btn.Image = ((System.Drawing.Image)(resources.GetObject("showProduct_btn.Image")));
+            this.showProduct_btn.Location = new System.Drawing.Point(4, 5);
+            this.showProduct_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showProduct_btn.Name = "showProduct_btn";
+            this.showProduct_btn.Size = new System.Drawing.Size(80, 80);
+            this.showProduct_btn.TabIndex = 14;
+            this.showProduct_btn.Text = "ข้อมูลสินค้า";
+            this.showProduct_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showProduct_btn.UseVisualStyleBackColor = true;
+            this.showProduct_btn.Click += new System.EventHandler(this.showProduct_btn_Click);
+            // 
+            // showCat_btn
+            // 
+            this.showCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCat_btn.Image = ((System.Drawing.Image)(resources.GetObject("showCat_btn.Image")));
+            this.showCat_btn.Location = new System.Drawing.Point(4, 185);
+            this.showCat_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showCat_btn.Name = "showCat_btn";
+            this.showCat_btn.Size = new System.Drawing.Size(80, 80);
+            this.showCat_btn.TabIndex = 16;
+            this.showCat_btn.Text = "ประเภทสินค้า";
+            this.showCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showCat_btn.UseVisualStyleBackColor = true;
+            this.showCat_btn.Click += new System.EventHandler(this.showCat_btn_Click);
+            // 
+            // showGrp_btn
+            // 
+            this.showGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showGrp_btn.Image = ((System.Drawing.Image)(resources.GetObject("showGrp_btn.Image")));
+            this.showGrp_btn.Location = new System.Drawing.Point(4, 95);
+            this.showGrp_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showGrp_btn.Name = "showGrp_btn";
+            this.showGrp_btn.Size = new System.Drawing.Size(80, 80);
+            this.showGrp_btn.TabIndex = 15;
+            this.showGrp_btn.Text = "กลุ่มสินค้า";
+            this.showGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showGrp_btn.UseVisualStyleBackColor = true;
+            this.showGrp_btn.Click += new System.EventHandler(this.showGrp_btn_Click);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            // 
             // ProductMngControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1026,24 +896,21 @@
             this.product_tabpage.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.import_tabpage.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
             this.productGroup_tabpage.ResumeLayout(false);
             this.productGrp_panel.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.productCat_tabpage.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
+            this.import_tabpage.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1071,21 +938,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox description_txt;
         private System.Windows.Forms.TabPage import_tabpage;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.ListBox productImport_listBox;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button importFromXls_btn;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Button xlsImport_btn;
+        private System.Windows.Forms.Button browse_btn;
         private System.Windows.Forms.TextBox importFileName_txtBox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TabPage productGroup_tabpage;
@@ -1127,6 +982,7 @@
         private System.Windows.Forms.Button productCatSearchSubmit_btn;
         private System.Windows.Forms.TextBox productCatSearchKey_txtBox;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
 
     }
 }

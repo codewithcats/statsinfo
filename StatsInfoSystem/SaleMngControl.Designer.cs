@@ -38,7 +38,9 @@
             this.label21 = new System.Windows.Forms.Label();
             this.import_btn = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.sale_list = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.SuspendLayout();
@@ -56,12 +58,13 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.sale_list);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(652, 509);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "ข้อมูลการขาย";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -126,10 +129,21 @@
             this.import_btn.Text = "นำเข้าข้อมูล";
             this.import_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.import_btn.UseVisualStyleBackColor = true;
+            this.import_btn.Click += new System.EventHandler(this.import_btn_Click);
             // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // sale_list
+            // 
+            this.sale_list.DisplayMember = "Code";
+            this.sale_list.FormattingEnabled = true;
+            this.sale_list.Location = new System.Drawing.Point(3, 3);
+            this.sale_list.Name = "sale_list";
+            this.sale_list.Size = new System.Drawing.Size(250, 277);
+            this.sale_list.TabIndex = 0;
+            this.sale_list.ValueMember = "Id";
             // 
             // SaleMngControl
             // 
@@ -139,6 +153,7 @@
             this.Name = "SaleMngControl";
             this.Size = new System.Drawing.Size(660, 535);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
@@ -157,5 +172,6 @@
         private System.Windows.Forms.TextBox importFileName_txtBox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.ListBox sale_list;
     }
 }
