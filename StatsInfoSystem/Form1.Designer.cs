@@ -31,7 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ขอมลลกคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ขอมลการขายสนคาToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.productMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ขอมลลกคาToolStripMenuItem,
-            this.ขอมลการขายสนคาToolStripMenuItem,
+            this.saleMenuItem,
             this.productMenuItem});
             this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Name = "ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem";
             this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Size = new System.Drawing.Size(171, 20);
@@ -64,11 +64,12 @@
             this.ขอมลลกคาToolStripMenuItem.Text = "ข้อมูลลูกค้า";
             this.ขอมลลกคาToolStripMenuItem.Click += new System.EventHandler(this.customerMenuItem_Click);
             // 
-            // ขอมลการขายสนคาToolStripMenuItem
+            // saleMenuItem
             // 
-            this.ขอมลการขายสนคาToolStripMenuItem.Name = "ขอมลการขายสนคาToolStripMenuItem";
-            this.ขอมลการขายสนคาToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.ขอมลการขายสนคาToolStripMenuItem.Text = "ข้อมูลการขายสินค้า";
+            this.saleMenuItem.Name = "saleMenuItem";
+            this.saleMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.saleMenuItem.Text = "ข้อมูลการขายสินค้า";
+            this.saleMenuItem.Click += new System.EventHandler(this.saleMenuItem_Click);
             // 
             // mainPanel
             // 
@@ -107,7 +108,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ขอมลลกคาToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ขอมลการขายสนคาToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saleMenuItem;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.ToolStripMenuItem productMenuItem;
 

@@ -15,6 +15,7 @@ namespace StatsInfoSystem
         private LoadingIndicator loadingIndicator = new LoadingIndicator() { Dock = DockStyle.Top };
         private CustomerMngControl customerMngControl;
         private ProductMngControl productMngControl;
+        private SaleMngControl saleMngControl;
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +41,13 @@ namespace StatsInfoSystem
             DisplayControl(loadingIndicator);
             if (productMngControl == null) productMngControl = new ProductMngControl();
             DisplayControl(productMngControl);
+        }
+
+        private void saleMenuItem_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loadingIndicator);
+            if (saleMngControl == null) saleMngControl = new SaleMngControl();
+            DisplayControl(saleMngControl);
         }
     }
 }
