@@ -370,6 +370,85 @@ PREFIX='Model'
                 spss.Quit();
                 tabControl1.SelectedIndex = 4;
             }
+            else if (arimaRadio.Checked)
+            {
+                SpssBridge.SpssBridge bridge = new SpssBridge.SpssBridge();
+                spsswinLib.Application16 spss = (spsswinLib.Application16)bridge.GetSpss();
+
+                string syntax = @"
+
+GET DATA 
+/TYPE=ODBC 
+/CONNECT= {0}
+/SQL = "" SELECT [month] ,[amount] FROM [StatsInfoSystem.StsContext].[dbo].[SaleAmountPerMonth] WHERE [month]>'2007-12-31' ORDER BY [month]"".
+
+VARIABLE LABEL month ""month""
+  amount ""SaleAmount"" .
+
+DATE Y 2008 M.
+
+PREDICT THRU YEAR 2013 MONTH 1.
+
+* Time Series Modeler.
+
+TSMODEL
+/MODELSUMMARY PRINT=[MODELFIT]
+/MODELSTATISTICS DISPLAY=YES MODELFIT=[ SRSQUARE RSQUARE RMSE MAPE MAE]
+/MODELDETAILS PRINT=[ PARAMETERS FORECASTS] PLOT=[ RESIDACF RESIDPACF]
+/SERIESPLOT OBSERVED FORECAST FIT
+/OUTPUTFILTER DISPLAY=ALLMODELS
+/SAVE PREDICTED(Predicted) NRESIDUAL(NResidual)
+/AUXILIARY CILEVEL=95 MAXACFLAGS=24
+/MISSING USERMISSING=EXCLUDE
+/MODEL DEPENDENT=amount
+PREFIX='Model'
+/ARIMA AR=[2,1] DIFF=1 MA=[2,1] ARSEASONAL=[0] DIFFSEASONAL=0 MASEASONAL=[0]
+TRANSFORM=NONE CONSTANT=YES
+/AUTOOUTLIER DETECT=OFF.
+
+            ";
+                syntax = String.Format(syntax, Config.SPSS_CONNECT);
+                spss.ExecuteCommands(syntax, true);
+                spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
+
+                var outputItems = spss.GetDesignatedOutputDoc().Items;
+                for (int i = 0; i < outputItems.Count; i++)
+                {
+                    var item = outputItems.GetItem(i);
+                    if (item.Label.Equals("Series Chart"))
+                    {
+                        var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
+                        string img = "arima_series_chart-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                        chart.ExportChart(img, "JPEG File");
+                        pictureBox4.ImageLocation = img;
+                    }
+                    else if (item.Label.Equals("Residual ACF/PACF Chart"))
+                    {
+                        var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
+                        string img = "arima_residual_acf_pacf_chart-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                        chart.ExportChart(img, "JPEG File");
+                        pictureBox3.ImageLocation = img;
+                    }
+                    else if (item.Label.Equals("Forecast"))
+                    {
+                        var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                        var cells = table.DataCellArray();
+                        label85.Text = cells.ValueAt[0, 0];
+                        label83.Text = cells.ValueAt[1, 0];
+                        label81.Text = cells.ValueAt[2, 0];
+                    }
+                    else if (item.Label.Equals("Model Statistics"))
+                    {
+                        var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                        var cells = table.DataCellArray();
+                        label79.Text = cells.ValueAt[0, 3].ToString();
+                        label77.Text = cells.ValueAt[0, 4].ToString();
+                    }
+                }
+                if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+                spss.Quit();
+                tabControl1.SelectedIndex = 5;
+            }
         }
 
         private void alternativeAcfBtn_Click(object sender, EventArgs e)

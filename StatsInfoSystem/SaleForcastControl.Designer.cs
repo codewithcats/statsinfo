@@ -46,7 +46,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.arimaRadio = new System.Windows.Forms.RadioButton();
             this.winterRadio = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -108,8 +108,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel20 = new System.Windows.Forms.Panel();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -178,6 +176,32 @@
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -217,6 +241,11 @@
             this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox14.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -415,7 +444,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.radioButton4);
+            this.panel2.Controls.Add(this.arimaRadio);
             this.panel2.Controls.Add(this.winterRadio);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.holtRadio);
@@ -425,15 +454,15 @@
             this.panel2.Size = new System.Drawing.Size(298, 218);
             this.panel2.TabIndex = 0;
             // 
-            // radioButton4
+            // arimaRadio
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(3, 86);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(59, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.Text = "ARIMA";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.arimaRadio.AutoSize = true;
+            this.arimaRadio.Location = new System.Drawing.Point(3, 86);
+            this.arimaRadio.Name = "arimaRadio";
+            this.arimaRadio.Size = new System.Drawing.Size(59, 17);
+            this.arimaRadio.TabIndex = 3;
+            this.arimaRadio.Text = "ARIMA";
+            this.arimaRadio.UseVisualStyleBackColor = true;
             // 
             // winterRadio
             // 
@@ -1050,29 +1079,19 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.label14);
-            this.tabPage6.Controls.Add(this.panel13);
+            this.tabPage6.Controls.Add(this.groupBox14);
+            this.tabPage6.Controls.Add(this.groupBox15);
+            this.tabPage6.Controls.Add(this.groupBox16);
+            this.tabPage6.Controls.Add(this.label87);
+            this.tabPage6.Controls.Add(this.pictureBox3);
+            this.tabPage6.Controls.Add(this.pictureBox4);
+            this.tabPage6.Controls.Add(this.label88);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(477, 407);
+            this.tabPage6.Size = new System.Drawing.Size(642, 621);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "กราฟแสดงข้อมูลเปรียบเทียบค่าจริงกับค่าพยากรณ์";
+            this.tabPage6.Text = "ผลพยากรณ์วิธี ARIMA";
             this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 11);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(40, 13);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "เดือนปี";
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(9, 34);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(845, 426);
-            this.panel13.TabIndex = 3;
             // 
             // tabPage7
             // 
@@ -1733,6 +1752,261 @@
             this.label70.TabIndex = 4;
             this.label70.Text = "-";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(70, 13);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(100, 16);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "เทคนิค: ARIMA";
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.label90);
+            this.groupBox14.Controls.Add(this.label71);
+            this.groupBox14.Controls.Add(this.label72);
+            this.groupBox14.Controls.Add(this.label89);
+            this.groupBox14.Controls.Add(this.label73);
+            this.groupBox14.Controls.Add(this.label74);
+            this.groupBox14.Controls.Add(this.label75);
+            this.groupBox14.Controls.Add(this.label76);
+            this.groupBox14.Location = new System.Drawing.Point(286, 38);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(200, 122);
+            this.groupBox14.TabIndex = 29;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Model\'s Parameter";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(106, 56);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(10, 13);
+            this.label71.TabIndex = 4;
+            this.label71.Text = "-";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(106, 38);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(10, 13);
+            this.label72.TabIndex = 4;
+            this.label72.Text = "-";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(19, 56);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(23, 13);
+            this.label73.TabIndex = 2;
+            this.label73.Text = "MA";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(19, 38);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(22, 13);
+            this.label74.TabIndex = 2;
+            this.label74.Text = "AR";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(106, 21);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(10, 13);
+            this.label75.TabIndex = 5;
+            this.label75.Text = "-";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(19, 21);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(38, 13);
+            this.label76.TabIndex = 3;
+            this.label76.Text = "ค่าคงที่";
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.label77);
+            this.groupBox15.Controls.Add(this.label78);
+            this.groupBox15.Controls.Add(this.label79);
+            this.groupBox15.Controls.Add(this.label80);
+            this.groupBox15.Location = new System.Drawing.Point(73, 38);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(200, 62);
+            this.groupBox15.TabIndex = 30;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "ความคลาดเคลื่อน";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(106, 38);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(10, 13);
+            this.label77.TabIndex = 4;
+            this.label77.Text = "-";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(19, 38);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(54, 13);
+            this.label78.TabIndex = 2;
+            this.label78.Text = "MAPE (%)";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(106, 21);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(10, 13);
+            this.label79.TabIndex = 5;
+            this.label79.Text = "-";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(19, 21);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(38, 13);
+            this.label80.TabIndex = 3;
+            this.label80.Text = "RMSE";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.label81);
+            this.groupBox16.Controls.Add(this.label82);
+            this.groupBox16.Controls.Add(this.label83);
+            this.groupBox16.Controls.Add(this.label84);
+            this.groupBox16.Controls.Add(this.label85);
+            this.groupBox16.Controls.Add(this.label86);
+            this.groupBox16.Location = new System.Drawing.Point(73, 106);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(200, 88);
+            this.groupBox16.TabIndex = 28;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Forecast";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(106, 60);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(10, 13);
+            this.label81.TabIndex = 1;
+            this.label81.Text = "-";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(19, 60);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(26, 13);
+            this.label82.TabIndex = 0;
+            this.label82.Text = "LCL";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(106, 41);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(10, 13);
+            this.label83.TabIndex = 1;
+            this.label83.Text = "-";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(19, 41);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(28, 13);
+            this.label84.TabIndex = 0;
+            this.label84.Text = "UCL";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(106, 24);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(10, 13);
+            this.label85.TabIndex = 1;
+            this.label85.Text = "-";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(19, 24);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(48, 13);
+            this.label86.TabIndex = 0;
+            this.label86.Text = "Forecast";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.Location = new System.Drawing.Point(258, 536);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(131, 13);
+            this.label87.TabIndex = 27;
+            this.label87.Text = "Residual ACF/PACF Chart";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(73, 556);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(500, 300);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 26;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(73, 224);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(500, 300);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 25;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.Location = new System.Drawing.Point(285, 202);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(75, 13);
+            this.label88.TabIndex = 24;
+            this.label88.Text = "กราฟพยากรณ์";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(19, 74);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(69, 13);
+            this.label89.TabIndex = 2;
+            this.label89.Text = "AR Seasonal";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(106, 74);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(10, 13);
+            this.label90.TabIndex = 4;
+            this.label90.Text = "-";
+            // 
             // SaleForcastControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1799,6 +2073,14 @@
             this.groupBox13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1822,7 +2104,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton arimaRadio;
         private System.Windows.Forms.RadioButton winterRadio;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox7;
@@ -1847,8 +2129,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.TextBox textBox13;
@@ -1954,5 +2234,31 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label88;
     }
 }
