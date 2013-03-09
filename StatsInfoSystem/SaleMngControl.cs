@@ -112,6 +112,7 @@ namespace StatsInfoSystem
                                     Product = product
                                 };
                                 context.SaleLines.Add(saleLine);
+                                sale.Amount += saleLine.SubTotal;
                             }
                             catch { continue; }
                             context.SaveChanges();

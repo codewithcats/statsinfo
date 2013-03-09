@@ -32,8 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SpssBridge">
+      <HintPath>..\..\SpssBridge\SpssBridge\bin\Release\SpssBridge.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -49,12 +55,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerMngControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CustomerMngControl.Designer.cs">
       <DependentUpon>CustomerMngControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DbConfigControl.Designer.cs">
+      <DependentUpon>DbConfigControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="Form1.cs">
@@ -99,6 +112,12 @@
     <Compile Include="Frm10_3Reg.designer.cs">
       <DependentUpon>Frm10_3Reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm10_4PCA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm10_4PCA.designer.cs">
+      <DependentUpon>Frm10_4PCA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm10_6Descrip_Cus.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -111,6 +130,12 @@
     <Compile Include="LoadingIndicator.Designer.cs">
       <DependentUpon>LoadingIndicator.cs</DependentUpon>
     </Compile>
+    <Compile Include="PcaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PcaControl.Designer.cs">
+      <DependentUpon>PcaControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="ProductConfiguration.cs" />
     <Compile Include="ProductMngControl.cs">
@@ -121,7 +146,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report\CReportReg.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CReportReg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Sale.cs" />
+    <Compile Include="SaleForcastControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaleForcastControl.Designer.cs">
+      <DependentUpon>SaleForcastControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SaleMngControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +169,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="CustomerMngControl.resx">
       <DependentUpon>CustomerMngControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DbConfigControl.resx">
+      <DependentUpon>DbConfigControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -154,11 +194,17 @@
     <EmbeddedResource Include="Frm10_3Reg.resx">
       <DependentUpon>Frm10_3Reg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm10_4PCA.resx">
+      <DependentUpon>Frm10_4PCA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm10_6Descrip_Cus.resx">
       <DependentUpon>Frm10_6Descrip_Cus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoadingIndicator.resx">
       <DependentUpon>LoadingIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcaControl.resx">
+      <DependentUpon>PcaControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductMngControl.resx">
       <DependentUpon>ProductMngControl.cs</DependentUpon>
@@ -173,6 +219,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report\CReportReg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CReportReg.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleForcastControl.resx">
+      <DependentUpon>SaleForcastControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SaleMngControl.resx">
       <DependentUpon>SaleMngControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,15 +317,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-    <COMReference Include="VBIDE">
-      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
-      <VersionMajor>5</VersionMajor>
-      <VersionMinor>3</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
     <COMReference Include="VISCHARTLib">
       <Guid>{F738DC61-54CE-483C-86D2-972AC6A29E95}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -327,6 +371,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coeffiskljfslkfj.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
