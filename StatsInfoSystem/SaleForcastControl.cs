@@ -25,7 +25,7 @@ namespace StatsInfoSystem
 
 GET DATA 
 /TYPE=ODBC 
-/CONNECT= 'DSN=sql_server;UID=LAMBKIN;APP=SPSS For Windows;WSID=LAMBKIN;DATABASE=StatsInfoSystem.StsContext;' 'Trusted_Connection=Yes'
+/CONNECT= {0}
 /SQL = "" SELECT [month] ,[amount] FROM [StatsInfoSystem.StsContext].[dbo].[SaleAmountPerMonth] WHERE [month]>'2007-12-31' ORDER BY [month]"".
 
 VARIABLE LABEL month ""month""
@@ -46,6 +46,7 @@ ACF VARIABLES=amount
 /PACF.
 
             ";
+            syntax = String.Format(syntax, Config.SPSS_CONNECT);
 
             spss.ExecuteCommands(syntax, true);
             spss.GetDesignatedOutputDoc().Visible = false;
@@ -57,32 +58,32 @@ ACF VARIABLES=amount
                 if (item.Label.Equals("Line of mean(amount) by month"))
                 {
                     var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
-                    string img = "line_of_mean_by_month-"+System.DateTime.Now.Ticks.ToString()+".jpg";
-                    chart.ExportChart(img, "JPEG File");
-                    lineOfMeanMonthPic.ImageLocation = img;
+                    string lineOfMeanMonthImg = "line_of_mean_by_month-"+System.DateTime.Now.Ticks.ToString()+".jpg";
+                    chart.ExportChart(lineOfMeanMonthImg, "JPEG File");
+                    lineOfMeanMonthPic.ImageLocation = lineOfMeanMonthImg;
                 }
                 else if (item.Label.Equals("Line of mean(amount) by MONTH_ YEAR_"))
                 {
                     var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
-                    string img = "line_of_mean_by_MONTH_YEAR-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
-                    chart.ExportChart(img, "JPEG File");
-                    lineOfMeanMonthYearPic.ImageLocation = img;
+                    string lineOfMeanMonthYearImg = "line_of_mean_by_MONTH_YEAR-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                    chart.ExportChart(lineOfMeanMonthYearImg, "JPEG File");
+                    lineOfMeanMonthYearPic.ImageLocation = lineOfMeanMonthYearImg;
                 }
                 else if (item.Label.Equals("ACF"))
                 {
                     var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
                     if (chart == null) continue;
-                    string img = "ACF-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
-                    chart.ExportChart(img, "JPEG File");
-                    acfPic.ImageLocation = img;
+                    string acfImg = "ACF-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                    chart.ExportChart(acfImg, "JPEG File");
+                    acfPic.ImageLocation = acfImg;
                 }
                 else if (item.Label.Equals("PACF"))
                 {
                     var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
                     if (chart == null) continue;
-                    string img = "PACF-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
-                    chart.ExportChart(img, "JPEG File");
-                    pacfPic.ImageLocation = img;
+                    string pacfImg = "PACF-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                    chart.ExportChart(pacfImg, "JPEG File");
+                    pacfPic.ImageLocation = pacfImg;
                 }
             }
             //MessageBox.Show("click to close SPSS.");
@@ -100,7 +101,7 @@ ACF VARIABLES=amount
 
 GET DATA 
 /TYPE=ODBC 
-/CONNECT= 'DSN=sql_server;UID=LAMBKIN;APP=SPSS For Windows;WSID=LAMBKIN;DATABASE=StatsInfoSystem.StsContext;' 'Trusted_Connection=Yes'
+/CONNECT= {0}
 /SQL = "" SELECT [month] ,[amount] FROM [StatsInfoSystem.StsContext].[dbo].[SaleAmountPerMonth] WHERE [month]>'2007-12-31' ORDER BY [month]"".
 
 VARIABLE LABEL month ""month""
@@ -126,7 +127,7 @@ PREFIX='Model'
 /EXSMOOTH TYPE=SIMPLE TRANSFORM=NONE.
 
             ";
-
+                syntax = String.Format(syntax, Config.SPSS_CONNECT);
                 spss.ExecuteCommands(syntax, true);
                 spss.GetDesignatedOutputDoc().Visible = false;
 
@@ -162,7 +163,7 @@ PREFIX='Model'
 
 GET DATA 
 /TYPE=ODBC 
-/CONNECT= 'DSN=sql_server;UID=LAMBKIN;APP=SPSS For Windows;WSID=LAMBKIN;DATABASE=StatsInfoSystem.StsContext;' 'Trusted_Connection=Yes'
+/CONNECT= {0}
 /SQL = "" SELECT [month] ,[amount] FROM [StatsInfoSystem.StsContext].[dbo].[SaleAmountPerMonth] WHERE [month]>'2007-12-31' ORDER BY [month]"".
 
 VARIABLE LABEL month ""month""
@@ -188,7 +189,7 @@ PREFIX='Model'
 /EXSMOOTH TYPE=HOLT TRANSFORM=NONE.
 
             ";
-
+                syntax = String.Format(syntax, Config.SPSS_CONNECT);
                 spss.ExecuteCommands(syntax, true);
                 spss.GetDesignatedOutputDoc().Visible = false;
 
@@ -201,19 +202,19 @@ PREFIX='Model'
                         var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
                         string img = "holt_series_chart-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
                         chart.ExportChart(img, "JPEG File");
-                        simpleSeriesChartPic.ImageLocation = img;
+                        holtSeriesChartPic.ImageLocation = img;
                     }
                     else if (item.Label.Equals("Residual ACF/PACF Chart"))
                     {
                         var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
                         string img = "holt_residual_acf_pacf_chart-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
                         chart.ExportChart(img, "JPEG File");
-                        simpleResidualAcfPacfChartPic.ImageLocation = img;
+                        holtResidualAcfPacfChartPic.ImageLocation = img;
                     }
                 }
                 //MessageBox.Show("click to close SPSS.");
                 spss.Quit();
-                tabControl1.SelectedIndex = 2;
+                tabControl1.SelectedIndex = 3;
             }
         }
     }
