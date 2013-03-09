@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SaleForcastControl));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -82,6 +82,24 @@
             this.pacfPic = new System.Windows.Forms.PictureBox();
             this.acfPic = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label36 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.alpahLvLbl = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.mapeTxt = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.rmseTxt = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.simpleForecastLclLbl = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.simpleForecastUclLbl = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.simpleForecastLbl = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.simpleResidualAcfPacfChartPic = new System.Windows.Forms.PictureBox();
             this.simpleSeriesChartPic = new System.Windows.Forms.PictureBox();
@@ -141,6 +159,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pacfPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acfPic)).BeginInit();
             this.tabPage3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.simpleResidualAcfPacfChartPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeriesChartPic)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -367,7 +388,6 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(59, 17);
             this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "ARIMA";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
@@ -378,7 +398,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(203, 30);
             this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Winter\'s Three Parameter Exponential\r\nSmoothing";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
@@ -504,13 +523,13 @@
             this.holtRadio.Name = "holtRadio";
             this.holtRadio.Size = new System.Drawing.Size(216, 17);
             this.holtRadio.TabIndex = 1;
-            this.holtRadio.TabStop = true;
             this.holtRadio.Text = "Holt\'s Two-Parameter Linear Exponential";
             this.holtRadio.UseVisualStyleBackColor = true;
             // 
             // simpleRadio
             // 
             this.simpleRadio.AutoSize = true;
+            this.simpleRadio.Checked = true;
             this.simpleRadio.Location = new System.Drawing.Point(3, 4);
             this.simpleRadio.Name = "simpleRadio";
             this.simpleRadio.Size = new System.Drawing.Size(165, 17);
@@ -679,6 +698,10 @@
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.label36);
+            this.tabPage3.Controls.Add(this.groupBox7);
+            this.tabPage3.Controls.Add(this.groupBox6);
+            this.tabPage3.Controls.Add(this.groupBox5);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.simpleResidualAcfPacfChartPic);
             this.tabPage3.Controls.Add(this.simpleSeriesChartPic);
@@ -691,11 +714,188 @@
             this.tabPage3.Text = "ผลพยากรณ์วิธี Simple";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(73, 23);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(263, 16);
+            this.label36.TabIndex = 9;
+            this.label36.Text = "เทคนิค: Simple Exponential Smoothing";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label37);
+            this.groupBox7.Controls.Add(this.label38);
+            this.groupBox7.Controls.Add(this.alpahLvLbl);
+            this.groupBox7.Controls.Add(this.label40);
+            this.groupBox7.Location = new System.Drawing.Point(289, 49);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(200, 62);
+            this.groupBox7.TabIndex = 8;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Model\'s Parameter";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(106, 38);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(10, 13);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "-";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(19, 38);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(77, 13);
+            this.label38.TabIndex = 2;
+            this.label38.Text = "Delta (Season)";
+            // 
+            // alpahLvLbl
+            // 
+            this.alpahLvLbl.AutoSize = true;
+            this.alpahLvLbl.Location = new System.Drawing.Point(106, 21);
+            this.alpahLvLbl.Name = "alpahLvLbl";
+            this.alpahLvLbl.Size = new System.Drawing.Size(10, 13);
+            this.alpahLvLbl.TabIndex = 5;
+            this.alpahLvLbl.Text = "-";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(19, 21);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(69, 13);
+            this.label40.TabIndex = 3;
+            this.label40.Text = "Alpha (Level)";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.mapeTxt);
+            this.groupBox6.Controls.Add(this.label33);
+            this.groupBox6.Controls.Add(this.rmseTxt);
+            this.groupBox6.Controls.Add(this.label35);
+            this.groupBox6.Location = new System.Drawing.Point(76, 49);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(200, 62);
+            this.groupBox6.TabIndex = 8;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "ความคลาดเคลื่อน";
+            // 
+            // mapeTxt
+            // 
+            this.mapeTxt.AutoSize = true;
+            this.mapeTxt.Location = new System.Drawing.Point(106, 38);
+            this.mapeTxt.Name = "mapeTxt";
+            this.mapeTxt.Size = new System.Drawing.Size(10, 13);
+            this.mapeTxt.TabIndex = 4;
+            this.mapeTxt.Text = "-";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(19, 38);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(54, 13);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "MAPE (%)";
+            // 
+            // rmseTxt
+            // 
+            this.rmseTxt.AutoSize = true;
+            this.rmseTxt.Location = new System.Drawing.Point(106, 21);
+            this.rmseTxt.Name = "rmseTxt";
+            this.rmseTxt.Size = new System.Drawing.Size(10, 13);
+            this.rmseTxt.TabIndex = 5;
+            this.rmseTxt.Text = "-";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(19, 21);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(38, 13);
+            this.label35.TabIndex = 3;
+            this.label35.Text = "RMSE";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.simpleForecastLclLbl);
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Controls.Add(this.simpleForecastUclLbl);
+            this.groupBox5.Controls.Add(this.label30);
+            this.groupBox5.Controls.Add(this.simpleForecastLbl);
+            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Location = new System.Drawing.Point(76, 117);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(200, 88);
+            this.groupBox5.TabIndex = 7;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Forecast";
+            // 
+            // simpleForecastLclLbl
+            // 
+            this.simpleForecastLclLbl.AutoSize = true;
+            this.simpleForecastLclLbl.Location = new System.Drawing.Point(106, 60);
+            this.simpleForecastLclLbl.Name = "simpleForecastLclLbl";
+            this.simpleForecastLclLbl.Size = new System.Drawing.Size(10, 13);
+            this.simpleForecastLclLbl.TabIndex = 1;
+            this.simpleForecastLclLbl.Text = "-";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(19, 60);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(26, 13);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "LCL";
+            // 
+            // simpleForecastUclLbl
+            // 
+            this.simpleForecastUclLbl.AutoSize = true;
+            this.simpleForecastUclLbl.Location = new System.Drawing.Point(106, 41);
+            this.simpleForecastUclLbl.Name = "simpleForecastUclLbl";
+            this.simpleForecastUclLbl.Size = new System.Drawing.Size(10, 13);
+            this.simpleForecastUclLbl.TabIndex = 1;
+            this.simpleForecastUclLbl.Text = "-";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(19, 41);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(28, 13);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "UCL";
+            // 
+            // simpleForecastLbl
+            // 
+            this.simpleForecastLbl.AutoSize = true;
+            this.simpleForecastLbl.Location = new System.Drawing.Point(106, 24);
+            this.simpleForecastLbl.Name = "simpleForecastLbl";
+            this.simpleForecastLbl.Size = new System.Drawing.Size(10, 13);
+            this.simpleForecastLbl.TabIndex = 1;
+            this.simpleForecastLbl.Text = "-";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(19, 24);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(48, 13);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Forecast";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(201, 366);
+            this.label11.Location = new System.Drawing.Point(258, 584);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(131, 13);
             this.label11.TabIndex = 6;
@@ -703,7 +903,7 @@
             // 
             // simpleResidualAcfPacfChartPic
             // 
-            this.simpleResidualAcfPacfChartPic.Location = new System.Drawing.Point(73, 382);
+            this.simpleResidualAcfPacfChartPic.Location = new System.Drawing.Point(73, 600);
             this.simpleResidualAcfPacfChartPic.Name = "simpleResidualAcfPacfChartPic";
             this.simpleResidualAcfPacfChartPic.Size = new System.Drawing.Size(500, 300);
             this.simpleResidualAcfPacfChartPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -712,7 +912,7 @@
             // 
             // simpleSeriesChartPic
             // 
-            this.simpleSeriesChartPic.Location = new System.Drawing.Point(73, 50);
+            this.simpleSeriesChartPic.Location = new System.Drawing.Point(73, 268);
             this.simpleSeriesChartPic.Name = "simpleSeriesChartPic";
             this.simpleSeriesChartPic.Size = new System.Drawing.Size(500, 300);
             this.simpleSeriesChartPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -723,7 +923,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(201, 22);
+            this.label10.Location = new System.Drawing.Point(286, 245);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 13);
             this.label10.TabIndex = 3;
@@ -804,33 +1004,33 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Size = new System.Drawing.Size(856, 460);
             this.dataGridView1.TabIndex = 3;
             // 
@@ -1139,6 +1339,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.acfPic)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.simpleResidualAcfPacfChartPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeriesChartPic)).EndInit();
             this.tabPage4.ResumeLayout(false);
@@ -1251,5 +1457,23 @@
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label simpleForecastLclLbl;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label simpleForecastUclLbl;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label simpleForecastLbl;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label alpahLvLbl;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label mapeTxt;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label rmseTxt;
+        private System.Windows.Forms.Label label35;
     }
 }

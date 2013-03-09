@@ -149,6 +149,40 @@ PREFIX='Model'
                         chart.ExportChart(img, "JPEG File");
                         simpleResidualAcfPacfChartPic.ImageLocation = img;
                     }
+                    else if (item.Label.Equals("Forecast"))
+                    {
+                        var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                        var cells = table.DataCellArray();
+                        simpleForecastLbl.Text = cells.ValueAt[0, 0];
+                        simpleForecastUclLbl.Text = cells.ValueAt[1, 0];
+                        simpleForecastLclLbl.Text = cells.ValueAt[2, 0];
+                        //MessageBox.Show("rows: " + cells.NumRows + ", cols: " + cells.NumColumns);
+                        //for (int j = 0; j < cells.NumRows; j++)
+                        //{
+                        //    MessageBox.Show(cells.ValueAt[j, 0].ToString());
+                        //}
+                        //var labels = table.RowLabelArray();
+                        //for (int j = 0; j < labels.NumRows; j++)
+                        //{
+                        //    for (int k = 0; k < labels.NumColumns; k++)
+                        //    {
+                        //        MessageBox.Show(String.Format("[{0},{1}] => {2}", j, k, labels.ValueAt[j, k].ToString()));
+                        //    }
+                        //}
+                    }
+                    else if (item.Label.Equals("Model Statistics"))
+                    {
+                        var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                        var cells = table.DataCellArray();
+                        rmseTxt.Text = cells.ValueAt[0, 3].ToString();
+                        mapeTxt.Text = cells.ValueAt[0, 4].ToString();
+                    }
+                    else if (item.Label.Equals("Exponential Smoothing Model Parameters"))
+                    {
+                        var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                        var cells = table.DataCellArray();
+                        alpahLvLbl.Text = cells.ValueAt[0, 0].ToString();
+                    }
                 }
                 if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
                 spss.Quit();
