@@ -13,5 +13,6 @@ namespace StatsInfoSystem
         {
             get { return String.Format("'DSN={0};UID={1};APP=SPSS For Windows;WSID={1};DATABASE=StatsInfoSystem.StsContext;' 'Trusted_Connection=Yes'", SPSS_DNS, SPSS_UID); }
         }
+        public static Boolean SPSS_OUTPUT = true;
     }
 }

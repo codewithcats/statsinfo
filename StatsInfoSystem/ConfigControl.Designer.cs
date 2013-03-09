@@ -1,6 +1,6 @@
 ﻿namespace StatsInfoSystem
 {
-    partial class DbConfigControl
+    partial class ConfigControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.spssConnectLbl = new System.Windows.Forms.Label();
+            this.turnOnSpssOutput = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -109,10 +110,23 @@
             this.spssConnectLbl.TabIndex = 4;
             this.spssConnectLbl.Text = "unavailable";
             // 
-            // DbConfigControl
+            // turnOnSpssOutput
+            // 
+            this.turnOnSpssOutput.AutoSize = true;
+            this.turnOnSpssOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.turnOnSpssOutput.Location = new System.Drawing.Point(7, 181);
+            this.turnOnSpssOutput.Name = "turnOnSpssOutput";
+            this.turnOnSpssOutput.Size = new System.Drawing.Size(156, 20);
+            this.turnOnSpssOutput.TabIndex = 5;
+            this.turnOnSpssOutput.Text = "Show SPSS Output";
+            this.turnOnSpssOutput.UseVisualStyleBackColor = true;
+            this.turnOnSpssOutput.CheckedChanged += new System.EventHandler(this.turnOnSpssOutput_CheckedChanged);
+            // 
+            // ConfigControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.turnOnSpssOutput);
             this.Controls.Add(this.spssConnectLbl);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.uidText);
@@ -121,7 +135,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "DbConfigControl";
+            this.Name = "ConfigControl";
             this.Size = new System.Drawing.Size(482, 363);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,5 +152,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label spssConnectLbl;
+        private System.Windows.Forms.CheckBox turnOnSpssOutput;
     }
 }

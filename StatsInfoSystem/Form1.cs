@@ -18,7 +18,7 @@ namespace StatsInfoSystem
         private ProductMngControl productMngControl;
         private SaleMngControl saleMngControl;
         private SaleForcastControl saleForcastControl;
-        private DbConfigControl dbConfigControl;
+        private ConfigControl dbConfigControl;
         public Form1()
         {
             InitializeComponent();
@@ -185,7 +185,7 @@ TSMODEL
         private void dbConfigMenu_Click(object sender, EventArgs e)
         {
             DisplayControl(loadingIndicator);
-            if (dbConfigControl == null) dbConfigControl = new DbConfigControl();
+            if (dbConfigControl == null) dbConfigControl = new ConfigControl();
             DisplayControl(dbConfigControl);
         }
     }

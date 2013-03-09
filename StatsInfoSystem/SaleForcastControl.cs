@@ -49,7 +49,7 @@ ACF VARIABLES=amount
             syntax = String.Format(syntax, Config.SPSS_CONNECT);
 
             spss.ExecuteCommands(syntax, true);
-            spss.GetDesignatedOutputDoc().Visible = false;
+            spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
 
             var outputItems = spss.GetDesignatedOutputDoc().Items;
             for (int i = 0; i < outputItems.Count; i++)
@@ -86,7 +86,7 @@ ACF VARIABLES=amount
                     pacfPic.ImageLocation = pacfImg;
                 }
             }
-            //MessageBox.Show("click to close SPSS.");
+            if(Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
             spss.Quit();
         }
 
@@ -129,7 +129,7 @@ PREFIX='Model'
             ";
                 syntax = String.Format(syntax, Config.SPSS_CONNECT);
                 spss.ExecuteCommands(syntax, true);
-                spss.GetDesignatedOutputDoc().Visible = false;
+                spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
 
                 var outputItems = spss.GetDesignatedOutputDoc().Items;
                 for (int i = 0; i < outputItems.Count; i++)
@@ -150,7 +150,7 @@ PREFIX='Model'
                         simpleResidualAcfPacfChartPic.ImageLocation = img;
                     }
                 }
-                //MessageBox.Show("click to close SPSS.");
+                if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
                 spss.Quit();
                 tabControl1.SelectedIndex = 2;
             }
@@ -191,7 +191,7 @@ PREFIX='Model'
             ";
                 syntax = String.Format(syntax, Config.SPSS_CONNECT);
                 spss.ExecuteCommands(syntax, true);
-                spss.GetDesignatedOutputDoc().Visible = false;
+                spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
 
                 var outputItems = spss.GetDesignatedOutputDoc().Items;
                 for (int i = 0; i < outputItems.Count; i++)
@@ -212,7 +212,7 @@ PREFIX='Model'
                         holtResidualAcfPacfChartPic.ImageLocation = img;
                     }
                 }
-                //MessageBox.Show("click to close SPSS.");
+                if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
                 spss.Quit();
                 tabControl1.SelectedIndex = 3;
             }
