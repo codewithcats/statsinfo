@@ -19,6 +19,7 @@ namespace StatsInfoSystem
         private SaleMngControl saleMngControl;
         private SaleForcastControl saleForcastControl;
         private ConfigControl dbConfigControl;
+        private PcaControl pcaControl;
         public Form1()
         {
             InitializeComponent();
@@ -187,6 +188,13 @@ TSMODEL
             DisplayControl(loadingIndicator);
             if (dbConfigControl == null) dbConfigControl = new ConfigControl();
             DisplayControl(dbConfigControl);
+        }
+
+        private void customerImportantMenuItem_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loadingIndicator);
+            if (pcaControl == null) pcaControl = new PcaControl();
+            DisplayControl(pcaControl);
         }
     }
 }

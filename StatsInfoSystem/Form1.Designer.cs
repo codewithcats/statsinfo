@@ -42,9 +42,9 @@
             this.spssText_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timeSeriesSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testSaveSavToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainPanel = new System.Windows.Forms.Panel();
             this.configToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dbConfigMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,7 +106,7 @@
             this.วเคราะหการขายToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.predictSaleMenu});
             this.วเคราะหการขายToolStripMenuItem.Name = "วเคราะหการขายToolStripMenuItem";
-            this.วเคราะหการขายToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.วเคราะหการขายToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.วเคราะหการขายToolStripMenuItem.Text = "วิเคราะห์การขาย";
             // 
             // predictSaleMenu
@@ -121,7 +121,7 @@
             this.วเคราะหลกคาToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customerImportantMenuItem});
             this.วเคราะหลกคาToolStripMenuItem.Name = "วเคราะหลกคาToolStripMenuItem";
-            this.วเคราะหลกคาToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.วเคราะหลกคาToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.วเคราะหลกคาToolStripMenuItem.Text = "วิเคราะห์ลูกค้า";
             // 
             // customerImportantMenuItem
@@ -129,6 +129,7 @@
             this.customerImportantMenuItem.Name = "customerImportantMenuItem";
             this.customerImportantMenuItem.Size = new System.Drawing.Size(189, 22);
             this.customerImportantMenuItem.Text = "จัดลำดับความสำคัญลูกค้า";
+            this.customerImportantMenuItem.Click += new System.EventHandler(this.customerImportantMenuItem_Click);
             // 
             // สถตToolStripMenuItem
             // 
@@ -161,14 +162,6 @@
             this.testSaveSavToolStripMenuItem.Text = "test save sav";
             this.testSaveSavToolStripMenuItem.Click += new System.EventHandler(this.testSaveSavToolStripMenuItem_Click);
             // 
-            // mainPanel
-            // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(0, 24);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(824, 537);
-            this.mainPanel.TabIndex = 1;
-            // 
             // configToolStripMenuItem
             // 
             this.configToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -183,6 +176,14 @@
             this.dbConfigMenu.Size = new System.Drawing.Size(171, 22);
             this.dbConfigMenu.Text = "การเชื่อมต่อฐานข้อมูล";
             this.dbConfigMenu.Click += new System.EventHandler(this.dbConfigMenu_Click);
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 24);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(824, 537);
+            this.mainPanel.TabIndex = 1;
             // 
             // Form1
             // 
