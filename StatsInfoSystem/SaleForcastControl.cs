@@ -217,5 +217,61 @@ PREFIX='Model'
                 tabControl1.SelectedIndex = 3;
             }
         }
+
+        private void alternativeAcfBtn_Click(object sender, EventArgs e)
+        {
+            SpssBridge.SpssBridge bridge = new SpssBridge.SpssBridge();
+            spsswinLib.Application16 spss = (spsswinLib.Application16)bridge.GetSpss();
+
+            string syntax = @"
+
+GET DATA 
+/TYPE=ODBC 
+/CONNECT= {0}
+/SQL = "" SELECT [month] ,[amount] FROM [StatsInfoSystem.StsContext].[dbo].[SaleAmountPerMonth] WHERE [month]>'2007-12-31' ORDER BY [month]"".
+
+VARIABLE LABEL month ""month""
+  amount ""amount"" .
+
+DATE Y 2008 M.
+
+ACF VARIABLES=amount
+/NOLOG
+/DIFF=1
+/SDIFF=3
+/MXAUTO 16
+/SERROR=IND
+/PACF.
+
+            ";
+            syntax = String.Format(syntax, Config.SPSS_CONNECT);
+
+            spss.ExecuteCommands(syntax, true);
+            spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
+
+            var outputItems = spss.GetDesignatedOutputDoc().Items;
+            for (int i = 0; i < outputItems.Count; i++)
+            {
+                var item = outputItems.GetItem(i);
+                if (item.Label.Equals("ACF"))
+                {
+                    var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
+                    if (chart == null) continue;
+                    string acfImg = "ACF-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                    chart.ExportChart(acfImg, "JPEG File");
+                    acfPic.ImageLocation = acfImg;
+                }
+                else if (item.Label.Equals("PACF"))
+                {
+                    var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
+                    if (chart == null) continue;
+                    string pacfImg = "PACF-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                    chart.ExportChart(pacfImg, "JPEG File");
+                    pacfPic.ImageLocation = pacfImg;
+                }
+            }
+            if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+            spss.Quit();
+        }
     }
 }
