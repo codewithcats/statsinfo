@@ -16,6 +16,7 @@ namespace StatsInfoSystem
             InitializeComponent();
             dnsText.Text = Config.SPSS_DNS;
             uidText.Text = Config.SPSS_UID;
+            spssConnectLbl.Text = Config.SPSS_CONNECT;
         }
     }
 }
