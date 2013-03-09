@@ -13,6 +13,8 @@ namespace StatsInfoSystem
         public DbSet<User> Users { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Sale> Sales { get; set; }
+        public DbSet<SaleLine> SaleLines { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

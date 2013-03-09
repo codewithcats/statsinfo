@@ -63,7 +63,7 @@
             this.label43 = new System.Windows.Forms.Label();
             this.productGrp_listBox = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.productGrp_panel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.productImport_listBox = new System.Windows.Forms.ListBox();
@@ -115,7 +115,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.productGrp_panel.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -511,17 +511,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "จำนวนข้อมูลกลุ่มสินค้า 0 รายการ";
             // 
-            // panel2
+            // productGrp_panel
             // 
-            this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Controls.Add(this.groupBox3);
-            this.panel2.Controls.Add(this.groupBox4);
-            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(14, 276);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(479, 325);
-            this.panel2.TabIndex = 15;
+            this.productGrp_panel.Controls.Add(this.groupBox2);
+            this.productGrp_panel.Controls.Add(this.groupBox3);
+            this.productGrp_panel.Controls.Add(this.groupBox4);
+            this.productGrp_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productGrp_panel.Location = new System.Drawing.Point(14, 276);
+            this.productGrp_panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.productGrp_panel.Name = "productGrp_panel";
+            this.productGrp_panel.Size = new System.Drawing.Size(479, 325);
+            this.productGrp_panel.TabIndex = 15;
             // 
             // button2
             // 
@@ -799,7 +799,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Location = new System.Drawing.Point(1, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(852, 236);
@@ -814,7 +814,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(844, 319);
+            this.tabPage2.Size = new System.Drawing.Size(844, 210);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "นำเข้าข้อมูลสินค้า";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1062,7 +1062,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.productGrp_panel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Name = "Form_Product";
@@ -1074,7 +1074,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.productGrp_panel.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -1131,7 +1131,7 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.ListBox productGrp_listBox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel productGrp_panel;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.ListBox productImport_listBox;

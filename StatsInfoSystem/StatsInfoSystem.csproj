@@ -32,8 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SpssBridge">
+      <HintPath>..\..\SpssBridge\SpssBridge\bin\Release\SpssBridge.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -49,7 +55,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerMngControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerMngControl.Designer.cs">
+      <DependentUpon>CustomerMngControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DbConfigControl.Designer.cs">
+      <DependentUpon>DbConfigControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,18 +112,67 @@
     <Compile Include="Frm10_3Reg.designer.cs">
       <DependentUpon>Frm10_3Reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm10_4PCA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm10_4PCA.designer.cs">
+      <DependentUpon>Frm10_4PCA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm10_6Descrip_Cus.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Frm10_6Descrip_Cus.designer.cs">
       <DependentUpon>Frm10_6Descrip_Cus.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadingIndicator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadingIndicator.Designer.cs">
+      <DependentUpon>LoadingIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PcaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PcaControl.Designer.cs">
+      <DependentUpon>PcaControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="ProductConfiguration.cs" />
+    <Compile Include="ProductMngControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductMngControl.Designer.cs">
+      <DependentUpon>ProductMngControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report\CReportReg.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CReportReg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sale.cs" />
+    <Compile Include="SaleForcastControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaleForcastControl.Designer.cs">
+      <DependentUpon>SaleForcastControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaleMngControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaleMngControl.Designer.cs">
+      <DependentUpon>SaleMngControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="StsContext.cs" />
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="CustomerMngControl.resx">
+      <DependentUpon>CustomerMngControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DbConfigControl.resx">
+      <DependentUpon>DbConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,8 +194,20 @@
     <EmbeddedResource Include="Frm10_3Reg.resx">
       <DependentUpon>Frm10_3Reg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm10_4PCA.resx">
+      <DependentUpon>Frm10_4PCA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm10_6Descrip_Cus.resx">
       <DependentUpon>Frm10_6Descrip_Cus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingIndicator.resx">
+      <DependentUpon>LoadingIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcaControl.resx">
+      <DependentUpon>PcaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMngControl.resx">
+      <DependentUpon>ProductMngControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,6 +219,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report\CReportReg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CReportReg.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleForcastControl.resx">
+      <DependentUpon>SaleForcastControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleMngControl.resx">
+      <DependentUpon>SaleMngControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -173,12 +263,66 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-    <COMReference Include="VBIDE">
-      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
-      <VersionMajor>5</VersionMajor>
+    <COMReference Include="SPSSGCTLLib">
+      <Guid>{520B6B8F-594D-4C15-AD84-D04B1BBBB540}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>13</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="spsspvt">
+      <Guid>{F3FE4BD5-F72D-4C25-910D-7C22CB17A64F}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="spssrtf">
+      <Guid>{350BF6E4-F29C-41A6-87F4-B4AB5BA702B1}</Guid>
+      <VersionMajor>7</VersionMajor>
       <VersionMinor>3</VersionMinor>
       <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="spsswin">
+      <Guid>{7ABA5FEE-0D61-42C9-B5D0-8492FD2E938C}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="spsswinLib">
+      <Guid>{03BA2079-7D90-432A-8160-5764DFE85BF4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="TreeModelLib">
+      <Guid>{5905163D-5647-4224-A7C9-386810CCA891}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VISCHARTLib">
+      <Guid>{F738DC61-54CE-483C-86D2-972AC6A29E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
@@ -227,6 +371,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coeffiskljfslkfj.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
