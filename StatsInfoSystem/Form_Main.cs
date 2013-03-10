@@ -154,5 +154,10 @@ namespace StatsInfoSystem
         {
             showPage(new Frm10_3Reg());
         }
+
+        private void ระบบสอบถามและแสดงสารสนเทศสำหรบผบรหารToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //showPage(new frmOLAP());
+        }
     }
 }

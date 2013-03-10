@@ -20,6 +20,7 @@ namespace StatsInfoSystem
         private SaleForcastControl saleForcastControl;
         private ConfigControl dbConfigControl;
         private PcaControl pcaControl;
+        private ClusterControl clusterControl;
         public Form1()
         {
             InitializeComponent();
@@ -186,8 +187,8 @@ TSMODEL
         private void dbConfigMenu_Click(object sender, EventArgs e)
         {
             DisplayControl(loadingIndicator);
-            if (dbConfigControl == null) dbConfigControl = new ConfigControl();
-            DisplayControl(dbConfigControl);
+           if (dbConfigControl == null) dbConfigControl = new ConfigControl();
+           DisplayControl(dbConfigControl);
         }
 
         private void customerImportantMenuItem_Click(object sender, EventArgs e)
@@ -195,6 +196,18 @@ TSMODEL
             DisplayControl(loadingIndicator);
             if (pcaControl == null) pcaControl = new PcaControl();
             DisplayControl(pcaControl);
+        }
+
+        private void customerGroupMenu_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loadingIndicator);
+            if (clusterControl == null) clusterControl = new ClusterControl();
+            DisplayControl(clusterControl);
+        }
+
+        private void oLAPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

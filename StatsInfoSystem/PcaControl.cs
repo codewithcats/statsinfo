@@ -27,7 +27,7 @@ namespace StatsInfoSystem
 GET DATA 
 /TYPE=ODBC 
 /CONNECT= {0}
-/SQL = "" SELECT * FROM [StatsInfoSystem.StsContext].[dbo].[CustomerOrder]"".
+/SQL = "" SELECT Id, months, buy, buy_avg, unit, unit_avg, orders, orders_avg FROM [StatsInfoSystem.StsContext].[dbo].[CustomerOrder]"".
 
 ";
             syntax = String.Format(syntax, Config.SPSS_CONNECT);
@@ -82,8 +82,6 @@ SAVE OUTFILE='{1}'.
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                 }
             }
-
-            if(Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
             spsswin.ISpssDataDoc dataDoc = spss.OpenDataDoc(output3);
             var data = dataDoc.GetTextData("Id", "FAC1_1", 1, dataDoc.GetNumberOfCases());
             using (var context = new StsContext())
@@ -97,6 +95,7 @@ SAVE OUTFILE='{1}'.
                 }
                 context.SaveChanges();
             }
+            if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
             spss.Quit();
         }
 

@@ -186,6 +186,7 @@ PREFIX='Model'
                 }
                 if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
                 spss.Quit();
+                textBox1.Visible = true;
                 tabControl1.SelectedIndex = 2;
             }
             else if (holtRadio.Checked)

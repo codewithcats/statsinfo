@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_StatsInfoSystem_StsContextDataSet1" targetNamespace="http://tempuri.org/_StatsInfoSystem_StsContextDataSet1.xsd" xmlns:mstns="http://tempuri.org/_StatsInfoSystem_StsContextDataSet1.xsd" xmlns="http://tempuri.org/_StatsInfoSystem_StsContextDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="StatsInfoSystem_StsContextConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StatsInfoSystem_StsContextConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StatsInfoSystem.Properties.Settings.GlobalReference.Default.StatsInfoSystem_StsContextConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SaleAnalysisFactTableAdapter" GeneratorDataComponentClassName="SaleAnalysisFactTableAdapter" Name="SaleAnalysisFact" UserDataComponentName="SaleAnalysisFactTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StatsInfoSystem_StsContextConnectionString (Settings)" DbObjectName="[StatsInfoSystem.StsContext].dbo.SaleAnalysisFact" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SaleAmount, year1, month1, day1, Date, ProdId, ProdNameTH, ProdNameEN, ProdGroupId, ProdGroupName, ProdCatId, ProdCatName, CusAreaId, CusAreaName, CusGroupId, CusGroupName, CusId, CusName FROM dbo.SaleAnalysisFact</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SaleAmount" DataSetColumn="SaleAmount" />
+              <Mapping SourceColumn="year1" DataSetColumn="year1" />
+              <Mapping SourceColumn="month1" DataSetColumn="month1" />
+              <Mapping SourceColumn="day1" DataSetColumn="day1" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="ProdId" DataSetColumn="ProdId" />
+              <Mapping SourceColumn="ProdNameTH" DataSetColumn="ProdNameTH" />
+              <Mapping SourceColumn="ProdNameEN" DataSetColumn="ProdNameEN" />
+              <Mapping SourceColumn="ProdGroupId" DataSetColumn="ProdGroupId" />
+              <Mapping SourceColumn="ProdGroupName" DataSetColumn="ProdGroupName" />
+              <Mapping SourceColumn="ProdCatId" DataSetColumn="ProdCatId" />
+              <Mapping SourceColumn="ProdCatName" DataSetColumn="ProdCatName" />
+              <Mapping SourceColumn="CusAreaId" DataSetColumn="CusAreaId" />
+              <Mapping SourceColumn="CusAreaName" DataSetColumn="CusAreaName" />
+              <Mapping SourceColumn="CusGroupId" DataSetColumn="CusGroupId" />
+              <Mapping SourceColumn="CusGroupName" DataSetColumn="CusGroupName" />
+              <Mapping SourceColumn="CusId" DataSetColumn="CusId" />
+              <Mapping SourceColumn="CusName" DataSetColumn="CusName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_StatsInfoSystem_StsContextDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_StatsInfoSystem_StsContextDataSet1" msprop:Generator_UserDSName="_StatsInfoSystem_StsContextDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SaleAnalysisFact" msprop:Generator_TableClassName="SaleAnalysisFactDataTable" msprop:Generator_TableVarName="tableSaleAnalysisFact" msprop:Generator_TablePropName="SaleAnalysisFact" msprop:Generator_RowDeletingName="SaleAnalysisFactRowDeleting" msprop:Generator_RowChangingName="SaleAnalysisFactRowChanging" msprop:Generator_RowEvHandlerName="SaleAnalysisFactRowChangeEventHandler" msprop:Generator_RowDeletedName="SaleAnalysisFactRowDeleted" msprop:Generator_UserTableName="SaleAnalysisFact" msprop:Generator_RowChangedName="SaleAnalysisFactRowChanged" msprop:Generator_RowEvArgName="SaleAnalysisFactRowChangeEvent" msprop:Generator_RowClassName="SaleAnalysisFactRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SaleAmount" msprop:Generator_ColumnVarNameInTable="columnSaleAmount" msprop:Generator_ColumnPropNameInRow="SaleAmount" msprop:Generator_ColumnPropNameInTable="SaleAmountColumn" msprop:Generator_UserColumnName="SaleAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="year1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnyear1" msprop:Generator_ColumnPropNameInRow="year1" msprop:Generator_ColumnPropNameInTable="year1Column" msprop:Generator_UserColumnName="year1" type="xs:int" minOccurs="0" />
+              <xs:element name="month1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnmonth1" msprop:Generator_ColumnPropNameInRow="month1" msprop:Generator_ColumnPropNameInTable="month1Column" msprop:Generator_UserColumnName="month1" type="xs:int" minOccurs="0" />
+              <xs:element name="day1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnday1" msprop:Generator_ColumnPropNameInRow="day1" msprop:Generator_ColumnPropNameInTable="day1Column" msprop:Generator_UserColumnName="day1" type="xs:int" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" />
+              <xs:element name="ProdId" msprop:Generator_ColumnVarNameInTable="columnProdId" msprop:Generator_ColumnPropNameInRow="ProdId" msprop:Generator_ColumnPropNameInTable="ProdIdColumn" msprop:Generator_UserColumnName="ProdId" type="xs:int" />
+              <xs:element name="ProdNameTH" msprop:Generator_ColumnVarNameInTable="columnProdNameTH" msprop:Generator_ColumnPropNameInRow="ProdNameTH" msprop:Generator_ColumnPropNameInTable="ProdNameTHColumn" msprop:Generator_UserColumnName="ProdNameTH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProdNameEN" msprop:Generator_ColumnVarNameInTable="columnProdNameEN" msprop:Generator_ColumnPropNameInRow="ProdNameEN" msprop:Generator_ColumnPropNameInTable="ProdNameENColumn" msprop:Generator_UserColumnName="ProdNameEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProdGroupId" msprop:Generator_ColumnVarNameInTable="columnProdGroupId" msprop:Generator_ColumnPropNameInRow="ProdGroupId" msprop:Generator_ColumnPropNameInTable="ProdGroupIdColumn" msprop:Generator_UserColumnName="ProdGroupId" type="xs:int" />
+              <xs:element name="ProdGroupName" msprop:Generator_ColumnVarNameInTable="columnProdGroupName" msprop:Generator_ColumnPropNameInRow="ProdGroupName" msprop:Generator_ColumnPropNameInTable="ProdGroupNameColumn" msprop:Generator_UserColumnName="ProdGroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProdCatId" msprop:Generator_ColumnVarNameInTable="columnProdCatId" msprop:Generator_ColumnPropNameInRow="ProdCatId" msprop:Generator_ColumnPropNameInTable="ProdCatIdColumn" msprop:Generator_UserColumnName="ProdCatId" type="xs:int" />
+              <xs:element name="ProdCatName" msprop:Generator_ColumnVarNameInTable="columnProdCatName" msprop:Generator_ColumnPropNameInRow="ProdCatName" msprop:Generator_ColumnPropNameInTable="ProdCatNameColumn" msprop:Generator_UserColumnName="ProdCatName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CusAreaId" msprop:Generator_ColumnVarNameInTable="columnCusAreaId" msprop:Generator_ColumnPropNameInRow="CusAreaId" msprop:Generator_ColumnPropNameInTable="CusAreaIdColumn" msprop:Generator_UserColumnName="CusAreaId" type="xs:int" />
+              <xs:element name="CusAreaName" msprop:Generator_ColumnVarNameInTable="columnCusAreaName" msprop:Generator_ColumnPropNameInRow="CusAreaName" msprop:Generator_ColumnPropNameInTable="CusAreaNameColumn" msprop:Generator_UserColumnName="CusAreaName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CusGroupId" msprop:Generator_ColumnVarNameInTable="columnCusGroupId" msprop:Generator_ColumnPropNameInRow="CusGroupId" msprop:Generator_ColumnPropNameInTable="CusGroupIdColumn" msprop:Generator_UserColumnName="CusGroupId" type="xs:int" />
+              <xs:element name="CusGroupName" msprop:Generator_ColumnVarNameInTable="columnCusGroupName" msprop:Generator_ColumnPropNameInRow="CusGroupName" msprop:Generator_ColumnPropNameInTable="CusGroupNameColumn" msprop:Generator_UserColumnName="CusGroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CusId" msprop:Generator_ColumnVarNameInTable="columnCusId" msprop:Generator_ColumnPropNameInRow="CusId" msprop:Generator_ColumnPropNameInTable="CusIdColumn" msprop:Generator_UserColumnName="CusId" type="xs:int" minOccurs="0" />
+              <xs:element name="CusName" msprop:Generator_ColumnVarNameInTable="columnCusName" msprop:Generator_ColumnPropNameInRow="CusName" msprop:Generator_ColumnPropNameInTable="CusNameColumn" msprop:Generator_UserColumnName="CusName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

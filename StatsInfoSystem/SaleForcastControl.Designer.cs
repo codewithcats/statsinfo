@@ -102,12 +102,80 @@
             this.simpleSeriesChartPic = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.holtResidualAcfPacfChartPic = new System.Windows.Forms.PictureBox();
             this.holtSeriesChartPic = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label68 = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label67 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label88 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel20 = new System.Windows.Forms.Panel();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -134,74 +202,6 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -226,26 +226,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleResidualAcfPacfChartPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeriesChartPic)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.holtResidualAcfPacfChartPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.holtSeriesChartPic)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.holtResidualAcfPacfChartPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.holtSeriesChartPic)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -637,7 +637,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(477, 407);
+            this.tabPage1.Size = new System.Drawing.Size(642, 621);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "แสดงข้อมูลสำหรับวิเคราะห์";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -672,7 +672,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.tabPage2.Size = new System.Drawing.Size(477, 407);
+            this.tabPage2.Size = new System.Drawing.Size(642, 621);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ACF/PACF";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -782,7 +782,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(477, 407);
+            this.tabPage3.Size = new System.Drawing.Size(642, 621);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ผลพยากรณ์วิธี Simple";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1020,326 +1020,6 @@
             this.tabPage4.Text = "ผลพยากรณ์วิธี Holt";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(258, 545);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(131, 13);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Residual ACF/PACF Chart";
-            // 
-            // holtResidualAcfPacfChartPic
-            // 
-            this.holtResidualAcfPacfChartPic.Location = new System.Drawing.Point(73, 565);
-            this.holtResidualAcfPacfChartPic.Name = "holtResidualAcfPacfChartPic";
-            this.holtResidualAcfPacfChartPic.Size = new System.Drawing.Size(500, 300);
-            this.holtResidualAcfPacfChartPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.holtResidualAcfPacfChartPic.TabIndex = 11;
-            this.holtResidualAcfPacfChartPic.TabStop = false;
-            // 
-            // holtSeriesChartPic
-            // 
-            this.holtSeriesChartPic.Location = new System.Drawing.Point(73, 233);
-            this.holtSeriesChartPic.Name = "holtSeriesChartPic";
-            this.holtSeriesChartPic.Size = new System.Drawing.Size(500, 300);
-            this.holtSeriesChartPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.holtSeriesChartPic.TabIndex = 10;
-            this.holtSeriesChartPic.TabStop = false;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(285, 211);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(75, 13);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "กราฟพยากรณ์";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.AutoScroll = true;
-            this.tabPage5.Controls.Add(this.label68);
-            this.tabPage5.Controls.Add(this.groupBox11);
-            this.tabPage5.Controls.Add(this.groupBox12);
-            this.tabPage5.Controls.Add(this.groupBox13);
-            this.tabPage5.Controls.Add(this.label66);
-            this.tabPage5.Controls.Add(this.pictureBox1);
-            this.tabPage5.Controls.Add(this.pictureBox2);
-            this.tabPage5.Controls.Add(this.label67);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(642, 621);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "ผลพยากรณ์วิธี Winter";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.label14);
-            this.tabPage6.Controls.Add(this.groupBox14);
-            this.tabPage6.Controls.Add(this.groupBox15);
-            this.tabPage6.Controls.Add(this.groupBox16);
-            this.tabPage6.Controls.Add(this.label87);
-            this.tabPage6.Controls.Add(this.pictureBox3);
-            this.tabPage6.Controls.Add(this.pictureBox4);
-            this.tabPage6.Controls.Add(this.label88);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(642, 621);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "ผลพยากรณ์วิธี ARIMA";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.panel20);
-            this.tabPage7.Controls.Add(this.textBox13);
-            this.tabPage7.Controls.Add(this.label21);
-            this.tabPage7.Controls.Add(this.label22);
-            this.tabPage7.Controls.Add(this.textBox12);
-            this.tabPage7.Controls.Add(this.label19);
-            this.tabPage7.Controls.Add(this.textBox11);
-            this.tabPage7.Controls.Add(this.label20);
-            this.tabPage7.Controls.Add(this.textBox10);
-            this.tabPage7.Controls.Add(this.label26);
-            this.tabPage7.Controls.Add(this.textBox9);
-            this.tabPage7.Controls.Add(this.textBox8);
-            this.tabPage7.Controls.Add(this.label18);
-            this.tabPage7.Controls.Add(this.label17);
-            this.tabPage7.Controls.Add(this.label16);
-            this.tabPage7.Controls.Add(this.label15);
-            this.tabPage7.Controls.Add(this.panel19);
-            this.tabPage7.Controls.Add(this.panel18);
-            this.tabPage7.Controls.Add(this.panel17);
-            this.tabPage7.Controls.Add(this.panel16);
-            this.tabPage7.Controls.Add(this.panel15);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(477, 407);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "ค่าความแม่นยำในการพยากรณ์";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // panel20
-            // 
-            this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
-            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel20.Location = new System.Drawing.Point(202, 184);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(31, 32);
-            this.panel20.TabIndex = 22;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(307, 190);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(168, 20);
-            this.textBox13.TabIndex = 25;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(481, 193);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(15, 13);
-            this.label21.TabIndex = 24;
-            this.label21.Text = "%";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(239, 193);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(43, 13);
-            this.label22.TabIndex = 23;
-            this.label22.Text = "MAPE :";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(307, 152);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(168, 20);
-            this.textBox12.TabIndex = 21;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(481, 155);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(38, 13);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "(บาท2)";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(307, 114);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(168, 20);
-            this.textBox11.TabIndex = 17;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(239, 155);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 13);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "MSE :";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(610, 34);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(70, 20);
-            this.textBox10.TabIndex = 16;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(531, 37);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 13);
-            this.label26.TabIndex = 15;
-            this.label26.Text = "Delta :";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(399, 34);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(70, 20);
-            this.textBox9.TabIndex = 13;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(186, 31);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(70, 20);
-            this.textBox8.TabIndex = 12;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(481, 117);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(38, 13);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "(บาท2)";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(239, 117);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(34, 13);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "SSE :";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(320, 37);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(49, 13);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Gamma :";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(122, 34);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Alpha :";
-            // 
-            // panel19
-            // 
-            this.panel19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel19.BackgroundImage")));
-            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel19.Location = new System.Drawing.Point(202, 146);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(31, 32);
-            this.panel19.TabIndex = 18;
-            // 
-            // panel18
-            // 
-            this.panel18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel18.BackgroundImage")));
-            this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel18.Location = new System.Drawing.Point(202, 108);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(31, 32);
-            this.panel18.TabIndex = 2;
-            // 
-            // panel17
-            // 
-            this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
-            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel17.Location = new System.Drawing.Point(494, 25);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(31, 32);
-            this.panel17.TabIndex = 14;
-            // 
-            // panel16
-            // 
-            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
-            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel16.Location = new System.Drawing.Point(283, 25);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(31, 32);
-            this.panel16.TabIndex = 1;
-            // 
-            // panel15
-            // 
-            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel15.Location = new System.Drawing.Point(85, 22);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(31, 32);
-            this.panel15.TabIndex = 0;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.panel14);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(477, 407);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "กราฟ ACF ของค่าคลาดเคลื่อน";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // panel14
-            // 
-            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel14.Location = new System.Drawing.Point(9, 6);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(845, 454);
-            this.panel14.TabIndex = 3;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(0, 647);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(650, 167);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "คำอธิบายผลลัพธ์";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 16);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(644, 148);
-            this.textBox1.TabIndex = 0;
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -1517,6 +1197,72 @@
             this.label52.TabIndex = 0;
             this.label52.Text = "Forecast";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(258, 545);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(131, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Residual ACF/PACF Chart";
+            // 
+            // holtResidualAcfPacfChartPic
+            // 
+            this.holtResidualAcfPacfChartPic.Location = new System.Drawing.Point(73, 565);
+            this.holtResidualAcfPacfChartPic.Name = "holtResidualAcfPacfChartPic";
+            this.holtResidualAcfPacfChartPic.Size = new System.Drawing.Size(500, 300);
+            this.holtResidualAcfPacfChartPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.holtResidualAcfPacfChartPic.TabIndex = 11;
+            this.holtResidualAcfPacfChartPic.TabStop = false;
+            // 
+            // holtSeriesChartPic
+            // 
+            this.holtSeriesChartPic.Location = new System.Drawing.Point(73, 233);
+            this.holtSeriesChartPic.Name = "holtSeriesChartPic";
+            this.holtSeriesChartPic.Size = new System.Drawing.Size(500, 300);
+            this.holtSeriesChartPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.holtSeriesChartPic.TabIndex = 10;
+            this.holtSeriesChartPic.TabStop = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(285, 211);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(75, 13);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "กราฟพยากรณ์";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.AutoScroll = true;
+            this.tabPage5.Controls.Add(this.label68);
+            this.tabPage5.Controls.Add(this.groupBox11);
+            this.tabPage5.Controls.Add(this.groupBox12);
+            this.tabPage5.Controls.Add(this.groupBox13);
+            this.tabPage5.Controls.Add(this.label66);
+            this.tabPage5.Controls.Add(this.pictureBox1);
+            this.tabPage5.Controls.Add(this.pictureBox2);
+            this.tabPage5.Controls.Add(this.label67);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(642, 621);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "ผลพยากรณ์วิธี Winter";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(68, 21);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(204, 16);
+            this.label68.TabIndex = 23;
+            this.label68.Text = "เทคนิค: Winters\' Multiplicative";
+            // 
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.label70);
@@ -1532,6 +1278,15 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Model\'s Parameter";
             // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(106, 56);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(10, 13);
+            this.label70.TabIndex = 4;
+            this.label70.Text = "-";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -1540,6 +1295,15 @@
             this.label12.Size = new System.Drawing.Size(10, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "-";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(19, 56);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(77, 13);
+            this.label69.TabIndex = 2;
+            this.label69.Text = "Delta (Season)";
             // 
             // label53
             // 
@@ -1724,33 +1488,22 @@
             this.label67.TabIndex = 16;
             this.label67.Text = "กราฟพยากรณ์";
             // 
-            // label68
+            // tabPage6
             // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(68, 21);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(204, 16);
-            this.label68.TabIndex = 23;
-            this.label68.Text = "เทคนิค: Winters\' Multiplicative";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(19, 56);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(77, 13);
-            this.label69.TabIndex = 2;
-            this.label69.Text = "Delta (Season)";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(106, 56);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(10, 13);
-            this.label70.TabIndex = 4;
-            this.label70.Text = "-";
+            this.tabPage6.Controls.Add(this.label14);
+            this.tabPage6.Controls.Add(this.groupBox14);
+            this.tabPage6.Controls.Add(this.groupBox15);
+            this.tabPage6.Controls.Add(this.groupBox16);
+            this.tabPage6.Controls.Add(this.label87);
+            this.tabPage6.Controls.Add(this.pictureBox3);
+            this.tabPage6.Controls.Add(this.pictureBox4);
+            this.tabPage6.Controls.Add(this.label88);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(642, 621);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "ผลพยากรณ์วิธี ARIMA";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -1779,6 +1532,15 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Model\'s Parameter";
             // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(106, 74);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(10, 13);
+            this.label90.TabIndex = 4;
+            this.label90.Text = "-";
+            // 
             // label71
             // 
             this.label71.AutoSize = true;
@@ -1796,6 +1558,15 @@
             this.label72.Size = new System.Drawing.Size(10, 13);
             this.label72.TabIndex = 4;
             this.label72.Text = "-";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(19, 74);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(69, 13);
+            this.label89.TabIndex = 2;
+            this.label89.Text = "AR Seasonal";
             // 
             // label73
             // 
@@ -1989,23 +1760,254 @@
             this.label88.TabIndex = 24;
             this.label88.Text = "กราฟพยากรณ์";
             // 
-            // label89
+            // tabPage7
             // 
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(19, 74);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(69, 13);
-            this.label89.TabIndex = 2;
-            this.label89.Text = "AR Seasonal";
+            this.tabPage7.Controls.Add(this.panel20);
+            this.tabPage7.Controls.Add(this.textBox13);
+            this.tabPage7.Controls.Add(this.label21);
+            this.tabPage7.Controls.Add(this.label22);
+            this.tabPage7.Controls.Add(this.textBox12);
+            this.tabPage7.Controls.Add(this.label19);
+            this.tabPage7.Controls.Add(this.textBox11);
+            this.tabPage7.Controls.Add(this.label20);
+            this.tabPage7.Controls.Add(this.textBox10);
+            this.tabPage7.Controls.Add(this.label26);
+            this.tabPage7.Controls.Add(this.textBox9);
+            this.tabPage7.Controls.Add(this.textBox8);
+            this.tabPage7.Controls.Add(this.label18);
+            this.tabPage7.Controls.Add(this.label17);
+            this.tabPage7.Controls.Add(this.label16);
+            this.tabPage7.Controls.Add(this.label15);
+            this.tabPage7.Controls.Add(this.panel19);
+            this.tabPage7.Controls.Add(this.panel18);
+            this.tabPage7.Controls.Add(this.panel17);
+            this.tabPage7.Controls.Add(this.panel16);
+            this.tabPage7.Controls.Add(this.panel15);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(642, 621);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "ค่าความแม่นยำในการพยากรณ์";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // label90
+            // panel20
             // 
-            this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(106, 74);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(10, 13);
-            this.label90.TabIndex = 4;
-            this.label90.Text = "-";
+            this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
+            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel20.Location = new System.Drawing.Point(202, 184);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(31, 32);
+            this.panel20.TabIndex = 22;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(307, 190);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(168, 20);
+            this.textBox13.TabIndex = 25;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(481, 193);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(15, 13);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "%";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(239, 193);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(43, 13);
+            this.label22.TabIndex = 23;
+            this.label22.Text = "MAPE :";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(307, 152);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(168, 20);
+            this.textBox12.TabIndex = 21;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(481, 155);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(38, 13);
+            this.label19.TabIndex = 20;
+            this.label19.Text = "(บาท2)";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(307, 114);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(168, 20);
+            this.textBox11.TabIndex = 17;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(239, 155);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(36, 13);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "MSE :";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(610, 34);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(70, 20);
+            this.textBox10.TabIndex = 16;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(531, 37);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(38, 13);
+            this.label26.TabIndex = 15;
+            this.label26.Text = "Delta :";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(399, 34);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(70, 20);
+            this.textBox9.TabIndex = 13;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(186, 31);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(70, 20);
+            this.textBox8.TabIndex = 12;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(481, 117);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(38, 13);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "(บาท2)";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(239, 117);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(34, 13);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "SSE :";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(320, 37);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(49, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Gamma :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(122, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(40, 13);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Alpha :";
+            // 
+            // panel19
+            // 
+            this.panel19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel19.BackgroundImage")));
+            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel19.Location = new System.Drawing.Point(202, 146);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(31, 32);
+            this.panel19.TabIndex = 18;
+            // 
+            // panel18
+            // 
+            this.panel18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel18.BackgroundImage")));
+            this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel18.Location = new System.Drawing.Point(202, 108);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(31, 32);
+            this.panel18.TabIndex = 2;
+            // 
+            // panel17
+            // 
+            this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
+            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel17.Location = new System.Drawing.Point(494, 25);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(31, 32);
+            this.panel17.TabIndex = 14;
+            // 
+            // panel16
+            // 
+            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
+            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel16.Location = new System.Drawing.Point(283, 25);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(31, 32);
+            this.panel16.TabIndex = 1;
+            // 
+            // panel15
+            // 
+            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel15.Location = new System.Drawing.Point(85, 22);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(31, 32);
+            this.panel15.TabIndex = 0;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.panel14);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(642, 621);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "กราฟ ACF ของค่าคลาดเคลื่อน";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // panel14
+            // 
+            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
+            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel14.Location = new System.Drawing.Point(9, 6);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(845, 454);
+            this.panel14.TabIndex = 3;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(0, 647);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(650, 167);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "คำอธิบายผลลัพธ์";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(3, 16);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(644, 148);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBox1.Visible = false;
             // 
             // SaleForcastControl
             // 
@@ -2048,23 +2050,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeriesChartPic)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.holtResidualAcfPacfChartPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.holtSeriesChartPic)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.holtResidualAcfPacfChartPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.holtSeriesChartPic)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -2073,6 +2068,8 @@
             this.groupBox13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
             this.groupBox15.ResumeLayout(false);
@@ -2081,6 +2078,11 @@
             this.groupBox16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
