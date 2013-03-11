@@ -93,7 +93,6 @@
             this.browse_btn = new System.Windows.Forms.Button();
             this.importFileName_txtBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -118,6 +117,11 @@
             this.button15 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.showProduct_btn = new System.Windows.Forms.Button();
+            this.showCat_btn = new System.Windows.Forms.Button();
+            this.showGrp_btn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -135,6 +139,7 @@
             this.groupBox5.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -145,10 +150,10 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(91, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(663, 539);
+            this.tabControl1.Size = new System.Drawing.Size(660, 539);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -162,7 +167,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(655, 513);
+            this.tabPage1.Size = new System.Drawing.Size(652, 513);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "เพิ่มและปรับปรุงข้อมูลูกค้าทั้งหมด";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -580,7 +585,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(655, 513);
+            this.tabPage5.Size = new System.Drawing.Size(652, 513);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "กลุ่มลูกค้า";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -595,7 +600,7 @@
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(649, 507);
+            this.panel2.Size = new System.Drawing.Size(646, 507);
             this.panel2.TabIndex = 10;
             // 
             // customerGrp_list
@@ -608,7 +613,7 @@
             this.customerGrp_list.FormattingEnabled = true;
             this.customerGrp_list.Location = new System.Drawing.Point(3, 197);
             this.customerGrp_list.Name = "customerGrp_list";
-            this.customerGrp_list.Size = new System.Drawing.Size(451, 303);
+            this.customerGrp_list.Size = new System.Drawing.Size(448, 303);
             this.customerGrp_list.TabIndex = 0;
             this.customerGrp_list.ValueMember = "Id";
             // 
@@ -633,7 +638,7 @@
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(231, 86);
+            this.button7.Location = new System.Drawing.Point(231, 87);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(64, 64);
             this.button7.TabIndex = 39;
@@ -645,7 +650,7 @@
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(161, 86);
+            this.button8.Location = new System.Drawing.Point(161, 87);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(64, 64);
             this.button8.TabIndex = 38;
@@ -657,7 +662,7 @@
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(91, 85);
+            this.button9.Location = new System.Drawing.Point(91, 87);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(64, 64);
             this.button9.TabIndex = 37;
@@ -792,7 +797,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(655, 513);
+            this.tabPage2.Size = new System.Drawing.Size(652, 513);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "นำเข้าข้อมูลกลุ่มลูกค้า";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -849,17 +854,13 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "เปิดข้อมูล :";
             // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog1";
-            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.panel1);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(655, 513);
+            this.tabPage6.Size = new System.Drawing.Size(652, 513);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "กลุ่มพื้นที่ลูกค้า";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -874,7 +875,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(649, 507);
+            this.panel1.Size = new System.Drawing.Size(646, 507);
             this.panel1.TabIndex = 11;
             // 
             // listBox1
@@ -887,7 +888,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(3, 197);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(451, 303);
+            this.listBox1.Size = new System.Drawing.Size(448, 303);
             this.listBox1.TabIndex = 0;
             this.listBox1.ValueMember = "Id";
             // 
@@ -1070,7 +1071,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(655, 513);
+            this.tabPage7.Size = new System.Drawing.Size(652, 513);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "นำเข้าข้อมูลพื้นที่ลูกค้า";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1125,13 +1126,68 @@
             this.label15.TabIndex = 0;
             this.label15.Text = "เปิดข้อมูล :";
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.showProduct_btn);
+            this.panel3.Controls.Add(this.showCat_btn);
+            this.panel3.Controls.Add(this.showGrp_btn);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(88, 535);
+            this.panel3.TabIndex = 3;
+            // 
+            // showProduct_btn
+            // 
+            this.showProduct_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showProduct_btn.Image = ((System.Drawing.Image)(resources.GetObject("showProduct_btn.Image")));
+            this.showProduct_btn.Location = new System.Drawing.Point(4, 5);
+            this.showProduct_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showProduct_btn.Name = "showProduct_btn";
+            this.showProduct_btn.Size = new System.Drawing.Size(80, 80);
+            this.showProduct_btn.TabIndex = 14;
+            this.showProduct_btn.Text = "ข้อมูลลูกค้า";
+            this.showProduct_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showProduct_btn.UseVisualStyleBackColor = true;
+            // 
+            // showCat_btn
+            // 
+            this.showCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCat_btn.Image = ((System.Drawing.Image)(resources.GetObject("showCat_btn.Image")));
+            this.showCat_btn.Location = new System.Drawing.Point(4, 185);
+            this.showCat_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showCat_btn.Name = "showCat_btn";
+            this.showCat_btn.Size = new System.Drawing.Size(80, 80);
+            this.showCat_btn.TabIndex = 16;
+            this.showCat_btn.Text = "กลุ่มพื้นที่ลูกค้า";
+            this.showCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showCat_btn.UseVisualStyleBackColor = true;
+            // 
+            // showGrp_btn
+            // 
+            this.showGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showGrp_btn.Image = ((System.Drawing.Image)(resources.GetObject("showGrp_btn.Image")));
+            this.showGrp_btn.Location = new System.Drawing.Point(4, 95);
+            this.showGrp_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showGrp_btn.Name = "showGrp_btn";
+            this.showGrp_btn.Size = new System.Drawing.Size(80, 80);
+            this.showGrp_btn.TabIndex = 15;
+            this.showGrp_btn.Text = "กลุ่มลูกค้า";
+            this.showGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showGrp_btn.UseVisualStyleBackColor = true;
+            // 
             // CustomerMngControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.tabControl1);
             this.Name = "CustomerMngControl";
-            this.Size = new System.Drawing.Size(660, 535);
+            this.Size = new System.Drawing.Size(751, 535);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1158,6 +1214,7 @@
             this.tabPage7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1253,5 +1310,9 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button showProduct_btn;
+        private System.Windows.Forms.Button showCat_btn;
+        private System.Windows.Forms.Button showGrp_btn;
     }
 }
