@@ -188,6 +188,62 @@ SAVE OUTFILE='{1}'.
                     label201.Text = dataCells.ValueAt[6, 6];
 
                 }
+                else if (item.Label.Equals("KMO and Bartlett's Test"))
+                {
+                    var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                    var dataCells = table.DataCellArray();
+                    label115.Text = dataCells.ValueAt[0, 0];
+                    label116.Text = dataCells.ValueAt[1, 0];
+                    label117.Text = dataCells.ValueAt[2, 0];
+                    label118.Text = dataCells.ValueAt[3, 0];
+                }
+                else if (item.Label.Equals("Total Variance Explained"))
+                {
+                    var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                    var dataCells = table.DataCellArray();
+                    label120.Text = dataCells.ValueAt[0, 0];
+                    label124.Text = dataCells.ValueAt[0, 1];
+                    label151.Text = dataCells.ValueAt[0, 2];
+                    label162.Text = dataCells.ValueAt[0, 3];
+                    label163.Text = dataCells.ValueAt[0, 4];
+                    label165.Text = dataCells.ValueAt[0, 5];
+
+                    label121.Text = dataCells.ValueAt[1, 0];
+                    label145.Text = dataCells.ValueAt[1, 1];
+                    label152.Text = dataCells.ValueAt[1, 2];
+
+                    label123.Text = dataCells.ValueAt[2, 0];
+                    label147.Text = dataCells.ValueAt[2, 1];
+                    label154.Text = dataCells.ValueAt[2, 2];
+
+                    label142.Text = dataCells.ValueAt[3, 0];
+                    label148.Text = dataCells.ValueAt[3, 1];
+                    label155.Text = dataCells.ValueAt[3, 2];
+
+                    label122.Text = dataCells.ValueAt[4, 0];
+                    label146.Text = dataCells.ValueAt[4, 1];
+                    label153.Text = dataCells.ValueAt[4, 2];
+
+                    label143.Text = dataCells.ValueAt[5, 0];
+                    label149.Text = dataCells.ValueAt[5, 1];
+                    label156.Text = dataCells.ValueAt[5, 2];
+
+                    label144.Text = dataCells.ValueAt[6, 0];
+                    label150.Text = dataCells.ValueAt[6, 1];
+                    label157.Text = dataCells.ValueAt[6, 2];
+                }
+                else if (item.Label.Equals("Component Matrix"))
+                {
+                    var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                    var dataCells = table.DataCellArray();
+                    label180.Text = dataCells.ValueAt[0, 0];
+                    label179.Text = dataCells.ValueAt[1, 0];
+                    label177.Text = dataCells.ValueAt[2, 0];
+                    label175.Text = dataCells.ValueAt[3, 0];
+                    label173.Text = dataCells.ValueAt[4, 0];
+                    label171.Text = dataCells.ValueAt[5, 0];
+                    label169.Text = dataCells.ValueAt[6, 0];
+                }
             }
             spsswin.ISpssDataDoc dataDoc = spss.OpenDataDoc(output3);
             var data = dataDoc.GetTextData("Id", "FAC1_1", 1, dataDoc.GetNumberOfCases());
