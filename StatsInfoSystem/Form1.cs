@@ -23,7 +23,7 @@ namespace StatsInfoSystem
         private ClusterControl clusterControl;
         private DescriptiveControl descriptiveControl;
         private RegControl regControl;
-        private OlapControl olapControl;
+        private OLAP olapForm;
         public Form1()
         {
             InitializeComponent();
@@ -210,9 +210,8 @@ TSMODEL
 
         private void oLAPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DisplayControl(loadingIndicator);
-            if (olapControl == null) olapControl = new OlapControl();
-            DisplayControl(olapControl);
+            olapForm = new OLAP();
+            olapForm.Visible = true;
         }
 
         private void descriptiveMenu_Click(object sender, EventArgs e)

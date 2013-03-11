@@ -142,6 +142,12 @@
     <Compile Include="Form_Product.designer.cs">
       <DependentUpon>Form_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="OLAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OLAP.Designer.cs">
+      <DependentUpon>OLAP.cs</DependentUpon>
+    </Compile>
     <Compile Include="OlapControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,6 +227,11 @@
     </Compile>
     <Compile Include="StsContext.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="_StatsInfoSystem_StsContextDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_StatsInfoSystem_StsContextDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ClusterControl.resx">
       <DependentUpon>ClusterControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Product.resx">
       <DependentUpon>Form_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OLAP.resx">
+      <DependentUpon>OLAP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OlapControl.resx">
       <DependentUpon>OlapControl.cs</DependentUpon>
@@ -308,6 +322,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_StatsInfoSystem_StsContextDataSet.xsc">
+      <DependentUpon>_StatsInfoSystem_StsContextDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_StatsInfoSystem_StsContextDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_StatsInfoSystem_StsContextDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_StatsInfoSystem_StsContextDataSet.xss">
+      <DependentUpon>_StatsInfoSystem_StsContextDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

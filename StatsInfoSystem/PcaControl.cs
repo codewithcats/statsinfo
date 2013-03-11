@@ -103,8 +103,8 @@ SAVE OUTFILE='{1}'.
         {
             ReportDocument rptDoc = new ReportDocument();
             rptDoc.Load("..\\..\\report\\ReportPCA.rpt");
-            reportViewer1.ReportSource = rptDoc;
-            reportViewer1.Refresh();
+            //reportViewer1.ReportSource = rptDoc;
+            //reportViewer1.Refresh();
             tabControl1.SelectedIndex = 1;
         }
 
