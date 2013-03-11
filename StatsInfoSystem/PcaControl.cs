@@ -74,12 +74,119 @@ SAVE OUTFILE='{1}'.
             spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
 
             var outputItems = spss.GetDesignatedOutputDoc().Items;
+            var descriptiveCount = 0;
             for (int i = 0; i < outputItems.Count; i++)
             {
                 var item = outputItems.GetItem(i);
                 if (item.Label.Equals("Descriptive Statistics"))
                 {
+                    if (descriptiveCount++ > 0) continue;
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                    var dataCells = table.DataCellArray();
+                    label11.Text = dataCells.ValueAt[0, 0];
+                    label18.Text = dataCells.ValueAt[0, 1];
+                    label19.Text = dataCells.ValueAt[0, 2];
+                    label20.Text = dataCells.ValueAt[0, 3];
+                    label21.Text = dataCells.ValueAt[0, 4];
+
+                    label24.Text = dataCells.ValueAt[1, 0];
+                    label31.Text = dataCells.ValueAt[1, 1];
+                    label38.Text = dataCells.ValueAt[1, 2];
+                    label45.Text = dataCells.ValueAt[1, 3];
+                    label52.Text = dataCells.ValueAt[1, 4];
+
+                    label25.Text = dataCells.ValueAt[2, 0];
+                    label32.Text = dataCells.ValueAt[2, 1];
+                    label39.Text = dataCells.ValueAt[2, 2];
+                    label46.Text = dataCells.ValueAt[2, 3];
+                    label21.Text = dataCells.ValueAt[2, 4];
+
+                    label26.Text = dataCells.ValueAt[3, 0];
+                    label33.Text = dataCells.ValueAt[3, 1];
+                    label40.Text = dataCells.ValueAt[3, 2];
+                    label47.Text = dataCells.ValueAt[3, 3];
+                    label54.Text = dataCells.ValueAt[3, 4];
+
+                    label27.Text = dataCells.ValueAt[4, 0];
+                    label34.Text = dataCells.ValueAt[4, 1];
+                    label41.Text = dataCells.ValueAt[4, 2];
+                    label48.Text = dataCells.ValueAt[4, 3];
+                    label55.Text = dataCells.ValueAt[4, 4];
+
+                    label28.Text = dataCells.ValueAt[5, 0];
+                    label35.Text = dataCells.ValueAt[5, 1];
+                    label42.Text = dataCells.ValueAt[5, 2];
+                    label49.Text = dataCells.ValueAt[5, 3];
+                    label56.Text = dataCells.ValueAt[5, 4];
+
+                    label29.Text = dataCells.ValueAt[6, 0];
+                    label36.Text = dataCells.ValueAt[6, 1];
+                    label43.Text = dataCells.ValueAt[6, 2];
+                    label50.Text = dataCells.ValueAt[6, 3];
+                    label57.Text = dataCells.ValueAt[6, 4];
+
+                    label6.Text = dataCells.ValueAt[7, 0];
+                }
+                else if (item.Label.Equals("Correlation Matrix"))
+                {
+                    var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                    var dataCells = table.DataCellArray();
+                    label112.Text = dataCells.ValueAt[0, 0];
+                    label92.Text = dataCells.ValueAt[0, 1];
+                    label61.Text = dataCells.ValueAt[0, 2];
+                    label69.Text = dataCells.ValueAt[0, 3];
+                    label79.Text = dataCells.ValueAt[0, 4];
+                    label170.Text = dataCells.ValueAt[0, 5];
+                    label172.Text = dataCells.ValueAt[0, 6];
+
+                    label111.Text = dataCells.ValueAt[1, 0];
+                    label91.Text = dataCells.ValueAt[1, 1];
+                    label62.Text = dataCells.ValueAt[1, 2];
+                    label70.Text = dataCells.ValueAt[1, 3];
+                    label81.Text = dataCells.ValueAt[1, 4];
+                    label174.Text = dataCells.ValueAt[1, 5];
+                    label176.Text = dataCells.ValueAt[1, 6];
+
+                    label110.Text = dataCells.ValueAt[2, 0];
+                    label90.Text = dataCells.ValueAt[2, 1];
+                    label63.Text = dataCells.ValueAt[2, 2];
+                    label71.Text = dataCells.ValueAt[2, 3];
+                    label82.Text = dataCells.ValueAt[2, 4];
+                    label178.Text = dataCells.ValueAt[2, 5];
+                    label183.Text = dataCells.ValueAt[2, 6];
+
+                    label109.Text = dataCells.ValueAt[3, 0];
+                    label88.Text = dataCells.ValueAt[3, 1];
+                    label64.Text = dataCells.ValueAt[3, 2];
+                    label73.Text = dataCells.ValueAt[3, 3];
+                    label83.Text = dataCells.ValueAt[3, 4];
+                    label191.Text = dataCells.ValueAt[3, 5];
+                    label192.Text = dataCells.ValueAt[3, 6];
+
+                    label108.Text = dataCells.ValueAt[4, 0];
+                    label84.Text = dataCells.ValueAt[4, 1];
+                    label65.Text = dataCells.ValueAt[4, 2];
+                    label74.Text = dataCells.ValueAt[4, 3];
+                    label85.Text = dataCells.ValueAt[4, 4];
+                    label193.Text = dataCells.ValueAt[4, 5];
+                    label194.Text = dataCells.ValueAt[4, 6];
+
+                    label107.Text = dataCells.ValueAt[5, 0];
+                    label80.Text = dataCells.ValueAt[5, 1];
+                    label66.Text = dataCells.ValueAt[5, 2];
+                    label75.Text = dataCells.ValueAt[5, 3];
+                    label86.Text = dataCells.ValueAt[5, 4];
+                    label195.Text = dataCells.ValueAt[5, 5];
+                    label196.Text = dataCells.ValueAt[5, 6];
+
+                    label106.Text = dataCells.ValueAt[6, 0];
+                    label76.Text = dataCells.ValueAt[6, 1];
+                    label67.Text = dataCells.ValueAt[6, 2];
+                    label77.Text = dataCells.ValueAt[6, 3];
+                    label87.Text = dataCells.ValueAt[6, 4];
+                    label197.Text = dataCells.ValueAt[6, 5];
+                    label201.Text = dataCells.ValueAt[6, 6];
+
                 }
             }
             spsswin.ISpssDataDoc dataDoc = spss.OpenDataDoc(output3);
