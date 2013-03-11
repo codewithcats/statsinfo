@@ -126,5 +126,20 @@ namespace StatsInfoSystem
                 MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
             }
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCusId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
