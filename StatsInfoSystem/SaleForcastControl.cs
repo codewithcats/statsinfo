@@ -633,8 +633,44 @@ TSMODEL
             syntax = string.Format(syntax, Config.SPSS_CONNECT, textBox13.Text, textBox12.Text, textBox11.Text);
             spss.ExecuteCommands(syntax, true);
             spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
+            var outputItems = spss.GetDesignatedOutputDoc().Items;
+            int acfCount = 0;
+            for (int i = 0; i < outputItems.Count; i++)
+            {
+                if (acfCount == 4) break;
+                var item = outputItems.GetItem(i);
+                if (item.Label.Equals("Model Statistics"))
+                {
+                    acfCount++;
+                    var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                    var cells = table.DataCellArray();
+                    var rmse = cells.ValueAt[0, 3].ToString();
+                    var mape = cells.ValueAt[0, 4].ToString();
+                    if (acfCount == 1)
+                    {
+                        label21.Text = rmse;
+                        label38.Text = mape;
+                    }
+                    else if (acfCount == 2)
+                    {
+                        label22.Text = rmse;
+                        label75.Text = mape;
+                    }
+                    else if (acfCount == 3)
+                    {
+                        label26.Text = rmse;
+                        label76.Text = mape;
+                    }
+                    else if (acfCount == 4)
+                    {
+                        label37.Text = rmse;
+                        label91.Text = mape;
+                    }
+                }
+            }
             if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
             spss.Quit();
+            tabControl1.SelectedIndex = 7;
         }
     }
 }
