@@ -260,6 +260,7 @@ SAVE OUTFILE='{1}'.
             }
             if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
             spss.Quit();
+            reportPCATableAdapter.Fill(reportPCA_DataSet1.ReportPCA);
         }
 
         private void button3_Click(object sender, EventArgs e)

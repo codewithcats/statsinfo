@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PcaControl));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -244,6 +245,15 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.reportPCA_DataSet1 = new StatsInfoSystem.ReportPCA_DataSet();
+            this.reportPCADataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportPCABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportPCATableAdapter = new StatsInfoSystem.ReportPCA_DataSetTableAdapters.ReportPCATableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fac11DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -259,6 +269,10 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportPCA_DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportPCADataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportPCABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -1921,6 +1935,7 @@
             // tabPage6
             // 
             this.tabPage6.AutoScroll = true;
+            this.tabPage6.Controls.Add(this.dataGridView1);
             this.tabPage6.Controls.Add(this.label166);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
@@ -1932,7 +1947,7 @@
             // label166
             // 
             this.label166.AutoSize = true;
-            this.label166.Location = new System.Drawing.Point(170, 24);
+            this.label166.Location = new System.Drawing.Point(198, 24);
             this.label166.Name = "label166";
             this.label166.Size = new System.Drawing.Size(158, 13);
             this.label166.TabIndex = 90;
@@ -2487,6 +2502,74 @@
             this.tabPage2.Text = "แสดงข้อมูลที่ใช้ในการวิเคราะห์";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.fac11DataGridViewTextBoxColumn,
+            this.rankDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.reportPCABindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(31, 53);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(492, 150);
+            this.dataGridView1.TabIndex = 91;
+            // 
+            // reportPCA_DataSet1
+            // 
+            this.reportPCA_DataSet1.DataSetName = "ReportPCA_DataSet";
+            this.reportPCA_DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // reportPCADataSet1BindingSource
+            // 
+            this.reportPCADataSet1BindingSource.DataSource = this.reportPCA_DataSet1;
+            this.reportPCADataSet1BindingSource.Position = 0;
+            // 
+            // reportPCABindingSource
+            // 
+            this.reportPCABindingSource.DataMember = "ReportPCA";
+            this.reportPCABindingSource.DataSource = this.reportPCADataSet1BindingSource;
+            // 
+            // reportPCATableAdapter
+            // 
+            this.reportPCATableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "ไอดี";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 40;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "ชื่อ";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // fac11DataGridViewTextBoxColumn
+            // 
+            this.fac11DataGridViewTextBoxColumn.DataPropertyName = "fac1_1";
+            this.fac11DataGridViewTextBoxColumn.HeaderText = "คะแนน";
+            this.fac11DataGridViewTextBoxColumn.Name = "fac11DataGridViewTextBoxColumn";
+            this.fac11DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rankDataGridViewTextBoxColumn
+            // 
+            this.rankDataGridViewTextBoxColumn.DataPropertyName = "rank";
+            this.rankDataGridViewTextBoxColumn.HeaderText = "ลำดับ";
+            this.rankDataGridViewTextBoxColumn.Name = "rankDataGridViewTextBoxColumn";
+            this.rankDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rankDataGridViewTextBoxColumn.Width = 60;
+            // 
             // PcaControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2517,6 +2600,10 @@
             this.tabPage6.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportPCA_DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportPCADataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reportPCABindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2738,6 +2825,15 @@
         private System.Windows.Forms.Label label203;
         private System.Windows.Forms.Label label204;
         private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource reportPCADataSet1BindingSource;
+        private ReportPCA_DataSet reportPCA_DataSet1;
+        private System.Windows.Forms.BindingSource reportPCABindingSource;
+        private ReportPCA_DataSetTableAdapters.ReportPCATableAdapter reportPCATableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fac11DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rankDataGridViewTextBoxColumn;
 
     }
 }

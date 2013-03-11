@@ -194,6 +194,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportPCA_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPCA_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="report\ReportPCA.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -322,6 +327,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ReportPCA_DataSet.xsc">
+      <DependentUpon>ReportPCA_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportPCA_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportPCA_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReportPCA_DataSet.xss">
+      <DependentUpon>ReportPCA_DataSet.xsd</DependentUpon>
+    </None>
     <None Include="_StatsInfoSystem_StsContextDataSet.xsc">
       <DependentUpon>_StatsInfoSystem_StsContextDataSet.xsd</DependentUpon>
     </None>
