@@ -194,6 +194,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportPCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPCA.Designer.cs">
+      <DependentUpon>ReportPCA.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportPCA_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -299,6 +305,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportPCA.resx">
+      <DependentUpon>ReportPCA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\ReportPCA.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportPCA.cs</LastGenOutput>

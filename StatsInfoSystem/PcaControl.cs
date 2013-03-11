@@ -265,11 +265,8 @@ SAVE OUTFILE='{1}'.
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ReportDocument rptDoc = new ReportDocument();
-            rptDoc.Load("..\\..\\report\\ReportPCA.rpt");
-            //reportViewer1.ReportSource = rptDoc;
-            //reportViewer1.Refresh();
-            tabControl1.SelectedIndex = 1;
+            var report = new ReportPCA();
+            report.Visible = true;
         }
 
         private void label10_Click(object sender, EventArgs e)
