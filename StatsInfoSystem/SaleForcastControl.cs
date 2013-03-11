@@ -375,7 +375,8 @@ PREFIX='Model'
             {
                 SpssBridge.SpssBridge bridge = new SpssBridge.SpssBridge();
                 spsswinLib.Application16 spss = (spsswinLib.Application16)bridge.GetSpss();
-
+                var key = System.DateTime.Now.Ticks.ToString();
+                string output = AppDomain.CurrentDomain.BaseDirectory + "arima-" + key + ".sav";
                 string syntax = @"
 
 GET DATA 
@@ -403,12 +404,13 @@ TSMODEL
 /MISSING USERMISSING=EXCLUDE
 /MODEL DEPENDENT=amount
 PREFIX='Model'
-/ARIMA AR=[2,1] DIFF=1 MA=[2,1] ARSEASONAL=[0] DIFFSEASONAL=0 MASEASONAL=[0]
+/ARIMA AR=[{1},1] DIFF={2} MA=[{3},1] ARSEASONAL=[0] DIFFSEASONAL=0 MASEASONAL=[0]
 TRANSFORM=NONE CONSTANT=YES
 /AUTOOUTLIER DETECT=OFF.
+SAVE OUTFILE='{4}'.
 
             ";
-                syntax = String.Format(syntax, Config.SPSS_CONNECT);
+                syntax = String.Format(syntax, Config.SPSS_CONNECT, label72.Text, label71.Text, label90.Text, output);
                 spss.ExecuteCommands(syntax, true);
                 spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
 
@@ -446,6 +448,31 @@ TRANSFORM=NONE CONSTANT=YES
                         label77.Text = cells.ValueAt[0, 4].ToString();
                     }
                 }
+
+                syntax = @"
+GET
+    FILE='{0}'.
+ACF VARIABLES=NResidual_amount_Model_1
+  /NOLOG
+  /MXAUTO 16
+  /SERROR=IND
+  /PACF.
+";
+                syntax = String.Format(syntax, output);
+                spss.ExecuteCommands(syntax, true);
+                outputItems = spss.GetDesignatedOutputDoc().Items;
+                for (int i = 0; i < outputItems.Count; i++)
+                {
+                    var item = outputItems.GetItem(i);
+                    if (item.Label.Equals("ACF"))
+                    {
+                        var chart = (VISCHARTLib.ISpssChart)item.GetOleObject();
+                        if (chart == null) continue;
+                        string img = "arima_acf-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
+                        chart.ExportChart(img, "JPEG File");
+                        pictureBox5.ImageLocation = img;
+                    }
+                }
                 if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
                 spss.Quit();
                 tabControl1.SelectedIndex = 5;
@@ -471,14 +498,14 @@ DATE Y 2008 M.
 
 ACF VARIABLES=amount
 /NOLOG
-/DIFF=1
-/SDIFF=3
+/DIFF={1}
+/SDIFF={2}
 /MXAUTO 16
 /SERROR=IND
 /PACF.
 
             ";
-            syntax = String.Format(syntax, Config.SPSS_CONNECT);
+            syntax = String.Format(syntax, Config.SPSS_CONNECT, textBox14.Text, textBox15.Text);
 
             spss.ExecuteCommands(syntax, true);
             spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
@@ -511,6 +538,103 @@ ACF VARIABLES=amount
         private void arimaRadio_CheckedChanged(object sender, EventArgs e)
         {
             panel3.Visible = arimaRadio.Checked;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            label72.Text = textBox2.Text;
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            label71.Text = textBox3.Text;
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            label90.Text = textBox4.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = false;
+            SpssBridge.SpssBridge bridge = new SpssBridge.SpssBridge();
+            spsswinLib.Application16 spss = (spsswinLib.Application16)bridge.GetSpss();
+
+            string syntax = @"
+
+GET DATA 
+/TYPE=ODBC 
+/CONNECT= {0}
+/SQL = "" SELECT [month] ,[amount] FROM [StatsInfoSystem.StsContext].[dbo].[SaleAmountPerMonth] WHERE [month]>'2007-12-31' ORDER BY [month]"".
+
+VARIABLE LABEL month ""month""
+  amount ""amount"" .
+
+DATE Y 2008 M.
+
+PREDICT THRU YEAR 2013 MONTH 1.
+* Time Series Modeler.
+TSMODEL
+   /MODELSUMMARY  PRINT=[NONE]
+   /MODELSTATISTICS  DISPLAY=YES MODELFIT=[ SRSQUARE RSQUARE RMSE MAPE MAE]
+   /MODELDETAILS  PRINT=[ FORECASTS]
+   /OUTPUTFILTER DISPLAY=ALLMODELS
+   /AUXILIARY  CILEVEL=95 MAXACFLAGS=24
+   /MISSING USERMISSING=EXCLUDE
+   /MODEL DEPENDENT=amount
+      PREFIX='Model'
+   /EXSMOOTH TYPE=SIMPLE  TRANSFORM=NONE.
+PREDICT THRU YEAR 2013 MONTH 1.
+* Time Series Modeler.
+TSMODEL
+   /MODELSUMMARY  PRINT=[NONE]
+   /MODELSTATISTICS  DISPLAY=YES MODELFIT=[ SRSQUARE RSQUARE RMSE MAPE MAE]
+   /MODELDETAILS  PRINT=[ FORECASTS]
+   /OUTPUTFILTER DISPLAY=ALLMODELS
+   /AUXILIARY  CILEVEL=95 MAXACFLAGS=24
+   /MISSING USERMISSING=EXCLUDE
+   /MODEL DEPENDENT=amount
+      PREFIX='Model'
+   /EXSMOOTH TYPE=HOLT  TRANSFORM=NONE.
+PREDICT THRU YEAR 2013 MONTH 1.
+* Time Series Modeler.
+TSMODEL
+   /MODELSUMMARY  PRINT=[NONE]
+   /MODELSTATISTICS  DISPLAY=YES MODELFIT=[ SRSQUARE RSQUARE RMSE MAPE MAE]
+   /MODELDETAILS  PRINT=[ FORECASTS]
+   /OUTPUTFILTER DISPLAY=ALLMODELS
+   /AUXILIARY  CILEVEL=95 MAXACFLAGS=24
+   /MISSING USERMISSING=EXCLUDE
+   /MODEL DEPENDENT=amount
+      PREFIX='Model'
+   /EXSMOOTH TYPE=WINTERSMULTIPLICATIVE  TRANSFORM=NONE.
+PREDICT THRU YEAR 2013 MONTH 1.
+* Time Series Modeler.
+TSMODEL
+   /MODELSUMMARY  PRINT=[NONE]
+   /MODELSTATISTICS  DISPLAY=YES MODELFIT=[ SRSQUARE RSQUARE RMSE MAPE MAE]
+   /MODELDETAILS  PRINT=[ FORECASTS]
+   /OUTPUTFILTER DISPLAY=ALLMODELS
+   /AUXILIARY  CILEVEL=95 MAXACFLAGS=24
+   /MISSING USERMISSING=EXCLUDE
+   /MODEL DEPENDENT=amount
+      PREFIX='Model'
+   /ARIMA AR=[{1},1]  DIFF={2}  MA=[{3},1]  ARSEASONAL=[0]  DIFFSEASONAL=0  MASEASONAL=[0]
+      TRANSFORM=NONE  CONSTANT=YES
+   /AUTOOUTLIER DETECT=OFF.
+            ";
+            syntax = string.Format(syntax, Config.SPSS_CONNECT, textBox13.Text, textBox12.Text, textBox11.Text);
+            spss.ExecuteCommands(syntax, true);
+            spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
+            if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+            spss.Quit();
         }
     }
 }
