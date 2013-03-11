@@ -93,5 +93,10 @@ namespace StatsInfoSystem
         {
 
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -254,7 +254,6 @@
             this.label228 = new System.Windows.Forms.Label();
             this.label227 = new System.Windows.Forms.Label();
             this.label172 = new System.Windows.Forms.Label();
-            this.label174 = new System.Windows.Forms.Label();
             this.label176 = new System.Windows.Forms.Label();
             this.label202 = new System.Windows.Forms.Label();
             this.label206 = new System.Windows.Forms.Label();
@@ -288,7 +287,6 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -317,6 +315,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -848,10 +847,10 @@
             this.tabPage2.Controls.Add(this.label69);
             this.tabPage2.Controls.Add(this.label70);
             this.tabPage2.Controls.Add(this.label81);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(919, 422);
+            this.tabPage2.Size = new System.Drawing.Size(919, 419);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ค่าความสัมพันธ์ของตัวแปร";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2115,10 +2114,10 @@
             this.tabPage3.Controls.Add(this.label218);
             this.tabPage3.Controls.Add(this.label220);
             this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(919, 422);
+            this.tabPage3.Size = new System.Drawing.Size(919, 419);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ตาราง ANOVA";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2279,7 +2278,7 @@
             // label196
             // 
             this.label196.AutoSize = true;
-            this.label196.Location = new System.Drawing.Point(648, 114);
+            this.label196.Location = new System.Drawing.Point(656, 114);
             this.label196.Name = "label196";
             this.label196.Size = new System.Drawing.Size(31, 16);
             this.label196.TabIndex = 113;
@@ -2289,7 +2288,7 @@
             // label197
             // 
             this.label197.AutoSize = true;
-            this.label197.Location = new System.Drawing.Point(595, 114);
+            this.label197.Location = new System.Drawing.Point(601, 114);
             this.label197.Name = "label197";
             this.label197.Size = new System.Drawing.Size(16, 16);
             this.label197.TabIndex = 114;
@@ -2379,9 +2378,9 @@
             // 
             this.tabPage1.AutoScroll = true;
             this.tabPage1.Controls.Add(this.label163);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(919, 422);
+            this.tabPage1.Size = new System.Drawing.Size(919, 419);
             this.tabPage1.TabIndex = 12;
             this.tabPage1.Text = "ตารางค่าพยากรณ์";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -2399,10 +2398,10 @@
             // 
             this.tabPage9.AutoScroll = true;
             this.tabPage9.Controls.Add(this.label164);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(919, 422);
+            this.tabPage9.Size = new System.Drawing.Size(919, 419);
             this.tabPage9.TabIndex = 10;
             this.tabPage9.Text = "กราฟข้อมูล";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -2421,9 +2420,9 @@
             this.tabPage7.AutoScroll = true;
             this.tabPage7.Controls.Add(this.panel14);
             this.tabPage7.Controls.Add(this.panel13);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(919, 422);
+            this.tabPage7.Size = new System.Drawing.Size(919, 419);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "ตรวจสอบเงื่อนไข (1)";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -2549,9 +2548,9 @@
             // 
             this.tabPage8.AutoScroll = true;
             this.tabPage8.Controls.Add(this.label26);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(919, 422);
+            this.tabPage8.Size = new System.Drawing.Size(919, 419);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "ตรวจสอบเงื่อนไข (2)";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -2574,7 +2573,6 @@
             this.tabPage5.Controls.Add(this.label228);
             this.tabPage5.Controls.Add(this.label227);
             this.tabPage5.Controls.Add(this.label172);
-            this.tabPage5.Controls.Add(this.label174);
             this.tabPage5.Controls.Add(this.label176);
             this.tabPage5.Controls.Add(this.label202);
             this.tabPage5.Controls.Add(this.label206);
@@ -2600,9 +2598,9 @@
             this.tabPage5.Controls.Add(this.label226);
             this.tabPage5.Controls.Add(this.label170);
             this.tabPage5.Controls.Add(this.label169);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(919, 422);
+            this.tabPage5.Size = new System.Drawing.Size(919, 419);
             this.tabPage5.TabIndex = 13;
             this.tabPage5.Text = "ตรวจสอบเงื่อนไข (3)";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2663,15 +2661,6 @@
             this.label172.Size = new System.Drawing.Size(175, 16);
             this.label172.TabIndex = 193;
             this.label172.Text = "Unstandardized Coefficients";
-            // 
-            // label174
-            // 
-            this.label174.AutoSize = true;
-            this.label174.Location = new System.Drawing.Point(49, 236);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(208, 16);
-            this.label174.TabIndex = 177;
-            this.label174.Text = "Dependent Variable: SaleAmount";
             // 
             // label176
             // 
@@ -2850,7 +2839,7 @@
             // label219
             // 
             this.label219.AutoSize = true;
-            this.label219.Location = new System.Drawing.Point(672, 133);
+            this.label219.Location = new System.Drawing.Point(685, 133);
             this.label219.Name = "label219";
             this.label219.Size = new System.Drawing.Size(130, 16);
             this.label219.TabIndex = 172;
@@ -2917,9 +2906,9 @@
             this.tabPage10.Controls.Add(this.panel6);
             this.tabPage10.Controls.Add(this.panel5);
             this.tabPage10.Controls.Add(this.panel12);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(919, 422);
+            this.tabPage10.Size = new System.Drawing.Size(919, 419);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "สมการพยากรณ์";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -2927,7 +2916,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(694, 285);
+            this.label4.Location = new System.Drawing.Point(654, 285);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 16);
             this.label4.TabIndex = 41;
@@ -2935,7 +2924,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(455, 282);
+            this.textBox1.Location = new System.Drawing.Point(415, 282);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(233, 22);
             this.textBox1.TabIndex = 40;
@@ -2952,15 +2941,16 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(687, 350);
+            this.label19.Location = new System.Drawing.Point(654, 331);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(28, 16);
             this.label19.TabIndex = 38;
             this.label19.Text = "บาท";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(573, 347);
+            this.textBox10.Location = new System.Drawing.Point(540, 329);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(108, 22);
             this.textBox10.TabIndex = 36;
@@ -2968,7 +2958,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(386, 350);
+            this.label18.Location = new System.Drawing.Point(395, 331);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(139, 16);
             this.label18.TabIndex = 37;
@@ -2995,28 +2985,15 @@
             this.panel6.Controls.Add(this.panel11);
             this.panel6.Location = new System.Drawing.Point(12, 49);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(869, 224);
+            this.panel6.Size = new System.Drawing.Size(824, 224);
             this.panel6.TabIndex = 1;
-            // 
-            // button5
-            // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(727, 131);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 67);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "ล้างข้อมูล";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(727, 39);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 67);
+            this.button6.Size = new System.Drawing.Size(77, 67);
             this.button6.TabIndex = 16;
             this.button6.Text = "พยากรณ์";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -3155,14 +3132,14 @@
             this.panel5.Controls.Add(this.label11);
             this.panel5.Location = new System.Drawing.Point(12, 14);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(869, 32);
+            this.panel5.Size = new System.Drawing.Size(824, 32);
             this.panel5.TabIndex = 0;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(141, 3);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(710, 22);
+            this.textBox4.Size = new System.Drawing.Size(663, 22);
             this.textBox4.TabIndex = 1;
             this.textBox4.Text = "13696858.47 -  169822.984 * ProductIndex";
             // 
@@ -3179,7 +3156,7 @@
             // 
             this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel12.Location = new System.Drawing.Point(349, 338);
+            this.panel12.Location = new System.Drawing.Point(358, 319);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(31, 32);
             this.panel12.TabIndex = 35;
@@ -3267,6 +3244,18 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "เดือน";
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(727, 118);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(77, 66);
+            this.button5.TabIndex = 331;
+            this.button5.Text = "ล้างข้อมูล";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // RegControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3346,7 +3335,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label12;
@@ -3562,7 +3550,6 @@
         private System.Windows.Forms.Label label228;
         private System.Windows.Forms.Label label227;
         private System.Windows.Forms.Label label172;
-        private System.Windows.Forms.Label label174;
         private System.Windows.Forms.Label label176;
         private System.Windows.Forms.Label label202;
         private System.Windows.Forms.Label label206;
@@ -3609,5 +3596,6 @@
         private System.Windows.Forms.Label label236;
         private System.Windows.Forms.Label label235;
         private System.Windows.Forms.Label label233;
+        private System.Windows.Forms.Button button5;
     }
 }
