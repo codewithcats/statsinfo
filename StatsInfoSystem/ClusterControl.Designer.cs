@@ -291,8 +291,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 540);
-            this.splitContainer1.SplitterDistance = 286;
+            this.splitContainer1.Size = new System.Drawing.Size(1014, 540);
+            this.splitContainer1.SplitterDistance = 362;
             this.splitContainer1.TabIndex = 1;
             // 
             // groupBox2
@@ -305,7 +305,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(4, 244);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(279, 285);
+            this.groupBox2.Size = new System.Drawing.Size(294, 285);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "เลือกช่วงเวลาที่ต้องการวิเคราะห์";
@@ -445,7 +445,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(276, 231);
+            this.groupBox1.Size = new System.Drawing.Size(294, 231);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "เลือกปัจจัยที่ใช้จัดกลุ่มลูกค้า";
@@ -539,7 +539,7 @@
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(203, 91);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 64);
+            this.button2.Size = new System.Drawing.Size(76, 64);
             this.button2.TabIndex = 10;
             this.button2.Text = "ยกเลิก";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -551,7 +551,7 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(203, 21);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 64);
+            this.button1.Size = new System.Drawing.Size(76, 64);
             this.button1.TabIndex = 9;
             this.button1.Text = "เลือกทั้งหมด";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -570,7 +570,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(510, 540);
+            this.tabControl1.Size = new System.Drawing.Size(648, 540);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage4
@@ -635,7 +635,7 @@
             this.tabPage4.Controls.Add(this.label60);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(502, 514);
+            this.tabPage4.Size = new System.Drawing.Size(640, 514);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "แสดงข้อมูลที่ใช้ในการวิเคราะห์";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1204,7 +1204,7 @@
             this.tabPage5.Controls.Add(this.label113);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(502, 514);
+            this.tabPage5.Size = new System.Drawing.Size(640, 514);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ตารางแสดงค่าเฉลี่ยของตัวแปรในแต่ละกลุ่ม";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1657,7 +1657,7 @@
             this.tabPage6.Controls.Add(this.label155);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(502, 514);
+            this.tabPage6.Size = new System.Drawing.Size(640, 514);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "ตารางแสดงระยะห่างระหว่างค่ากลางของแต่ละกลุ่ม";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1946,7 +1946,7 @@
             this.tabPage7.Controls.Add(this.label186);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(502, 514);
+            this.tabPage7.Size = new System.Drawing.Size(640, 514);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "ตาราง ANOVA";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -2582,7 +2582,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(502, 514);
+            this.tabPage2.Size = new System.Drawing.Size(640, 514);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "กราฟแสดงผลการจัดกลุ่มลูกค้า";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2614,7 +2614,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(502, 514);
+            this.tabPage3.Size = new System.Drawing.Size(640, 514);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ตารางแสดงข้อมูลผลการจัดกลุ่มลูกค้า";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2650,7 +2650,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer1);
             this.Name = "ClusterControl";
-            this.Size = new System.Drawing.Size(800, 540);
+            this.Size = new System.Drawing.Size(1014, 540);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
