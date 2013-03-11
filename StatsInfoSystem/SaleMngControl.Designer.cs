@@ -63,8 +63,8 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -105,7 +105,7 @@
             this.txtDis = new System.Windows.Forms.Label();
             this.GroupBox5 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.DataGridSale = new System.Windows.Forms.DataGridView();
             this.LabelNum = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -115,10 +115,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.Panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.DataGridSL = new System.Windows.Forms.DataGridView();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.PictureBox19 = new System.Windows.Forms.PictureBox();
@@ -228,7 +228,7 @@
             this.groupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox6.Controls.Add(this.groupBox7);
             this.groupBox6.Controls.Add(this.groupBox8);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox6.ForeColor = System.Drawing.Color.Black;
             this.groupBox6.Location = new System.Drawing.Point(3, 72);
             this.groupBox6.Name = "groupBox6";
@@ -236,6 +236,7 @@
             this.groupBox6.TabIndex = 316;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "ปรับปรุงรายการขายสินค้า";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
             // groupBox7
             // 
@@ -250,7 +251,7 @@
             this.groupBox7.Controls.Add(this.label29);
             this.groupBox7.Controls.Add(this.pictureBox23);
             this.groupBox7.Controls.Add(this.txtQuan);
-            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox7.ForeColor = System.Drawing.Color.Black;
             this.groupBox7.Location = new System.Drawing.Point(32, 21);
             this.groupBox7.Name = "groupBox7";
@@ -381,7 +382,7 @@
             this.groupBox8.Controls.Add(this.label32);
             this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.Controls.Add(this.label34);
-            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox8.ForeColor = System.Drawing.Color.Black;
             this.groupBox8.Location = new System.Drawing.Point(422, 21);
             this.groupBox8.Name = "groupBox8";
@@ -585,19 +586,19 @@
             // 
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label27.Location = new System.Drawing.Point(69, 16);
+            this.label27.Location = new System.Drawing.Point(67, 16);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(70, 16);
+            this.label27.Size = new System.Drawing.Size(81, 16);
             this.label27.TabIndex = 184;
             this.label27.Text = "รหัสการขาย :";
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.button5);
             this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Controls.Add(this.button8);
             this.groupBox4.Controls.Add(this.dataGridView1);
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.label25);
@@ -610,30 +611,31 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "                                                                            ";
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.Location = new System.Drawing.Point(711, 178);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(74, 62);
+            this.button5.TabIndex = 332;
+            this.button5.Text = "ลบ";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(708, 104);
+            this.button6.Location = new System.Drawing.Point(710, 102);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(77, 63);
-            this.button6.TabIndex = 327;
+            this.button6.Size = new System.Drawing.Size(73, 68);
+            this.button6.TabIndex = 331;
             this.button6.Text = "ล้างข้อมูล";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(709, 178);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 60);
-            this.button8.TabIndex = 326;
-            this.button8.Text = "ลบ";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -650,7 +652,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(137, 0);
+            this.label18.Location = new System.Drawing.Point(161, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(36, 16);
             this.label18.TabIndex = 7;
@@ -660,11 +662,11 @@
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
             this.label25.Location = new System.Drawing.Point(6, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(214, 16);
+            this.label25.Size = new System.Drawing.Size(257, 16);
             this.label25.TabIndex = 21;
             this.label25.Text = "จำนวนข้อมูลการขายสินค้า                  รายการ";
             // 
@@ -675,9 +677,9 @@
             this.button10.ForeColor = System.Drawing.Color.Black;
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(707, 29);
+            this.button10.Location = new System.Drawing.Point(711, 29);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(78, 66);
+            this.button10.Size = new System.Drawing.Size(71, 66);
             this.button10.TabIndex = 4;
             this.button10.Text = "แก้ไข";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -725,7 +727,7 @@
             this.groupBox3.Controls.Add(this.txtDisc);
             this.groupBox3.Controls.Add(this.txtAllDisc);
             this.groupBox3.Controls.Add(this.txtDis);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(8, 3);
             this.groupBox3.Name = "groupBox3";
@@ -1088,7 +1090,7 @@
             // 
             this.GroupBox5.BackColor = System.Drawing.Color.Transparent;
             this.GroupBox5.Controls.Add(this.button4);
-            this.GroupBox5.Controls.Add(this.button5);
+            this.GroupBox5.Controls.Add(this.button15);
             this.GroupBox5.Controls.Add(this.DataGridSale);
             this.GroupBox5.Controls.Add(this.LabelNum);
             this.GroupBox5.Controls.Add(this.label15);
@@ -1103,28 +1105,29 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(908, 104);
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Location = new System.Drawing.Point(908, 176);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 63);
-            this.button4.TabIndex = 327;
-            this.button4.Text = "ล้างข้อมูล";
+            this.button4.Size = new System.Drawing.Size(74, 62);
+            this.button4.TabIndex = 330;
+            this.button4.Text = "ลบ";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button15
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(909, 178);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 60);
-            this.button5.TabIndex = 326;
-            this.button5.Text = "ลบ";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
+            this.button15.Location = new System.Drawing.Point(907, 100);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(73, 68);
+            this.button15.TabIndex = 329;
+            this.button15.Text = "ล้างข้อมูล";
+            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button15.UseVisualStyleBackColor = true;
             // 
             // DataGridSale
             // 
@@ -1141,7 +1144,7 @@
             this.LabelNum.BackColor = System.Drawing.Color.Transparent;
             this.LabelNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNum.ForeColor = System.Drawing.Color.Black;
-            this.LabelNum.Location = new System.Drawing.Point(137, 0);
+            this.LabelNum.Location = new System.Drawing.Point(163, 0);
             this.LabelNum.Name = "LabelNum";
             this.LabelNum.Size = new System.Drawing.Size(36, 16);
             this.LabelNum.TabIndex = 7;
@@ -1151,11 +1154,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(6, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(214, 16);
+            this.label15.Size = new System.Drawing.Size(257, 16);
             this.label15.TabIndex = 21;
             this.label15.Text = "จำนวนข้อมูลการขายสินค้า                  รายการ";
             // 
@@ -1168,7 +1171,7 @@
             this.BtnEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnEdit.Location = new System.Drawing.Point(907, 29);
             this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(78, 66);
+            this.BtnEdit.Size = new System.Drawing.Size(73, 66);
             this.BtnEdit.TabIndex = 4;
             this.BtnEdit.Text = "แก้ไข";
             this.BtnEdit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1240,10 +1243,10 @@
             this.Panel1.BackColor = System.Drawing.Color.White;
             this.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Panel1.Controls.Add(this.button7);
             this.Panel1.Controls.Add(this.button17);
+            this.Panel1.Controls.Add(this.button14);
+            this.Panel1.Controls.Add(this.button7);
             this.Panel1.Controls.Add(this.button9);
-            this.Panel1.Controls.Add(this.btnSave);
             this.Panel1.Controls.Add(this.DataGridSL);
             this.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.Panel1.Location = new System.Drawing.Point(2, 356);
@@ -1251,30 +1254,44 @@
             this.Panel1.Size = new System.Drawing.Size(732, 310);
             this.Panel1.TabIndex = 325;
             // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(605, 92);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(101, 64);
-            this.button7.TabIndex = 325;
-            this.button7.Text = "ล้างข้อมูล";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // button17
             // 
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(606, 166);
+            this.button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button17.Location = new System.Drawing.Point(607, 166);
             this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(99, 61);
-            this.button17.TabIndex = 324;
+            this.button17.TabIndex = 328;
             this.button17.Text = "ยกเลิก";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button17.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
+            this.button14.Location = new System.Drawing.Point(606, 235);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(99, 59);
+            this.button14.TabIndex = 327;
+            this.button14.Text = "เสร็จสิ้น";
+            this.button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(606, 91);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(99, 67);
+            this.button7.TabIndex = 325;
+            this.button7.Text = "ล้างข้อมูล";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -1287,20 +1304,6 @@
             this.button9.Text = "เพิ่ม";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button9.UseVisualStyleBackColor = true;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSave.Location = new System.Drawing.Point(604, 238);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(105, 66);
-            this.btnSave.TabIndex = 320;
-            this.btnSave.Text = "เสร็จสิ้น";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // DataGridSL
             // 
@@ -1329,7 +1332,7 @@
             this.GroupBox2.Controls.Add(this.Label20);
             this.GroupBox2.Controls.Add(this.Label24);
             this.GroupBox2.Controls.Add(this.Label23);
-            this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.GroupBox2.ForeColor = System.Drawing.Color.Black;
             this.GroupBox2.Location = new System.Drawing.Point(404, 82);
             this.GroupBox2.Name = "GroupBox2";
@@ -1545,7 +1548,7 @@
             this.GroupBox1.Controls.Add(this.PictureBox11);
             this.GroupBox1.Controls.Add(this.Label1);
             this.GroupBox1.Controls.Add(this.txtc1);
-            this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.GroupBox1.ForeColor = System.Drawing.Color.Black;
             this.GroupBox1.Location = new System.Drawing.Point(2, 83);
             this.GroupBox1.Name = "GroupBox1";
@@ -1830,7 +1833,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.Button btnSave;
         internal System.Windows.Forms.DataGridView DataGridSL;
         internal System.Windows.Forms.GroupBox GroupBox2;
         internal System.Windows.Forms.PictureBox PictureBox19;
@@ -1871,10 +1873,8 @@
         internal System.Windows.Forms.TextBox id1;
         internal System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button7;
         internal System.Windows.Forms.GroupBox groupBox3;
         internal System.Windows.Forms.TextBox txtId;
         internal System.Windows.Forms.ComboBox comboBox1;
@@ -1909,8 +1909,6 @@
         internal System.Windows.Forms.TextBox txtAllDisc;
         internal System.Windows.Forms.Label txtDis;
         internal System.Windows.Forms.GroupBox GroupBox5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         internal System.Windows.Forms.DataGridView DataGridSale;
         internal System.Windows.Forms.Label LabelNum;
         internal System.Windows.Forms.Label label15;
@@ -1947,12 +1945,17 @@
         internal System.Windows.Forms.PictureBox pictureBox12;
         internal System.Windows.Forms.Label label27;
         internal System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
         internal System.Windows.Forms.DataGridView dataGridView1;
         internal System.Windows.Forms.Label label18;
         internal System.Windows.Forms.Label label25;
         internal System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
 
     }
 }

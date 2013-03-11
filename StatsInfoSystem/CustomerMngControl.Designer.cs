@@ -502,7 +502,7 @@
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(243, 129);
@@ -613,7 +613,7 @@
             this.customerGrp_list.FormattingEnabled = true;
             this.customerGrp_list.Location = new System.Drawing.Point(3, 197);
             this.customerGrp_list.Name = "customerGrp_list";
-            this.customerGrp_list.Size = new System.Drawing.Size(448, 303);
+            this.customerGrp_list.Size = new System.Drawing.Size(555, 303);
             this.customerGrp_list.TabIndex = 0;
             this.customerGrp_list.ValueMember = "Id";
             // 
@@ -626,7 +626,7 @@
             this.groupBox3.Controls.Add(this.textBox33);
             this.groupBox3.Controls.Add(this.textBox34);
             this.groupBox3.Controls.Add(this.label43);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(250, 4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(308, 187);
@@ -714,7 +714,7 @@
             this.groupBox4.Controls.Add(this.button18);
             this.groupBox4.Controls.Add(this.textBox37);
             this.groupBox4.Controls.Add(this.label45);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(241, 187);
@@ -888,7 +888,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(3, 197);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(448, 303);
+            this.listBox1.Size = new System.Drawing.Size(555, 303);
             this.listBox1.TabIndex = 0;
             this.listBox1.ValueMember = "Id";
             // 
@@ -901,7 +901,7 @@
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(250, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(308, 187);
@@ -989,7 +989,7 @@
             this.groupBox5.Controls.Add(this.button13);
             this.groupBox5.Controls.Add(this.textBox4);
             this.groupBox5.Controls.Add(this.label14);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(3, 3);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(241, 187);
