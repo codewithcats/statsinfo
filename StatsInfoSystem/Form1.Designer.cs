@@ -48,6 +48,8 @@
             this.oLAPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.c1OlapPrintDocument1 = new C1.Win.Olap.C1OlapPrintDocument();
+            this.descriptiveMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.regressionMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +101,7 @@
             // ระบบสารสนเทศทางสถตToolStripMenuItem
             // 
             this.ระบบสารสนเทศทางสถตToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.descriptiveMenu,
             this.วเคราะหการขายToolStripMenuItem,
             this.วเคราะหลกคาToolStripMenuItem});
             this.ระบบสารสนเทศทางสถตToolStripMenuItem.Name = "ระบบสารสนเทศทางสถตToolStripMenuItem";
@@ -108,15 +111,16 @@
             // วเคราะหการขายToolStripMenuItem
             // 
             this.วเคราะหการขายToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.predictSaleMenu});
+            this.predictSaleMenu,
+            this.regressionMenu});
             this.วเคราะหการขายToolStripMenuItem.Name = "วเคราะหการขายToolStripMenuItem";
-            this.วเคราะหการขายToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.วเคราะหการขายToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.วเคราะหการขายToolStripMenuItem.Text = "วิเคราะห์การขาย";
             // 
             // predictSaleMenu
             // 
             this.predictSaleMenu.Name = "predictSaleMenu";
-            this.predictSaleMenu.Size = new System.Drawing.Size(178, 22);
+            this.predictSaleMenu.Size = new System.Drawing.Size(181, 22);
             this.predictSaleMenu.Text = "พยากรณ์ยอดขายสินค้า";
             this.predictSaleMenu.Click += new System.EventHandler(this.predictSaleMenu_Click);
             // 
@@ -126,7 +130,7 @@
             this.customerImportantMenuItem,
             this.customerGroupMenu});
             this.วเคราะหลกคาToolStripMenuItem.Name = "วเคราะหลกคาToolStripMenuItem";
-            this.วเคราะหลกคาToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.วเคราะหลกคาToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.วเคราะหลกคาToolStripMenuItem.Text = "วิเคราะห์ลูกค้า";
             // 
             // customerImportantMenuItem
@@ -198,6 +202,7 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.AutoScroll = true;
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 24);
             this.mainPanel.Name = "mainPanel";
@@ -207,6 +212,20 @@
             // c1OlapPrintDocument1
             // 
             this.c1OlapPrintDocument1.DocumentName = "C1Olap Report";
+            // 
+            // descriptiveMenu
+            // 
+            this.descriptiveMenu.Name = "descriptiveMenu";
+            this.descriptiveMenu.Size = new System.Drawing.Size(171, 22);
+            this.descriptiveMenu.Text = "วิเคราะห์ข้อมูลเบื้องต้น";
+            this.descriptiveMenu.Click += new System.EventHandler(this.descriptiveMenu_Click);
+            // 
+            // regressionMenu
+            // 
+            this.regressionMenu.Name = "regressionMenu";
+            this.regressionMenu.Size = new System.Drawing.Size(181, 22);
+            this.regressionMenu.Text = "ตัวแปรที่มีผลต่อยอดขาย";
+            this.regressionMenu.Click += new System.EventHandler(this.regressionMenu_Click);
             // 
             // Form1
             // 
@@ -247,6 +266,8 @@
         private System.Windows.Forms.ToolStripMenuItem customerGroupMenu;
         private System.Windows.Forms.ToolStripMenuItem oLAPToolStripMenuItem;
         private C1.Win.Olap.C1OlapPrintDocument c1OlapPrintDocument1;
+        private System.Windows.Forms.ToolStripMenuItem descriptiveMenu;
+        private System.Windows.Forms.ToolStripMenuItem regressionMenu;
 
 
 

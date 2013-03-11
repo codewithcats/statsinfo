@@ -21,6 +21,9 @@ namespace StatsInfoSystem
         private ConfigControl dbConfigControl;
         private PcaControl pcaControl;
         private ClusterControl clusterControl;
+        private DescriptiveControl descriptiveControl;
+        private RegControl regControl;
+        private OlapControl olapControl;
         public Form1()
         {
             InitializeComponent();
@@ -207,7 +210,23 @@ TSMODEL
 
         private void oLAPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+            DisplayControl(loadingIndicator);
+            if (olapControl == null) olapControl = new OlapControl();
+            DisplayControl(olapControl);
+        }
+
+        private void descriptiveMenu_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loadingIndicator);
+            if (descriptiveControl == null) descriptiveControl = new DescriptiveControl();
+            DisplayControl(descriptiveControl);
+        }
+
+        private void regressionMenu_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loadingIndicator);
+            if (regControl == null) regControl = new RegControl();
+            DisplayControl(regControl);
         }
     }
 }

@@ -142,11 +142,17 @@
     <Compile Include="Form_Product.designer.cs">
       <DependentUpon>Form_Product.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm10_3Reg.cs">
+    <Compile Include="OlapControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Frm10_3Reg.designer.cs">
-      <DependentUpon>Frm10_3Reg.cs</DependentUpon>
+    <Compile Include="OlapControl.Designer.cs">
+      <DependentUpon>OlapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegControl.designer.cs">
+      <DependentUpon>RegControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm10_4PCA.cs">
       <SubType>UserControl</SubType>
@@ -154,11 +160,11 @@
     <Compile Include="Frm10_4PCA.designer.cs">
       <DependentUpon>Frm10_4PCA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm10_6Descrip_Cus.cs">
+    <Compile Include="DescriptiveControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Frm10_6Descrip_Cus.designer.cs">
-      <DependentUpon>Frm10_6Descrip_Cus.cs</DependentUpon>
+    <Compile Include="DescriptiveControl.designer.cs">
+      <DependentUpon>DescriptiveControl.cs</DependentUpon>
     </Compile>
     <Compile Include="LoadingIndicator.cs">
       <SubType>UserControl</SubType>
@@ -242,14 +248,17 @@
     <EmbeddedResource Include="Form_Product.resx">
       <DependentUpon>Form_Product.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm10_3Reg.resx">
-      <DependentUpon>Frm10_3Reg.cs</DependentUpon>
+    <EmbeddedResource Include="OlapControl.resx">
+      <DependentUpon>OlapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegControl.resx">
+      <DependentUpon>RegControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm10_4PCA.resx">
       <DependentUpon>Frm10_4PCA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm10_6Descrip_Cus.resx">
-      <DependentUpon>Frm10_6Descrip_Cus.cs</DependentUpon>
+    <EmbeddedResource Include="DescriptiveControl.resx">
+      <DependentUpon>DescriptiveControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoadingIndicator.resx">
       <DependentUpon>LoadingIndicator.cs</DependentUpon>
@@ -289,7 +298,6 @@
     <EmbeddedResource Include="SaleMngControl.resx">
       <DependentUpon>SaleMngControl.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

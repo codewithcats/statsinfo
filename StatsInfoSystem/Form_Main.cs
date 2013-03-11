@@ -147,12 +147,12 @@ namespace StatsInfoSystem
 
         private void basicAnalysisMenu_Click(object sender, EventArgs e)
         {
-            showPage(new Frm10_6Descrip_Cus());
+            showPage(new DescriptiveControl());
         }
 
         private void sellAnalysisMenu_Click(object sender, EventArgs e)
         {
-            showPage(new Frm10_3Reg());
+            showPage(new RegControl());
         }
 
         private void ระบบสอบถามและแสดงสารสนเทศสำหรบผบรหารToolStripMenuItem_Click(object sender, EventArgs e)

@@ -85,9 +85,50 @@ GRAPH
                     chart.ExportChart(img, "JPEG File");
                     pictureBox1.ImageLocation = img;
                 }
+                if (item.Label.Equals("Descriptive Statistic"))
+                {
+                    var table = item.GetTableOleObject();
+                    if (table == null) continue;
+                    //var pivot = (spsspvt.PivotTable)table;
+                    
+                }
             }
+            spsswin.ISpssDataDoc dataDoc = spss.OpenDataDoc(output3);
+            var data = dataDoc.GetTextData("Id", "QCL_1", 1, dataDoc.GetNumberOfCases());
+            using (var context = new StsContext())
+            {
+                List<Customer> customers = new List<Customer>();
+                for (int j = 0; j < dataDoc.GetNumberOfCases(); j++)
+                {
+                    string id = data[0, j];
+                    var customer = context.Customers.Find(Convert.ToInt32(id));
+                    if (customer != null) customers.Add(customer);
+                }
+                customerList.DataSource = customers;
+            }
+            
             if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
             spss.Quit();
+        }
+
+        private void label83_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label110_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label185_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label168_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

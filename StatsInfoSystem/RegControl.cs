@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace StatsInfoSystem
 {
-    public partial class Frm10_3Reg : UserControl
+    public partial class RegControl : UserControl
     {
-        public Frm10_3Reg()
+        public RegControl()
         {
             InitializeComponent();
         }
@@ -52,6 +52,46 @@ namespace StatsInfoSystem
         {
             textBox5.Clear();
             textBox1.Clear();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void RegControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label61_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label59_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label60_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox7_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

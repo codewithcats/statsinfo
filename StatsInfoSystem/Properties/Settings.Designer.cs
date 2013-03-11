@@ -33,5 +33,16 @@ namespace StatsInfoSystem.Properties {
                 return ((string)(this["StatsInfoSystem_StsContextConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAMBKIN\\SQLEXPRESS;Initial Catalog=StatsInfoSystem.StsContext;Integra" +
+            "ted Security=True")]
+        public string StatsInfoSystem_StsContextConnectionString1 {
+            get {
+                return ((string)(this["StatsInfoSystem_StsContextConnectionString1"]));
+            }
+        }
     }
 }

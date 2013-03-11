@@ -107,5 +107,30 @@ SAVE OUTFILE='{1}'.
             reportViewer1.Refresh();
             tabControl1.SelectedIndex = 1;
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label101_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label199_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
