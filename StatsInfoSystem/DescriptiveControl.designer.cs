@@ -437,6 +437,8 @@
             this.label409 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.mainTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -453,6 +455,8 @@
             this.tabPage9.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.tabPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -479,7 +483,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "ลูกค้า",
-            "สินค้า"});
+            "สินค้า",
+            "ทั้งหมด"});
             this.comboBox1.Location = new System.Drawing.Point(56, 23);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -617,6 +622,7 @@
             // customerGroup_tabpage
             // 
             this.customerGroup_tabpage.AutoScroll = true;
+            this.customerGroup_tabpage.Controls.Add(this.pictureBox1);
             this.customerGroup_tabpage.Controls.Add(this.label14);
             this.customerGroup_tabpage.Controls.Add(this.label13);
             this.customerGroup_tabpage.Controls.Add(this.label149);
@@ -975,7 +981,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label5.Location = new System.Drawing.Point(283, 277);
+            this.label5.Location = new System.Drawing.Point(276, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 13);
             this.label5.TabIndex = 2;
@@ -994,6 +1000,7 @@
             // tabPage4
             // 
             this.tabPage4.AutoScroll = true;
+            this.tabPage4.Controls.Add(this.pictureBox2);
             this.tabPage4.Controls.Add(this.label38);
             this.tabPage4.Controls.Add(this.label126);
             this.tabPage4.Controls.Add(this.label39);
@@ -4685,6 +4692,24 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(162, 316);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(398, 243);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 174;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(168, 320);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(398, 243);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 209;
+            this.pictureBox2.TabStop = false;
+            // 
             // DescriptiveControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4721,6 +4746,8 @@
             this.tabPage10.PerformLayout();
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5136,5 +5163,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
