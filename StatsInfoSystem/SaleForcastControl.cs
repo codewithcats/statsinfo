@@ -507,5 +507,10 @@ ACF VARIABLES=amount
             if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
             spss.Quit();
         }
+
+        private void arimaRadio_CheckedChanged(object sender, EventArgs e)
+        {
+            panel3.Visible = arimaRadio.Checked;
+        }
     }
 }

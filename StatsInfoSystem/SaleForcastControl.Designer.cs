@@ -463,6 +463,7 @@
             this.arimaRadio.TabIndex = 3;
             this.arimaRadio.Text = "ARIMA";
             this.arimaRadio.UseVisualStyleBackColor = true;
+            this.arimaRadio.CheckedChanged += new System.EventHandler(this.arimaRadio_CheckedChanged);
             // 
             // winterRadio
             // 
@@ -492,6 +493,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(271, 98);
             this.panel3.TabIndex = 8;
+            this.panel3.Visible = false;
             // 
             // textBox7
             // 
