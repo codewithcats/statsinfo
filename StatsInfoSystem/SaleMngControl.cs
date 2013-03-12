@@ -22,14 +22,14 @@ namespace StatsInfoSystem
 
         private void RefreshSale(StsContext context)
         {
-            sale_list.DataSource = context.Sales.ToArray();
+            //sale_list.DataSource = context.Sales.ToArray();
         }
 
         private void browse_btn_Click(object sender, EventArgs e)
         {
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                importFileName_txtBox.Text = openFileDialog.FileName;
+                //importFileName_txtBox.Text = openFileDialog.FileName;
             }
         }
 
