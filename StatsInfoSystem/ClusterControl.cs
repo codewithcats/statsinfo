@@ -303,5 +303,20 @@ GRAPH
         {
 
         }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label49_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label55_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
