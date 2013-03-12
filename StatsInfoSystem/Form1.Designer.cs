@@ -45,14 +45,15 @@
             this.spssText_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timeSeriesSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testSaveSavToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oLAPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.เกยวกบผใชงานระบบToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.กลบหนาแรกToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dbConfigMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.oLAPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ออกจากระบบToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.c1OlapPrintDocument1 = new C1.Win.Olap.C1OlapPrintDocument();
-            this.เกยวกบผใชงานระบบToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ออกจากระบบToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.กลบหนาแรกToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factorMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,9 +79,10 @@
             this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ขอมลลกคาToolStripMenuItem,
             this.saleMenuItem,
-            this.productMenuItem});
+            this.productMenuItem,
+            this.factorMenu});
             this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Name = "ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem";
-            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Size = new System.Drawing.Size(184, 20);
+            this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Size = new System.Drawing.Size(171, 20);
             this.ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem.Text = "ระบบเก็บรวบรวมและปรับปรุงข้อมูล";
             // 
             // ขอมลลกคาToolStripMenuItem
@@ -111,13 +113,13 @@
             this.วเคราะหการขายToolStripMenuItem,
             this.วเคราะหลกคาToolStripMenuItem});
             this.ระบบสารสนเทศทางสถตToolStripMenuItem.Name = "ระบบสารสนเทศทางสถตToolStripMenuItem";
-            this.ระบบสารสนเทศทางสถตToolStripMenuItem.Size = new System.Drawing.Size(132, 20);
+            this.ระบบสารสนเทศทางสถตToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.ระบบสารสนเทศทางสถตToolStripMenuItem.Text = "ระบบสารสนเทศทางสถิติ";
             // 
             // descriptiveMenu
             // 
             this.descriptiveMenu.Name = "descriptiveMenu";
-            this.descriptiveMenu.Size = new System.Drawing.Size(179, 22);
+            this.descriptiveMenu.Size = new System.Drawing.Size(171, 22);
             this.descriptiveMenu.Text = "วิเคราะห์ข้อมูลเบื้องต้น";
             this.descriptiveMenu.Click += new System.EventHandler(this.descriptiveMenu_Click);
             // 
@@ -127,20 +129,20 @@
             this.predictSaleMenu,
             this.regressionMenu});
             this.วเคราะหการขายToolStripMenuItem.Name = "วเคราะหการขายToolStripMenuItem";
-            this.วเคราะหการขายToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.วเคราะหการขายToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.วเคราะหการขายToolStripMenuItem.Text = "วิเคราะห์การขาย";
             // 
             // predictSaleMenu
             // 
             this.predictSaleMenu.Name = "predictSaleMenu";
-            this.predictSaleMenu.Size = new System.Drawing.Size(187, 22);
+            this.predictSaleMenu.Size = new System.Drawing.Size(181, 22);
             this.predictSaleMenu.Text = "พยากรณ์ยอดขายสินค้า";
             this.predictSaleMenu.Click += new System.EventHandler(this.predictSaleMenu_Click);
             // 
             // regressionMenu
             // 
             this.regressionMenu.Name = "regressionMenu";
-            this.regressionMenu.Size = new System.Drawing.Size(187, 22);
+            this.regressionMenu.Size = new System.Drawing.Size(181, 22);
             this.regressionMenu.Text = "ตัวแปรที่มีผลต่อยอดขาย";
             this.regressionMenu.Click += new System.EventHandler(this.regressionMenu_Click);
             // 
@@ -150,7 +152,7 @@
             this.customerImportantMenuItem,
             this.customerGroupMenu});
             this.วเคราะหลกคาToolStripMenuItem.Name = "วเคราะหลกคาToolStripMenuItem";
-            this.วเคราะหลกคาToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.วเคราะหลกคาToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.วเคราะหลกคาToolStripMenuItem.Text = "วิเคราะห์ลูกค้า";
             // 
             // customerImportantMenuItem
@@ -180,23 +182,42 @@
             // spssText_MenuItem
             // 
             this.spssText_MenuItem.Name = "spssText_MenuItem";
-            this.spssText_MenuItem.Size = new System.Drawing.Size(180, 22);
+            this.spssText_MenuItem.Size = new System.Drawing.Size(179, 22);
             this.spssText_MenuItem.Text = "ทดสอบการติดต่อ SPSS";
             this.spssText_MenuItem.Click += new System.EventHandler(this.spssText_MenuItem_Click);
             // 
             // timeSeriesSimpleToolStripMenuItem
             // 
             this.timeSeriesSimpleToolStripMenuItem.Name = "timeSeriesSimpleToolStripMenuItem";
-            this.timeSeriesSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.timeSeriesSimpleToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.timeSeriesSimpleToolStripMenuItem.Text = "Time Series(Simple)";
             this.timeSeriesSimpleToolStripMenuItem.Click += new System.EventHandler(this.timeSeriesSimpleToolStripMenuItem_Click);
             // 
             // testSaveSavToolStripMenuItem
             // 
             this.testSaveSavToolStripMenuItem.Name = "testSaveSavToolStripMenuItem";
-            this.testSaveSavToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testSaveSavToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.testSaveSavToolStripMenuItem.Text = "test save sav";
             this.testSaveSavToolStripMenuItem.Click += new System.EventHandler(this.testSaveSavToolStripMenuItem_Click);
+            // 
+            // oLAPToolStripMenuItem
+            // 
+            this.oLAPToolStripMenuItem.Name = "oLAPToolStripMenuItem";
+            this.oLAPToolStripMenuItem.Size = new System.Drawing.Size(232, 20);
+            this.oLAPToolStripMenuItem.Text = "ระบบสอบถามและแสดงสารสนเทศสำหรับผู้บริหาร";
+            this.oLAPToolStripMenuItem.Click += new System.EventHandler(this.oLAPToolStripMenuItem_Click);
+            // 
+            // เกยวกบผใชงานระบบToolStripMenuItem
+            // 
+            this.เกยวกบผใชงานระบบToolStripMenuItem.Name = "เกยวกบผใชงานระบบToolStripMenuItem";
+            this.เกยวกบผใชงานระบบToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
+            this.เกยวกบผใชงานระบบToolStripMenuItem.Text = "เกี่ยวกับผู้ใช้งานระบบ";
+            // 
+            // กลบหนาแรกToolStripMenuItem
+            // 
+            this.กลบหนาแรกToolStripMenuItem.Name = "กลบหนาแรกToolStripMenuItem";
+            this.กลบหนาแรกToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.กลบหนาแรกToolStripMenuItem.Text = "กลับหน้าแรก";
             // 
             // configToolStripMenuItem
             // 
@@ -209,16 +230,15 @@
             // dbConfigMenu
             // 
             this.dbConfigMenu.Name = "dbConfigMenu";
-            this.dbConfigMenu.Size = new System.Drawing.Size(175, 22);
+            this.dbConfigMenu.Size = new System.Drawing.Size(171, 22);
             this.dbConfigMenu.Text = "การเชื่อมต่อฐานข้อมูล";
             this.dbConfigMenu.Click += new System.EventHandler(this.dbConfigMenu_Click);
             // 
-            // oLAPToolStripMenuItem
+            // ออกจากระบบToolStripMenuItem
             // 
-            this.oLAPToolStripMenuItem.Name = "oLAPToolStripMenuItem";
-            this.oLAPToolStripMenuItem.Size = new System.Drawing.Size(247, 20);
-            this.oLAPToolStripMenuItem.Text = "ระบบสอบถามและแสดงสารสนเทศสำหรับผู้บริหาร";
-            this.oLAPToolStripMenuItem.Click += new System.EventHandler(this.oLAPToolStripMenuItem_Click);
+            this.ออกจากระบบToolStripMenuItem.Name = "ออกจากระบบToolStripMenuItem";
+            this.ออกจากระบบToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.ออกจากระบบToolStripMenuItem.Text = "ออกจากระบบ";
             // 
             // mainPanel
             // 
@@ -233,23 +253,12 @@
             // 
             this.c1OlapPrintDocument1.DocumentName = "C1Olap Report";
             // 
-            // เกยวกบผใชงานระบบToolStripMenuItem
+            // factorMenu
             // 
-            this.เกยวกบผใชงานระบบToolStripMenuItem.Name = "เกยวกบผใชงานระบบToolStripMenuItem";
-            this.เกยวกบผใชงานระบบToolStripMenuItem.Size = new System.Drawing.Size(121, 20);
-            this.เกยวกบผใชงานระบบToolStripMenuItem.Text = "เกี่ยวกับผู้ใช้งานระบบ";
-            // 
-            // ออกจากระบบToolStripMenuItem
-            // 
-            this.ออกจากระบบToolStripMenuItem.Name = "ออกจากระบบToolStripMenuItem";
-            this.ออกจากระบบToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.ออกจากระบบToolStripMenuItem.Text = "ออกจากระบบ";
-            // 
-            // กลบหนาแรกToolStripMenuItem
-            // 
-            this.กลบหนาแรกToolStripMenuItem.Name = "กลบหนาแรกToolStripMenuItem";
-            this.กลบหนาแรกToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.กลบหนาแรกToolStripMenuItem.Text = "กลับหน้าแรก";
+            this.factorMenu.Name = "factorMenu";
+            this.factorMenu.Size = new System.Drawing.Size(163, 22);
+            this.factorMenu.Text = "ข้อมูลปัจจัยภายนอก";
+            this.factorMenu.Click += new System.EventHandler(this.factorMenu_Click);
             // 
             // Form1
             // 
@@ -295,6 +304,7 @@
         private System.Windows.Forms.ToolStripMenuItem เกยวกบผใชงานระบบToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ออกจากระบบToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem กลบหนาแรกToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem factorMenu;
 
 
 

@@ -24,6 +24,7 @@ namespace StatsInfoSystem
         private DescriptiveControl descriptiveControl;
         private RegControl regControl;
         private OLAP olapForm;
+        private FactorMngControl factorControl;
         public Form1()
         {
             InitializeComponent();
@@ -226,6 +227,13 @@ TSMODEL
             DisplayControl(loadingIndicator);
             if (regControl == null) regControl = new RegControl();
             DisplayControl(regControl);
+        }
+
+        private void factorMenu_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loadingIndicator);
+            if (factorControl == null) factorControl = new FactorMngControl();
+            DisplayControl(factorControl);
         }
     }
 }
