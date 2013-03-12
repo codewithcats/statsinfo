@@ -1311,7 +1311,7 @@
             this.DataGridSL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridSL.Location = new System.Drawing.Point(3, 21);
             this.DataGridSL.Name = "DataGridSL";
-            this.DataGridSL.Size = new System.Drawing.Size(544, 282);
+            this.DataGridSL.Size = new System.Drawing.Size(574, 282);
             this.DataGridSL.TabIndex = 300;
             // 
             // GroupBox2
