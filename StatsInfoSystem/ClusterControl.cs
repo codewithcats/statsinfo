@@ -14,7 +14,10 @@ namespace StatsInfoSystem
         public ClusterControl()
         {
             InitializeComponent();
+            comboBox6.SelectedIndex = 0;
         }
+
+        private List<Customer>[] customers;
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -270,14 +273,19 @@ GRAPH
             var data = dataDoc.GetTextData("Id", "QCL_1", 1, dataDoc.GetNumberOfCases());
             using (var context = new StsContext())
             {
-                List<Customer> customers = new List<Customer>();
+                customers = new List<Customer>[4];
+                customers[0] = new List<Customer>();
+                customers[1] = new List<Customer>();
+                customers[2] = new List<Customer>();
+                customers[3] = new List<Customer>();
                 for (int j = 0; j < dataDoc.GetNumberOfCases(); j++)
                 {
+                    int group = Convert.ToInt32(data[17, j]);
                     string id = data[0, j];
                     var customer = context.Customers.Find(Convert.ToInt32(id));
-                    if (customer != null) customers.Add(customer);
+                    if (customer != null) customers[group-1].Add(customer);
                 }
-                customerList.DataSource = customers;
+                customerList.DataSource = customers[0];
             }
             
             if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
@@ -317,6 +325,14 @@ GRAPH
         private void label55_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (customers != null && customers[comboBox6.SelectedIndex] != null)
+            {
+                customerList.DataSource = customers[comboBox6.SelectedIndex];
+            }
         }
     }
 }

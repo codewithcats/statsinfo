@@ -2724,6 +2724,7 @@
             // 
             // customerList
             // 
+            this.customerList.DisplayMember = "Name";
             this.customerList.FormattingEnabled = true;
             this.customerList.Location = new System.Drawing.Point(49, 67);
             this.customerList.Name = "customerList";
@@ -2742,6 +2743,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(121, 21);
             this.comboBox6.TabIndex = 1;
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // label6
             // 
