@@ -330,7 +330,7 @@
             // 
             this.panel4.Controls.Add(this.comboBox7);
             this.panel4.Controls.Add(this.label170);
-            this.panel4.Location = new System.Drawing.Point(45, 46);
+            this.panel4.Location = new System.Drawing.Point(48, 46);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 37);
             this.panel4.TabIndex = 8;
@@ -362,7 +362,7 @@
             // holtRadio
             // 
             this.holtRadio.AutoSize = true;
-            this.holtRadio.Location = new System.Drawing.Point(30, 27);
+            this.holtRadio.Location = new System.Drawing.Point(33, 27);
             this.holtRadio.Name = "holtRadio";
             this.holtRadio.Size = new System.Drawing.Size(157, 17);
             this.holtRadio.TabIndex = 1;
@@ -373,7 +373,7 @@
             // 
             this.simpleRadio.AutoSize = true;
             this.simpleRadio.Checked = true;
-            this.simpleRadio.Location = new System.Drawing.Point(30, 4);
+            this.simpleRadio.Location = new System.Drawing.Point(33, 4);
             this.simpleRadio.Name = "simpleRadio";
             this.simpleRadio.Size = new System.Drawing.Size(143, 17);
             this.simpleRadio.TabIndex = 0;
