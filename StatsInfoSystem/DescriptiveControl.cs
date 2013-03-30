@@ -127,6 +127,7 @@ CTABLES
  
             var outputItems = spss.GetDesignatedOutputDoc().Items;
             var groupBarCount = 0;
+            var groupIdCount = 0;
             for (int i = 0; i < outputItems.Count; i++)
             {
                 var item = outputItems.GetItem(i);
@@ -159,6 +160,16 @@ CTABLES
                     string img = "bar_of_count_by_pcatid-" + System.DateTime.Now.Ticks.ToString() + ".jpg";
                     chart.ExportChart(img, "JPEG File");
                     pictureBox4.ImageLocation = img;
+                }
+                else if (item.Label.Equals("Group_Id"))
+                {
+                    if (groupIdCount++ == 0)
+                    {
+                        var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                        var dataCells = table.DataCellArray();
+
+                        label243.Text = dataCells.ValueAt[0, 0];
+                    }
                 }
             }
 
