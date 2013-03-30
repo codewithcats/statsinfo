@@ -244,15 +244,15 @@
             this.label199 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fac11DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reportPCABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportPCADataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportPCA_DataSet1 = new StatsInfoSystem.ReportPCA_DataSet();
             this.label166 = new System.Windows.Forms.Label();
             this.reportPCATableAdapter = new StatsInfoSystem.ReportPCA_DataSetTableAdapters.ReportPCATableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fac11DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -2565,37 +2565,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(492, 150);
             this.dataGridView1.TabIndex = 91;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "ไอดี";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 40;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "ชื่อ";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // fac11DataGridViewTextBoxColumn
-            // 
-            this.fac11DataGridViewTextBoxColumn.DataPropertyName = "fac1_1";
-            this.fac11DataGridViewTextBoxColumn.HeaderText = "คะแนน";
-            this.fac11DataGridViewTextBoxColumn.Name = "fac11DataGridViewTextBoxColumn";
-            this.fac11DataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // rankDataGridViewTextBoxColumn
-            // 
-            this.rankDataGridViewTextBoxColumn.DataPropertyName = "rank";
-            this.rankDataGridViewTextBoxColumn.HeaderText = "ลำดับ";
-            this.rankDataGridViewTextBoxColumn.Name = "rankDataGridViewTextBoxColumn";
-            this.rankDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rankDataGridViewTextBoxColumn.Width = 60;
-            // 
             // reportPCABindingSource
             // 
             this.reportPCABindingSource.DataMember = "ReportPCA";
@@ -2624,6 +2593,37 @@
             // reportPCATableAdapter
             // 
             this.reportPCATableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "รหัสลูกค้า";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "ชื่อ";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // fac11DataGridViewTextBoxColumn
+            // 
+            this.fac11DataGridViewTextBoxColumn.DataPropertyName = "fac1_1";
+            this.fac11DataGridViewTextBoxColumn.HeaderText = "คะแนน";
+            this.fac11DataGridViewTextBoxColumn.Name = "fac11DataGridViewTextBoxColumn";
+            this.fac11DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rankDataGridViewTextBoxColumn
+            // 
+            this.rankDataGridViewTextBoxColumn.DataPropertyName = "rank";
+            this.rankDataGridViewTextBoxColumn.HeaderText = "ลำดับ";
+            this.rankDataGridViewTextBoxColumn.Name = "rankDataGridViewTextBoxColumn";
+            this.rankDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rankDataGridViewTextBoxColumn.Width = 60;
             // 
             // PcaControl
             // 
@@ -2877,10 +2877,6 @@
         private ReportPCA_DataSet reportPCA_DataSet1;
         private System.Windows.Forms.BindingSource reportPCABindingSource;
         private ReportPCA_DataSetTableAdapters.ReportPCATableAdapter reportPCATableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fac11DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rankDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label51;
@@ -2888,6 +2884,10 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fac11DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rankDataGridViewTextBoxColumn;
 
     }
 }
