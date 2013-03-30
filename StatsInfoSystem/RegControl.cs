@@ -36,13 +36,23 @@ private  int descriptiveCount;
             checkBox5.Checked = true;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void run_regression(object sender, EventArgs e)
         {
             SpssBridge.SpssBridge bridge = new SpssBridge.SpssBridge();
             spsswinLib.Application16 spss = (spsswinLib.Application16)bridge.GetSpss();
             var key = System.DateTime.Now.Ticks.ToString();
-            string output = AppDomain.CurrentDomain.BaseDirectory + "reg_1-" + key + ".sav";
+            string output = AppDomain.CurrentDomain.BaseDirectory + "reg_step_1-" + key + ".sav";
             string syntax = @"
+GET DATA 
+/TYPE=ODBC 
+/CONNECT= {0}
+/SQL = "" SELECT * FROM [StatsInfoSystem.StsContext].[dbo].[RegStep]"".
+SAVE OUTFILE='{1}'.
+";
+            syntax = String.Format(syntax, Config.SPSS_CONNECT, output);
+            spss.ExecuteCommands(syntax, true);
+            spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
+            syntax = @"
 GET
     FILE='{0}'.
 
@@ -61,12 +71,12 @@ REGRESSION
 SAVE OUTFILE='{1}'.
 
 ";
-            string input = AppDomain.CurrentDomain.BaseDirectory + "Regstep.sav";
-            syntax = String.Format(syntax, input, output);
+            string output2 = AppDomain.CurrentDomain.BaseDirectory + "reg_step_2-" + key + ".sav";
+            syntax = String.Format(syntax, output, output2);
             spss.ExecuteCommands(syntax, true);
             spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
 
-            string syntax2 = @"
+            syntax = @"
 GET
     FILE='{0}'.
 EXAMINE VARIABLES=RES_1
@@ -82,8 +92,8 @@ GRAPH
   /MISSING=LISTWISE.
 
 ";
-            syntax2 = string.Format(syntax2, input);
-            spss.ExecuteCommands(syntax2, true);
+            syntax = string.Format(syntax, output2);
+            spss.ExecuteCommands(syntax, true);
             var outputItems = spss.GetDesignatedOutputDoc().Items;
             for (int i = 0; i < outputItems.Count; i++)
             {
@@ -106,7 +116,8 @@ GRAPH
             if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
             tabControl1.Visible = true;
-            }
+        }
+
           private void button6_Click(object sender, EventArgs e)
         {
             
