@@ -11,10 +11,13 @@ namespace StatsInfoSystem
 {
     public partial class RegControl : UserControl
     {
-private  int descriptiveCount;
         public RegControl()
         {
             InitializeComponent();
+            start_month_cmb.SelectedIndex = 0;
+            start_year_cmb.SelectedIndex = 0;
+            end_month_cmb.SelectedIndex = 11;
+            end_year_cmb.SelectedIndex = end_year_cmb.Items.Count - 1;
         }
 
         private void label17_Click(object sender, EventArgs e)
@@ -46,10 +49,14 @@ private  int descriptiveCount;
 GET DATA 
 /TYPE=ODBC 
 /CONNECT= {0}
-/SQL = "" SELECT * FROM [StatsInfoSystem.StsContext].[dbo].[RegStep]"".
+/SQL = "" SELECT * FROM [StatsInfoSystem.StsContext].[dbo].[RegStep] WHERE month >= '{2}-{3}-1' AND month <= '{4}-{5}-1'"".
 SAVE OUTFILE='{1}'.
 ";
-            syntax = String.Format(syntax, Config.SPSS_CONNECT, output);
+            var startMonth = start_month_cmb.SelectedIndex + 1;
+            var startYear = start_year_cmb.SelectedItem;
+            var endMonth = end_month_cmb.SelectedIndex + 1;
+            var endYear = end_year_cmb.SelectedItem;
+            syntax = String.Format(syntax, Config.SPSS_CONNECT, output, startYear, startMonth, endYear, endMonth);
             spss.ExecuteCommands(syntax, true);
             spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
             syntax = @"
