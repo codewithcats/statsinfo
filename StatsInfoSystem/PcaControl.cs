@@ -87,7 +87,7 @@ SAVE OUTFILE='{1}'.
                     label18.Text = dataCells.ValueAt[0, 1];
                     label19.Text = dataCells.ValueAt[0, 2];
                     label20.Text = dataCells.ValueAt[0, 3];
-                    label21.Text = dataCells.ValueAt[0, 4];
+                    label21.Text = string.Format("{0:N2}", Convert.ToDecimal(dataCells.ValueAt[0, 4]));
 
                     label24.Text = dataCells.ValueAt[1, 0];
                     label31.Text = dataCells.ValueAt[1, 1];

@@ -305,10 +305,10 @@
             this.txtR2 = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label163 = new System.Windows.Forms.Label();
+            this.sale_eq_label = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -836,7 +836,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(663, 22);
             this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "13696858.47 -  169822.984 * ProductIndex";
+            this.textBox4.Text = "...";
             // 
             // label11
             // 
@@ -3044,11 +3044,11 @@
             // tabPage4
             // 
             this.tabPage4.AutoScroll = true;
+            this.tabPage4.Controls.Add(this.sale_eq_label);
             this.tabPage4.Controls.Add(this.GroupBox12);
             this.tabPage4.Controls.Add(this.GroupBox7);
             this.tabPage4.Controls.Add(this.label30);
             this.tabPage4.Controls.Add(this.label32);
-            this.tabPage4.Controls.Add(this.textBox2);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(919, 419);
@@ -3241,18 +3241,6 @@
             this.label32.TabIndex = 19;
             this.label32.Text = "สมการแสดงความสัมพันธ์ระหว่างยอดขายสินค้าโดยรวมกับปัจจัยภายนอกที่เกี่ยวข้อง";
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(361, 82);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(333, 81);
-            this.textBox2.TabIndex = 18;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage4);
@@ -3291,6 +3279,15 @@
             this.label163.Name = "label163";
             this.label163.Size = new System.Drawing.Size(0, 16);
             this.label163.TabIndex = 4;
+            // 
+            // sale_eq_label
+            // 
+            this.sale_eq_label.AutoSize = true;
+            this.sale_eq_label.Location = new System.Drawing.Point(353, 85);
+            this.sale_eq_label.Name = "sale_eq_label";
+            this.sale_eq_label.Size = new System.Drawing.Size(17, 16);
+            this.sale_eq_label.TabIndex = 25;
+            this.sale_eq_label.Text = "...";
             // 
             // RegControl
             // 
@@ -3625,9 +3622,9 @@
         internal System.Windows.Forms.TextBox txtR2;
         internal System.Windows.Forms.Label label30;
         internal System.Windows.Forms.Label label32;
-        internal System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label163;
+        private System.Windows.Forms.Label sale_eq_label;
     }
 }

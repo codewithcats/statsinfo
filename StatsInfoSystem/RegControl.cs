@@ -119,6 +119,18 @@ GRAPH
                     chart.ExportChart(img, "JPEG File");
                     pictureBox2.ImageLocation = img;
                 }
+                else if (item.Label.Equals("Coefficients"))
+                {
+                    var table = (spsspvt.PivotTable)item.GetTableOleObject();
+                    var dataCells = table.DataCellArray();
+                    var beta0 = dataCells.ValueAt[0, 0];
+                    var index1 = dataCells.ValueAt[1, 0];
+                    spsspvt.ISpssLabels labels = table.RowLabelArray();
+                    var indexLbl = labels.ValueAt[1, 3];
+                    string eq = string.Format("{0} + ({1}){2}", beta0, index1, indexLbl);
+                    sale_eq_label.Text = eq;
+                    textBox4.Text = eq;
+                }
             }
             if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
