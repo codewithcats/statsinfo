@@ -169,6 +169,33 @@ CTABLES
                         var dataCells = table.DataCellArray();
 
                         label243.Text = dataCells.ValueAt[0, 0];
+                        label240.Text = dataCells.ValueAt[0, 1];
+                        label237.Text = dataCells.ValueAt[0, 2];
+                        label234.Text = dataCells.ValueAt[0, 3];
+
+                        label229.Text = dataCells.ValueAt[1, 0];
+                        label224.Text = dataCells.ValueAt[1, 1];
+                        label223.Text = dataCells.ValueAt[1, 2];
+                        label222.Text = dataCells.ValueAt[1, 3];
+
+                        label37.Text = dataCells.ValueAt[2, 0];
+                        label36.Text = dataCells.ValueAt[2, 1];
+                        label35.Text = dataCells.ValueAt[2, 2];
+                        label34.Text = dataCells.ValueAt[2, 3];
+
+                        label33.Text = dataCells.ValueAt[3, 0];
+                        label32.Text = dataCells.ValueAt[3, 1];
+                        label31.Text = dataCells.ValueAt[3, 2];
+                        label30.Text = dataCells.ValueAt[3, 3];
+
+                        label29.Text = dataCells.ValueAt[4, 0];
+                        label28.Text = dataCells.ValueAt[4, 1];
+                        label27.Text = dataCells.ValueAt[4, 2];
+                        label26.Text = dataCells.ValueAt[4, 3];
+
+                        label25.Text = dataCells.ValueAt[5, 0];
+                        label24.Text = dataCells.ValueAt[5, 1];
+                        label23.Text = dataCells.ValueAt[5, 2];
                     }
                 }
             }
