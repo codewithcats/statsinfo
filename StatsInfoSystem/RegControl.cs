@@ -11,6 +11,8 @@ namespace StatsInfoSystem
 {
     public partial class RegControl : UserControl
     {
+        Dictionary<string, Decimal> factorCalValues = new Dictionary<string, decimal>(5);
+        Decimal beta0 = 0;
         public RegControl()
         {
             InitializeComponent();
@@ -124,9 +126,11 @@ GRAPH
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                     var dataCells = table.DataCellArray();
                     var beta0 = dataCells.ValueAt[0, 0];
+                    this.beta0 = Convert.ToDecimal(beta0);
                     var index1 = dataCells.ValueAt[1, 0];
                     spsspvt.ISpssLabels labels = table.RowLabelArray();
                     var indexLbl = labels.ValueAt[1, 3];
+                    this.factorCalValues[indexLbl] = Convert.ToDecimal(index1);
                     string eq = string.Format("{0} + ({1}){2}", beta0, index1, indexLbl);
                     sale_eq_label.Text = eq;
                     textBox4.Text = eq;
@@ -209,6 +213,13 @@ GRAPH
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void calculate_formular(object sender, EventArgs e)
+        {
+            var productIndexValue = Convert.ToDecimal(textBox5.Text);
+            var saleValue = beta0 + this.factorCalValues["ProductIndex"] * productIndexValue;
+            textBox10.Text = string.Format("{0:N}", saleValue);
         }
     }
 }
