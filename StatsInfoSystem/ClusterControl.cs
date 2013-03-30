@@ -89,7 +89,7 @@ GRAPH
                     chart.ExportChart(img, "JPEG File");
                     pictureBox1.ImageLocation = img;
                 }
-                if (item.Label.Equals("Descriptive Statistic"))
+                if (item.Label.Equals("Descriptive Statistics"))
                 {
                     if (descriptiveCount++ > 0) continue;
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
@@ -192,21 +192,21 @@ GRAPH
                 {
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                     var dataCells = table.DataCellArray();
-                    label42.Text = dataCells.ValueAt[0, 0];
-                    label39.Text = dataCells.ValueAt[0, 1];
-                    label36.Text = dataCells.ValueAt[0, 2];
+                    label142.Text = dataCells.ValueAt[0, 0];
+                    label139.Text = dataCells.ValueAt[0, 1];
+                    label136.Text = dataCells.ValueAt[0, 2];
                     
-                    label38.Text = dataCells.ValueAt[1, 0];
-                    label34.Text = dataCells.ValueAt[1, 1];
-                    label32.Text = dataCells.ValueAt[1, 2];
+                    label138.Text = dataCells.ValueAt[1, 0];
+                    label134.Text = dataCells.ValueAt[1, 1];
+                    label132.Text = dataCells.ValueAt[1, 2];
                    
-                    label35.Text = dataCells.ValueAt[2, 0];
-                    label37.Text = dataCells.ValueAt[2, 1];
-                    label28.Text = dataCells.ValueAt[2, 2];
+                    label135.Text = dataCells.ValueAt[2, 0];
+                    label137.Text = dataCells.ValueAt[2, 1];
+                    label128.Text = dataCells.ValueAt[2, 2];
                     
-                    label31.Text = dataCells.ValueAt[3, 0];
-                    label33.Text = dataCells.ValueAt[3, 1];
-                    label26.Text = dataCells.ValueAt[3, 2];                   
+                    label131.Text = dataCells.ValueAt[3, 0];
+                    label133.Text = dataCells.ValueAt[3, 1];
+                    label126.Text = dataCells.ValueAt[3, 2];                   
                 }
                 else if (item.Label.Equals("ANOVA"))
                 {
@@ -288,7 +288,7 @@ GRAPH
                 customerList.DataSource = customers[0];
             }
             
-            if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
+            if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
         }
 
@@ -333,6 +333,29 @@ GRAPH
             {
                 customerList.DataSource = customers[comboBox6.SelectedIndex];
             }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = true;
+            checkBox2.Checked = true;
+            checkBox3.Checked = true;
+            checkBox4.Checked = true;
+            checkBox5.Checked = true;
+            checkBox6.Checked = true;
+            checkBox7.Checked = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+            checkBox7.Checked = false;
         }
     }
 }

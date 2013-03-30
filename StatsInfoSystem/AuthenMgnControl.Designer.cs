@@ -30,56 +30,55 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AuthenMgnControl));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.showProduct_btn = new System.Windows.Forms.Button();
+            this.showCat_btn = new System.Windows.Forms.Button();
+            this.showGrp_btn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.user_tabpage = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.usercalcel_tabpage = new System.Windows.Forms.TabPage();
-            this.productGrp_panel = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.user2_tabpage = new System.Windows.Forms.TabPage();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.TextBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.UsernameLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.showProduct_btn = new System.Windows.Forms.Button();
-            this.showCat_btn = new System.Windows.Forms.Button();
-            this.showGrp_btn = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.Panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.category_cmb = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.usercalcel_tabpage = new System.Windows.Forms.TabPage();
+            this.productGrp_panel = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.user2_tabpage = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.Panel3 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.user_tabpage.SuspendLayout();
@@ -88,12 +87,12 @@
             this.productGrp_panel.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.user2_tabpage.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,6 +105,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(88, 431);
             this.panel1.TabIndex = 3;
+            // 
+            // showProduct_btn
+            // 
+            this.showProduct_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showProduct_btn.Image = global::StatsInfoSystem.Properties.Resources.User_Group_0015;
+            this.showProduct_btn.Location = new System.Drawing.Point(4, 5);
+            this.showProduct_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showProduct_btn.Name = "showProduct_btn";
+            this.showProduct_btn.Size = new System.Drawing.Size(80, 80);
+            this.showProduct_btn.TabIndex = 14;
+            this.showProduct_btn.Text = "เพิ่มผู้ใช้ระบบ";
+            this.showProduct_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showProduct_btn.UseVisualStyleBackColor = true;
+            this.showProduct_btn.Click += new System.EventHandler(this.showProduct_btn_Click);
+            // 
+            // showCat_btn
+            // 
+            this.showCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCat_btn.Image = global::StatsInfoSystem.Properties.Resources._027;
+            this.showCat_btn.Location = new System.Drawing.Point(4, 185);
+            this.showCat_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showCat_btn.Name = "showCat_btn";
+            this.showCat_btn.Size = new System.Drawing.Size(80, 80);
+            this.showCat_btn.TabIndex = 16;
+            this.showCat_btn.Text = "กำหนดสิทธิ์ผู้ใช้ระบบ";
+            this.showCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showCat_btn.UseVisualStyleBackColor = true;
+            this.showCat_btn.Click += new System.EventHandler(this.showCat_btn_Click);
+            // 
+            // showGrp_btn
+            // 
+            this.showGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showGrp_btn.Image = global::StatsInfoSystem.Properties.Resources.Preppy_0011;
+            this.showGrp_btn.Location = new System.Drawing.Point(4, 95);
+            this.showGrp_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.showGrp_btn.Name = "showGrp_btn";
+            this.showGrp_btn.Size = new System.Drawing.Size(80, 80);
+            this.showGrp_btn.TabIndex = 15;
+            this.showGrp_btn.Text = "ยกเลิกผู้ใช้ระบบ";
+            this.showGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.showGrp_btn.UseVisualStyleBackColor = true;
+            this.showGrp_btn.Click += new System.EventHandler(this.showGrp_btn_Click);
             // 
             // tabControl1
             // 
@@ -150,7 +191,6 @@
             this.groupBox7.Controls.Add(this.UsernameTextBox);
             this.groupBox7.Controls.Add(this.PasswordLabel);
             this.groupBox7.Controls.Add(this.UsernameLabel);
-            this.groupBox7.Controls.Add(this.button13);
             this.groupBox7.Controls.Add(this.button10);
             this.groupBox7.Controls.Add(this.category_cmb);
             this.groupBox7.Controls.Add(this.label20);
@@ -161,6 +201,134 @@
             this.groupBox7.TabIndex = 13;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "ข้อมูลผู้ใช้ระบบ";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(125, 151);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(229, 22);
+            this.textBox3.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.Location = new System.Drawing.Point(23, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 25);
+            this.label1.TabIndex = 47;
+            this.label1.Text = "&นามสกุลพนักงาน";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TextBox2
+            // 
+            this.TextBox2.Location = new System.Drawing.Point(125, 121);
+            this.TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBox2.Name = "TextBox2";
+            this.TextBox2.Size = new System.Drawing.Size(229, 22);
+            this.TextBox2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.Location = new System.Drawing.Point(23, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 25);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "&ชื่อพนักงาน";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Label3
+            // 
+            this.Label3.BackColor = System.Drawing.Color.Transparent;
+            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.Label3.Location = new System.Drawing.Point(23, 93);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(84, 25);
+            this.Label3.TabIndex = 47;
+            this.Label3.Text = "&ยืนยันรหัสผ่าน";
+            this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(125, 91);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
+            this.textBox1.Size = new System.Drawing.Size(229, 22);
+            this.textBox1.TabIndex = 3;
+            // 
+            // PasswordTextBox
+            // 
+            this.PasswordTextBox.Location = new System.Drawing.Point(125, 60);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '*';
+            this.PasswordTextBox.Size = new System.Drawing.Size(229, 22);
+            this.PasswordTextBox.TabIndex = 2;
+            // 
+            // UsernameTextBox
+            // 
+            this.UsernameTextBox.Location = new System.Drawing.Point(125, 26);
+            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.UsernameTextBox.Name = "UsernameTextBox";
+            this.UsernameTextBox.Size = new System.Drawing.Size(229, 22);
+            this.UsernameTextBox.TabIndex = 1;
+            // 
+            // PasswordLabel
+            // 
+            this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.PasswordLabel.Location = new System.Drawing.Point(23, 59);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(113, 25);
+            this.PasswordLabel.TabIndex = 43;
+            this.PasswordLabel.Text = "&รหัสผ่านเดิม";
+            this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PasswordLabel.Click += new System.EventHandler(this.PasswordLabel_Click);
+            // 
+            // UsernameLabel
+            // 
+            this.UsernameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.UsernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.UsernameLabel.Location = new System.Drawing.Point(23, 25);
+            this.UsernameLabel.Name = "UsernameLabel";
+            this.UsernameLabel.Size = new System.Drawing.Size(113, 24);
+            this.UsernameLabel.TabIndex = 41;
+            this.UsernameLabel.Text = "&ชื่อผู้ใช้งาน";
+            this.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(125, 207);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(90, 54);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "เพิ่ม";
+            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // category_cmb
+            // 
+            this.category_cmb.DisplayMember = "DisplayName";
+            this.category_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.category_cmb.FormattingEnabled = true;
+            this.category_cmb.Items.AddRange(new object[] {
+            "ผู้บริหาร",
+            "แผนกลูกค้าสัมพันธ์",
+            "แผนกส่งเสริมการตลาด",
+            "แผนกผลิต"});
+            this.category_cmb.Location = new System.Drawing.Point(125, 180);
+            this.category_cmb.Name = "category_cmb";
+            this.category_cmb.Size = new System.Drawing.Size(177, 21);
+            this.category_cmb.TabIndex = 6;
+            this.category_cmb.ValueMember = "Id";
+            this.category_cmb.SelectedIndexChanged += new System.EventHandler(this.category_cmb_SelectedIndexChanged);
             // 
             // label20
             // 
@@ -209,6 +377,38 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "สถานะการใช้งาน";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(103, 64);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(101, 20);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = "ยกเลิกการใช้งาน";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Image = global::StatsInfoSystem.Properties.Resources.Check_24x24;
+            this.button17.Location = new System.Drawing.Point(103, 92);
+            this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(85, 46);
+            this.button17.TabIndex = 14;
+            this.button17.Text = "ตกลง";
+            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(103, 28);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(130, 20);
+            this.textBox4.TabIndex = 1;
+            // 
             // label45
             // 
             this.label45.AutoSize = true;
@@ -238,338 +438,80 @@
             this.user2_tabpage.Text = "กำหนดสิทธิ์ผุ้ใช้ระบบ";
             this.user2_tabpage.UseVisualStyleBackColor = true;
             // 
-            // TextBox2
+            // button3
             // 
-            this.TextBox2.Location = new System.Drawing.Point(125, 121);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.PasswordChar = '*';
-            this.TextBox2.Size = new System.Drawing.Size(229, 22);
-            this.TextBox2.TabIndex = 48;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Location = new System.Drawing.Point(440, 272);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(76, 64);
+            this.button3.TabIndex = 313;
+            this.button3.Text = "แก้ไขสิทธิ์";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // Label3
+            // button2
             // 
-            this.Label3.BackColor = System.Drawing.Color.Transparent;
-            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.Label3.Location = new System.Drawing.Point(23, 93);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(84, 25);
-            this.Label3.TabIndex = 47;
-            this.Label3.Text = "&ยืนยันรหัสผ่าน";
-            this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(440, 202);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(76, 64);
+            this.button2.TabIndex = 312;
+            this.button2.Text = "ล้างรายการ";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // PasswordTextBox
+            // button1
             // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(125, 60);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.PasswordChar = '*';
-            this.PasswordTextBox.Size = new System.Drawing.Size(229, 22);
-            this.PasswordTextBox.TabIndex = 44;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(440, 132);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 64);
+            this.button1.TabIndex = 311;
+            this.button1.Text = "เลือกทั้งหมด";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // UsernameTextBox
+            // groupBox5
             // 
-            this.UsernameTextBox.Location = new System.Drawing.Point(125, 26);
-            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.UsernameTextBox.Name = "UsernameTextBox";
-            this.UsernameTextBox.Size = new System.Drawing.Size(229, 22);
-            this.UsernameTextBox.TabIndex = 42;
+            this.groupBox5.Controls.Add(this.checkBox8);
+            this.groupBox5.Controls.Add(this.checkBox7);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(6, 244);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(396, 94);
+            this.groupBox5.TabIndex = 310;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "ระบบสารสนเทศทางสถิติ";
             // 
-            // PasswordLabel
+            // checkBox8
             // 
-            this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.PasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.PasswordLabel.Location = new System.Drawing.Point(23, 59);
-            this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(113, 25);
-            this.PasswordLabel.TabIndex = 43;
-            this.PasswordLabel.Text = "&รหัสผ่านเดิม";
-            this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PasswordLabel.Click += new System.EventHandler(this.PasswordLabel_Click);
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox8.Location = new System.Drawing.Point(37, 53);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(224, 20);
+            this.checkBox8.TabIndex = 15;
+            this.checkBox8.Text = "ระบบสารสนเทศทางสถิติเพื่อวิเคราะห์ลูกค้า";
+            this.checkBox8.UseVisualStyleBackColor = true;
             // 
-            // UsernameLabel
+            // checkBox7
             // 
-            this.UsernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.UsernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.UsernameLabel.Location = new System.Drawing.Point(23, 25);
-            this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(113, 24);
-            this.UsernameLabel.TabIndex = 41;
-            this.UsernameLabel.Text = "&ชื่อผู้ใช้งาน";
-            this.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(23, 150);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 25);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "&นามสกุลพนักงาน";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(125, 151);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(229, 22);
-            this.textBox3.TabIndex = 48;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label2.Location = new System.Drawing.Point(23, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 25);
-            this.label2.TabIndex = 47;
-            this.label2.Text = "&ชื่อพนักงาน";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(125, 91);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(229, 22);
-            this.textBox1.TabIndex = 44;
-            // 
-            // button13
-            // 
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.Location = new System.Drawing.Point(213, 207);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(89, 54);
-            this.button13.TabIndex = 40;
-            this.button13.Text = "ล้างข้อมูล";
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(101, 207);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(90, 54);
-            this.button10.TabIndex = 37;
-            this.button10.Text = "เพิ่ม";
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Image = global::StatsInfoSystem.Properties.Resources.Check_24x24;
-            this.button17.Location = new System.Drawing.Point(103, 92);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(85, 46);
-            this.button17.TabIndex = 14;
-            this.button17.Text = "ตกลง";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // showProduct_btn
-            // 
-            this.showProduct_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showProduct_btn.Image = global::StatsInfoSystem.Properties.Resources.User_Group_0015;
-            this.showProduct_btn.Location = new System.Drawing.Point(4, 5);
-            this.showProduct_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.showProduct_btn.Name = "showProduct_btn";
-            this.showProduct_btn.Size = new System.Drawing.Size(80, 80);
-            this.showProduct_btn.TabIndex = 14;
-            this.showProduct_btn.Text = "เพิ่มผู้ใช้ระบบ";
-            this.showProduct_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.showProduct_btn.UseVisualStyleBackColor = true;
-            // 
-            // showCat_btn
-            // 
-            this.showCat_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showCat_btn.Image = global::StatsInfoSystem.Properties.Resources._027;
-            this.showCat_btn.Location = new System.Drawing.Point(4, 185);
-            this.showCat_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.showCat_btn.Name = "showCat_btn";
-            this.showCat_btn.Size = new System.Drawing.Size(80, 80);
-            this.showCat_btn.TabIndex = 16;
-            this.showCat_btn.Text = "กำหนดสิทธิ์ผู้ใช้ระบบ";
-            this.showCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.showCat_btn.UseVisualStyleBackColor = true;
-            // 
-            // showGrp_btn
-            // 
-            this.showGrp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showGrp_btn.Image = global::StatsInfoSystem.Properties.Resources.Preppy_0011;
-            this.showGrp_btn.Location = new System.Drawing.Point(4, 95);
-            this.showGrp_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.showGrp_btn.Name = "showGrp_btn";
-            this.showGrp_btn.Size = new System.Drawing.Size(80, 80);
-            this.showGrp_btn.TabIndex = 15;
-            this.showGrp_btn.Text = "ยกเลิกผู้ใช้ระบบ";
-            this.showGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.showGrp_btn.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(103, 28);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 20);
-            this.textBox4.TabIndex = 1;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(103, 64);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 20);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "ยกเลิกการใช้งาน";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(6, 70);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(195, 168);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ระบบบันทึกและปรับปรุงข้อมล";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(37, 27);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(79, 20);
-            this.checkBox2.TabIndex = 15;
-            this.checkBox2.Text = "ข้อมูลสินค้า";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(37, 53);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(77, 20);
-            this.checkBox3.TabIndex = 15;
-            this.checkBox3.Text = "ข้อมูลลูกค้า";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(37, 79);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(94, 20);
-            this.checkBox4.TabIndex = 15;
-            this.checkBox4.Text = "ข้อมูลลการขาย";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(37, 105);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(137, 20);
-            this.checkBox5.TabIndex = 15;
-            this.checkBox5.Text = "ข้อมูลพนักงานผู้ใช้ระบบ";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(37, 131);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(108, 20);
-            this.checkBox6.TabIndex = 15;
-            this.checkBox6.Text = "ข้อมูลปัจจัยภายอก";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // Panel3
-            // 
-            this.Panel3.BackColor = System.Drawing.Color.White;
-            this.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Panel3.Controls.Add(this.comboBox1);
-            this.Panel3.Controls.Add(this.pictureBox2);
-            this.Panel3.Controls.Add(this.label8);
-            this.Panel3.Location = new System.Drawing.Point(6, 6);
-            this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(510, 54);
-            this.Panel3.TabIndex = 309;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(22, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 42);
-            this.pictureBox2.TabIndex = 167;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label8.Location = new System.Drawing.Point(69, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 16);
-            this.label8.TabIndex = 185;
-            this.label8.Text = "เลือกแผนก :";
-            // 
-            // category_cmb
-            // 
-            this.category_cmb.DisplayMember = "DisplayName";
-            this.category_cmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category_cmb.FormattingEnabled = true;
-            this.category_cmb.Items.AddRange(new object[] {
-            "ผู้บริหาร",
-            "แผนกลูกค้าสัมพันธ์",
-            "แผนกส่งเสริมการตลาด",
-            "แผนกผลิต"});
-            this.category_cmb.Location = new System.Drawing.Point(125, 180);
-            this.category_cmb.Name = "category_cmb";
-            this.category_cmb.Size = new System.Drawing.Size(177, 21);
-            this.category_cmb.TabIndex = 36;
-            this.category_cmb.ValueMember = "Id";
-            this.category_cmb.SelectedIndexChanged += new System.EventHandler(this.category_cmb_SelectedIndexChanged);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DisplayMember = "DisplayName";
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "ผู้บริหาร",
-            "แผนกลูกค้าสัมพันธ์",
-            "แผนกส่งเสริมการตลาด",
-            "แผนกผลิต"});
-            this.comboBox1.Location = new System.Drawing.Point(136, 14);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 21);
-            this.comboBox1.TabIndex = 186;
-            this.comboBox1.ValueMember = "Id";
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox7.Location = new System.Drawing.Point(37, 27);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(235, 20);
+            this.checkBox7.TabIndex = 15;
+            this.checkBox7.Text = "ระบบสารสนเทศทางสถิติเพื่อวิเคราะห์การขาย";
+            this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -592,6 +534,57 @@
             this.checkBox11.TabIndex = 15;
             this.checkBox11.Text = "ระบบสอบถามและแสดงสารสนเทศสำหรับผู้บริหาร";
             this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // Panel3
+            // 
+            this.Panel3.BackColor = System.Drawing.Color.White;
+            this.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Panel3.Controls.Add(this.comboBox1);
+            this.Panel3.Controls.Add(this.pictureBox2);
+            this.Panel3.Controls.Add(this.label8);
+            this.Panel3.Location = new System.Drawing.Point(6, 6);
+            this.Panel3.Name = "Panel3";
+            this.Panel3.Size = new System.Drawing.Size(510, 54);
+            this.Panel3.TabIndex = 309;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DisplayMember = "DisplayName";
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "ผู้บริหาร",
+            "แผนกลูกค้าสัมพันธ์",
+            "แผนกส่งเสริมการตลาด",
+            "แผนกผลิต"});
+            this.comboBox1.Location = new System.Drawing.Point(136, 14);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(177, 21);
+            this.comboBox1.TabIndex = 186;
+            this.comboBox1.ValueMember = "Id";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(22, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 42);
+            this.pictureBox2.TabIndex = 167;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label8.Location = new System.Drawing.Point(69, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 16);
+            this.label8.TabIndex = 185;
+            this.label8.Text = "เลือกแผนก :";
             // 
             // groupBox3
             // 
@@ -639,78 +632,75 @@
             this.checkBox12.Text = "เปลี่ยนรหัสผ่าน";
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
-            // groupBox5
+            // groupBox1
             // 
-            this.groupBox5.Controls.Add(this.checkBox8);
-            this.groupBox5.Controls.Add(this.checkBox7);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(6, 244);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(396, 94);
-            this.groupBox5.TabIndex = 310;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "ระบบสารสนเทศทางสถิติ";
+            this.groupBox1.Controls.Add(this.checkBox6);
+            this.groupBox1.Controls.Add(this.checkBox5);
+            this.groupBox1.Controls.Add(this.checkBox4);
+            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(6, 70);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(195, 168);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "ระบบบันทึกและปรับปรุงข้อมล";
             // 
-            // checkBox7
+            // checkBox6
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(37, 27);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(235, 20);
-            this.checkBox7.TabIndex = 15;
-            this.checkBox7.Text = "ระบบสารสนเทศทางสถิติเพื่อวิเคราะห์การขาย";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox6.Location = new System.Drawing.Point(37, 131);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(108, 20);
+            this.checkBox6.TabIndex = 15;
+            this.checkBox6.Text = "ข้อมูลปัจจัยภายอก";
+            this.checkBox6.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkBox5
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(37, 53);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(224, 20);
-            this.checkBox8.TabIndex = 15;
-            this.checkBox8.Text = "ระบบสารสนเทศทางสถิติเพื่อวิเคราะห์ลูกค้า";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox5.Location = new System.Drawing.Point(37, 105);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(137, 20);
+            this.checkBox5.TabIndex = 15;
+            this.checkBox5.Text = "ข้อมูลพนักงานผู้ใช้ระบบ";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // checkBox4
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(440, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 64);
-            this.button1.TabIndex = 311;
-            this.button1.Text = "เลือกทั้งหมด";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Location = new System.Drawing.Point(37, 79);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(94, 20);
+            this.checkBox4.TabIndex = 15;
+            this.checkBox4.Text = "ข้อมูลลการขาย";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // checkBox3
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(440, 202);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 64);
-            this.button2.TabIndex = 312;
-            this.button2.Text = "ล้างรายการ";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(37, 53);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(77, 20);
+            this.checkBox3.TabIndex = 15;
+            this.checkBox3.Text = "ข้อมูลลูกค้า";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // checkBox2
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(440, 272);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(76, 64);
-            this.button3.TabIndex = 313;
-            this.button3.Text = "แก้ไขสิทธิ์";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(37, 27);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(79, 20);
+            this.checkBox2.TabIndex = 15;
+            this.checkBox2.Text = "ข้อมูลสินค้า";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // AuthenMgnControl
             // 
@@ -730,17 +720,17 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.user2_tabpage.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.Panel3.ResumeLayout(false);
             this.Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -751,7 +741,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage user_tabpage;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TabPage usercalcel_tabpage;

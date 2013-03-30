@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerMngControl));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.customerCount_lbl = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.customer_list = new System.Windows.Forms.ListBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -62,13 +60,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.customerPhone_txtBox = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.customerGrp_list = new System.Windows.Forms.ListBox();
@@ -80,13 +71,6 @@
             this.textBox33 = new System.Windows.Forms.TextBox();
             this.textBox34 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.import_btn = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -126,11 +110,9 @@
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -158,48 +140,25 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.customerCount_lbl);
-            this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.customer_list);
             this.tabPage1.Controls.Add(this.tabControl2);
-            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(652, 513);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "เพิ่มและปรับปรุงข้อมูลูกค้าทั้งหมด";
+            this.tabPage1.Text = "เพิ่มและปรับปรุงข้อมูลลูกค้าทั้งหมด";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // customerCount_lbl
-            // 
-            this.customerCount_lbl.AutoSize = true;
-            this.customerCount_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerCount_lbl.Location = new System.Drawing.Point(75, 151);
-            this.customerCount_lbl.Name = "customerCount_lbl";
-            this.customerCount_lbl.Size = new System.Drawing.Size(14, 13);
-            this.customerCount_lbl.TabIndex = 45;
-            this.customerCount_lbl.Text = "0";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 151);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 13);
-            this.label8.TabIndex = 44;
-            this.label8.Text = "จำนวนลูกค้า:";
             // 
             // customer_list
             // 
             this.customer_list.DisplayMember = "Name";
             this.customer_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_list.FormattingEnabled = true;
-            this.customer_list.Location = new System.Drawing.Point(6, 173);
+            this.customer_list.Location = new System.Drawing.Point(6, 17);
             this.customer_list.Name = "customer_list";
-            this.customer_list.Size = new System.Drawing.Size(243, 329);
+            this.customer_list.Size = new System.Drawing.Size(243, 485);
             this.customer_list.TabIndex = 16;
             this.customer_list.ValueMember = "Id";
             // 
@@ -361,6 +320,7 @@
             // customerStartDate_dt
             // 
             this.customerStartDate_dt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerStartDate_dt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.customerStartDate_dt.Location = new System.Drawing.Point(169, 206);
             this.customerStartDate_dt.Name = "customerStartDate_dt";
             this.customerStartDate_dt.Size = new System.Drawing.Size(177, 20);
@@ -494,91 +454,6 @@
             this.tabPage4.Text = "ข้อมูลการซื้อ";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(6, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(243, 129);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ค้นหาข้อมูลลูกค้า";
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(135, 76);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(99, 43);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "ยกเลิก";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "ข้อมูลลูกค้าทั้งหมด",
-            "รหัสลูกค้า",
-            "ชื่อลูกค้า",
-            "ชื่อกลุ่มลูกค้า",
-            "พื้นที่ลูกค้า"});
-            this.comboBox1.Location = new System.Drawing.Point(72, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 21);
-            this.comboBox1.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "คำค้นหา :";
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(28, 76);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 43);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "ค้นหา";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(72, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "สืบค้นตาม :";
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.panel2);
@@ -594,7 +469,6 @@
             // 
             this.panel2.Controls.Add(this.customerGrp_list);
             this.panel2.Controls.Add(this.groupBox3);
-            this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(3, 3);
@@ -627,9 +501,9 @@
             this.groupBox3.Controls.Add(this.textBox34);
             this.groupBox3.Controls.Add(this.label43);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(250, 4);
+            this.groupBox3.Location = new System.Drawing.Point(3, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(308, 187);
+            this.groupBox3.Size = new System.Drawing.Size(555, 187);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "เพิ่มและปรับปรุงข้อมูลกลุ่มลูกค้า";
@@ -705,89 +579,6 @@
             this.label43.Size = new System.Drawing.Size(71, 13);
             this.label43.TabIndex = 6;
             this.label43.Text = "ชื่อกลุ่มลูกค้า :";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.button17);
-            this.groupBox4.Controls.Add(this.comboBox6);
-            this.groupBox4.Controls.Add(this.label44);
-            this.groupBox4.Controls.Add(this.button18);
-            this.groupBox4.Controls.Add(this.textBox37);
-            this.groupBox4.Controls.Add(this.label45);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(3, 3);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(241, 187);
-            this.groupBox4.TabIndex = 15;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "ค้นหาข้อมูลกลุ่มลูกค้า";
-            // 
-            // button17
-            // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(133, 87);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(99, 43);
-            this.button17.TabIndex = 14;
-            this.button17.Text = "ยกเลิก";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "กลุ่มลูกค้าทั้งหมด",
-            "รหัสกลุ่มลูกค้า",
-            "ชื่อกลุ่มลูกค้า"});
-            this.comboBox6.Location = new System.Drawing.Point(72, 27);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(162, 21);
-            this.comboBox6.TabIndex = 11;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(14, 62);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(52, 13);
-            this.label44.TabIndex = 2;
-            this.label44.Text = "คำค้นหา :";
-            // 
-            // button18
-            // 
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(26, 87);
-            this.button18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(99, 43);
-            this.button18.TabIndex = 13;
-            this.button18.Text = "ค้นหา";
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox37.Location = new System.Drawing.Point(72, 59);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(162, 20);
-            this.textBox37.TabIndex = 1;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(6, 30);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(60, 13);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "สืบค้นตาม :";
             // 
             // tabPage2
             // 
@@ -1015,9 +806,9 @@
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "กลุ่มลูกค้าทั้งหมด",
-            "รหัสกลุ่มลูกค้า",
-            "ชื่อกลุ่มลูกค้า"});
+            "กลุ่มพื้นที่ลูกค้า",
+            "รหัสกลุ่มพื้นที่ลูกค้า",
+            "ทั้งหมด"});
             this.comboBox2.Location = new System.Drawing.Point(72, 27);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(162, 21);
@@ -1073,7 +864,7 @@
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(652, 513);
             this.tabPage7.TabIndex = 4;
-            this.tabPage7.Text = "นำเข้าข้อมูลพื้นที่ลูกค้า";
+            this.tabPage7.Text = "นำเข้าข้อมูลกลุ่มพื้นที่ลูกค้า";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // button14
@@ -1153,6 +944,7 @@
             this.showProduct_btn.Text = "ข้อมูลลูกค้า";
             this.showProduct_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.showProduct_btn.UseVisualStyleBackColor = true;
+            this.showProduct_btn.Click += new System.EventHandler(this.showProduct_btn_Click);
             // 
             // showCat_btn
             // 
@@ -1166,6 +958,7 @@
             this.showCat_btn.Text = "กลุ่มพื้นที่ลูกค้า";
             this.showCat_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.showCat_btn.UseVisualStyleBackColor = true;
+            this.showCat_btn.Click += new System.EventHandler(this.showCat_btn_Click);
             // 
             // showGrp_btn
             // 
@@ -1179,6 +972,7 @@
             this.showGrp_btn.Text = "กลุ่มลูกค้า";
             this.showGrp_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.showGrp_btn.UseVisualStyleBackColor = true;
+            this.showGrp_btn.Click += new System.EventHandler(this.showGrp_btn_Click);
             // 
             // CustomerMngControl
             // 
@@ -1190,18 +984,13 @@
             this.Size = new System.Drawing.Size(751, 535);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
@@ -1252,13 +1041,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox customerPhone_txtBox;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button import_btn;
         private System.Windows.Forms.GroupBox groupBox9;
@@ -1266,8 +1048,6 @@
         private System.Windows.Forms.TextBox importFileName_txtBox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.Label customerCount_lbl;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListBox customerGrp_list;
@@ -1279,13 +1059,6 @@
         private System.Windows.Forms.TextBox textBox33;
         private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ListBox listBox1;

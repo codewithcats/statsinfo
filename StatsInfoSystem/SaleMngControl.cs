@@ -141,5 +141,10 @@ namespace StatsInfoSystem
         {
 
         }
+
+        private void SaleDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

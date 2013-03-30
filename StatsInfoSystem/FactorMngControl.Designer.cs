@@ -37,15 +37,12 @@
             this.FacSComboBox = new System.Windows.Forms.ComboBox();
             this.FacSTextBox = new System.Windows.Forms.TextBox();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
+            this.SaleDate = new System.Windows.Forms.DateTimePicker();
+            this.PictureBox9 = new System.Windows.Forms.PictureBox();
+            this.Label14 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.BtnEdit = new System.Windows.Forms.Button();
-            this.FacYearTextBox = new System.Windows.Forms.TextBox();
-            this.FacComboBox1 = new System.Windows.Forms.ComboBox();
-            this.PictureBox6 = new System.Windows.Forms.PictureBox();
-            this.PictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.Label9 = new System.Windows.Forms.Label();
             this.FacTextBox1 = new System.Windows.Forms.TextBox();
             this.FacTextBox2 = new System.Windows.Forms.TextBox();
             this.PictureBox5 = new System.Windows.Forms.PictureBox();
@@ -67,15 +64,14 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.browse_btn = new System.Windows.Forms.Button();
             this.importFileName_txtBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.GroupBox1.SuspendLayout();
             this.GroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
@@ -155,12 +151,21 @@
             // 
             // FacSComboBox
             // 
+            this.FacSComboBox.BackColor = System.Drawing.SystemColors.Window;
             this.FacSComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FacSComboBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FacSComboBox.DropDownWidth = 350;
+            this.FacSComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FacSComboBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.FacSComboBox.FormattingEnabled = true;
+            this.FacSComboBox.Items.AddRange(new object[] {
+            "ดัชนีราคาผู้บริโภคของประเทศ",
+            "ดัชนีราคาผู้บริโภคในภาคเหนือ",
+            "ดัชนีราคาผู้ผลิตจำแนกตามกิจกรรมการผลิต",
+            "ดัชนีผลผลิตภาคอุตสาหกรรมจำแนกตามกิจกรรมการผลิต",
+            "อัตราการใช้กำลังการผลิตภาคอุตสาหกรรมจำแนกตามกิจกรรมการผลิต"});
             this.FacSComboBox.Location = new System.Drawing.Point(158, 21);
             this.FacSComboBox.Name = "FacSComboBox";
-            this.FacSComboBox.Size = new System.Drawing.Size(165, 25);
+            this.FacSComboBox.Size = new System.Drawing.Size(280, 24);
             this.FacSComboBox.TabIndex = 8;
             // 
             // FacSTextBox
@@ -175,15 +180,12 @@
             // 
             this.GroupBox2.BackColor = System.Drawing.Color.Transparent;
             this.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.GroupBox2.Controls.Add(this.SaleDate);
+            this.GroupBox2.Controls.Add(this.PictureBox9);
+            this.GroupBox2.Controls.Add(this.Label14);
             this.GroupBox2.Controls.Add(this.button4);
             this.GroupBox2.Controls.Add(this.button5);
             this.GroupBox2.Controls.Add(this.BtnEdit);
-            this.GroupBox2.Controls.Add(this.FacYearTextBox);
-            this.GroupBox2.Controls.Add(this.FacComboBox1);
-            this.GroupBox2.Controls.Add(this.PictureBox6);
-            this.GroupBox2.Controls.Add(this.PictureBox7);
-            this.GroupBox2.Controls.Add(this.Label1);
-            this.GroupBox2.Controls.Add(this.Label9);
             this.GroupBox2.Controls.Add(this.FacTextBox1);
             this.GroupBox2.Controls.Add(this.FacTextBox2);
             this.GroupBox2.Controls.Add(this.PictureBox5);
@@ -204,16 +206,50 @@
             this.GroupBox2.ForeColor = System.Drawing.Color.Black;
             this.GroupBox2.Location = new System.Drawing.Point(3, 119);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(913, 198);
+            this.GroupBox2.Size = new System.Drawing.Size(840, 198);
             this.GroupBox2.TabIndex = 26;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "เพิ่มและปรับปรุงข้อมูลปัจจัยภายนอก";
+            // 
+            // SaleDate
+            // 
+            this.SaleDate.CalendarFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaleDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.SaleDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaleDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.SaleDate.Location = new System.Drawing.Point(658, 26);
+            this.SaleDate.Name = "SaleDate";
+            this.SaleDate.Size = new System.Drawing.Size(163, 25);
+            this.SaleDate.TabIndex = 333;
+            // 
+            // PictureBox9
+            // 
+            this.PictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox9.Image")));
+            this.PictureBox9.Location = new System.Drawing.Point(567, 27);
+            this.PictureBox9.Name = "PictureBox9";
+            this.PictureBox9.Size = new System.Drawing.Size(31, 31);
+            this.PictureBox9.TabIndex = 332;
+            this.PictureBox9.TabStop = false;
+            // 
+            // Label14
+            // 
+            this.Label14.AutoSize = true;
+            this.Label14.BackColor = System.Drawing.Color.Transparent;
+            this.Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label14.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.Label14.Location = new System.Drawing.Point(595, 30);
+            this.Label14.Name = "Label14";
+            this.Label14.Size = new System.Drawing.Size(57, 16);
+            this.Label14.TabIndex = 331;
+            this.Label14.Tag = "";
+            this.Label14.Text = "บันทึกวันที่";
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(816, 122);
+            this.button4.Location = new System.Drawing.Point(744, 127);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(77, 66);
             this.button4.TabIndex = 330;
@@ -223,15 +259,15 @@
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(734, 122);
+            this.button5.Location = new System.Drawing.Point(655, 127);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 66);
             this.button5.TabIndex = 329;
             this.button5.Text = "ลบ";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = true;
             // 
             // BtnEdit
@@ -241,7 +277,7 @@
             this.BtnEdit.ForeColor = System.Drawing.Color.Black;
             this.BtnEdit.Image = ((System.Drawing.Image)(resources.GetObject("BtnEdit.Image")));
             this.BtnEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnEdit.Location = new System.Drawing.Point(649, 122);
+            this.BtnEdit.Location = new System.Drawing.Point(743, 56);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(78, 66);
             this.BtnEdit.TabIndex = 328;
@@ -249,70 +285,10 @@
             this.BtnEdit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnEdit.UseVisualStyleBackColor = true;
             // 
-            // FacYearTextBox
-            // 
-            this.FacYearTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacYearTextBox.Location = new System.Drawing.Point(666, 62);
-            this.FacYearTextBox.Name = "FacYearTextBox";
-            this.FacYearTextBox.Size = new System.Drawing.Size(148, 25);
-            this.FacYearTextBox.TabIndex = 44;
-            // 
-            // FacComboBox1
-            // 
-            this.FacComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FacComboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacComboBox1.FormattingEnabled = true;
-            this.FacComboBox1.Location = new System.Drawing.Point(666, 26);
-            this.FacComboBox1.Name = "FacComboBox1";
-            this.FacComboBox1.Size = new System.Drawing.Size(148, 25);
-            this.FacComboBox1.TabIndex = 42;
-            // 
-            // PictureBox6
-            // 
-            this.PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox6.Image")));
-            this.PictureBox6.Location = new System.Drawing.Point(565, 27);
-            this.PictureBox6.Name = "PictureBox6";
-            this.PictureBox6.Size = new System.Drawing.Size(30, 31);
-            this.PictureBox6.TabIndex = 39;
-            this.PictureBox6.TabStop = false;
-            // 
-            // PictureBox7
-            // 
-            this.PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox7.Image")));
-            this.PictureBox7.Location = new System.Drawing.Point(565, 62);
-            this.PictureBox7.Name = "PictureBox7";
-            this.PictureBox7.Size = new System.Drawing.Size(30, 31);
-            this.PictureBox7.TabIndex = 38;
-            this.PictureBox7.TabStop = false;
-            // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.BackColor = System.Drawing.Color.Transparent;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Label1.Location = new System.Drawing.Point(593, 63);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(51, 16);
-            this.Label1.TabIndex = 37;
-            this.Label1.Text = "ปีที่บันทึก";
-            // 
-            // Label9
-            // 
-            this.Label9.AutoSize = true;
-            this.Label9.BackColor = System.Drawing.Color.Transparent;
-            this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Label9.Location = new System.Drawing.Point(593, 28);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(67, 16);
-            this.Label9.TabIndex = 36;
-            this.Label9.Text = "เดือนที่บันทึก";
-            // 
             // FacTextBox1
             // 
             this.FacTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacTextBox1.Location = new System.Drawing.Point(379, 26);
+            this.FacTextBox1.Location = new System.Drawing.Point(379, 23);
             this.FacTextBox1.Name = "FacTextBox1";
             this.FacTextBox1.Size = new System.Drawing.Size(163, 25);
             this.FacTextBox1.TabIndex = 35;
@@ -320,7 +296,7 @@
             // FacTextBox2
             // 
             this.FacTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacTextBox2.Location = new System.Drawing.Point(379, 61);
+            this.FacTextBox2.Location = new System.Drawing.Point(379, 58);
             this.FacTextBox2.Name = "FacTextBox2";
             this.FacTextBox2.Size = new System.Drawing.Size(165, 25);
             this.FacTextBox2.TabIndex = 34;
@@ -328,7 +304,7 @@
             // PictureBox5
             // 
             this.PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox5.Image")));
-            this.PictureBox5.Location = new System.Drawing.Point(32, 26);
+            this.PictureBox5.Location = new System.Drawing.Point(25, 26);
             this.PictureBox5.Name = "PictureBox5";
             this.PictureBox5.Size = new System.Drawing.Size(30, 31);
             this.PictureBox5.TabIndex = 33;
@@ -337,7 +313,7 @@
             // PictureBox4
             // 
             this.PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox4.Image")));
-            this.PictureBox4.Location = new System.Drawing.Point(32, 61);
+            this.PictureBox4.Location = new System.Drawing.Point(25, 61);
             this.PictureBox4.Name = "PictureBox4";
             this.PictureBox4.Size = new System.Drawing.Size(30, 31);
             this.PictureBox4.TabIndex = 32;
@@ -346,7 +322,7 @@
             // PictureBox3
             // 
             this.PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox3.Image")));
-            this.PictureBox3.Location = new System.Drawing.Point(32, 128);
+            this.PictureBox3.Location = new System.Drawing.Point(25, 128);
             this.PictureBox3.Name = "PictureBox3";
             this.PictureBox3.Size = new System.Drawing.Size(30, 31);
             this.PictureBox3.TabIndex = 31;
@@ -355,7 +331,7 @@
             // PictureBox2
             // 
             this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(32, 163);
+            this.PictureBox2.Location = new System.Drawing.Point(25, 163);
             this.PictureBox2.Name = "PictureBox2";
             this.PictureBox2.Size = new System.Drawing.Size(30, 31);
             this.PictureBox2.TabIndex = 30;
@@ -364,7 +340,7 @@
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(32, 94);
+            this.PictureBox1.Location = new System.Drawing.Point(25, 94);
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.Size = new System.Drawing.Size(30, 31);
             this.PictureBox1.TabIndex = 19;
@@ -376,7 +352,7 @@
             this.Label8.BackColor = System.Drawing.Color.Transparent;
             this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label8.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Label8.Location = new System.Drawing.Point(60, 62);
+            this.Label8.Location = new System.Drawing.Point(53, 62);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(146, 16);
             this.Label8.TabIndex = 29;
@@ -388,7 +364,7 @@
             this.Label7.BackColor = System.Drawing.Color.Transparent;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label7.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Label7.Location = new System.Drawing.Point(60, 95);
+            this.Label7.Location = new System.Drawing.Point(53, 95);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(202, 16);
             this.Label7.TabIndex = 28;
@@ -400,7 +376,7 @@
             this.Label6.BackColor = System.Drawing.Color.Transparent;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label6.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Label6.Location = new System.Drawing.Point(60, 129);
+            this.Label6.Location = new System.Drawing.Point(53, 129);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(262, 16);
             this.Label6.TabIndex = 27;
@@ -412,7 +388,7 @@
             this.Label5.BackColor = System.Drawing.Color.Transparent;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label5.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Label5.Location = new System.Drawing.Point(60, 164);
+            this.Label5.Location = new System.Drawing.Point(53, 164);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(321, 16);
             this.Label5.TabIndex = 26;
@@ -421,7 +397,7 @@
             // FacTextBox4
             // 
             this.FacTextBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacTextBox4.Location = new System.Drawing.Point(379, 128);
+            this.FacTextBox4.Location = new System.Drawing.Point(379, 125);
             this.FacTextBox4.Name = "FacTextBox4";
             this.FacTextBox4.Size = new System.Drawing.Size(165, 25);
             this.FacTextBox4.TabIndex = 22;
@@ -429,7 +405,7 @@
             // FacTextBox5
             // 
             this.FacTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacTextBox5.Location = new System.Drawing.Point(379, 163);
+            this.FacTextBox5.Location = new System.Drawing.Point(379, 160);
             this.FacTextBox5.Name = "FacTextBox5";
             this.FacTextBox5.Size = new System.Drawing.Size(165, 25);
             this.FacTextBox5.TabIndex = 23;
@@ -440,7 +416,7 @@
             this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Label4.Location = new System.Drawing.Point(60, 27);
+            this.Label4.Location = new System.Drawing.Point(53, 27);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(147, 16);
             this.Label4.TabIndex = 17;
@@ -449,7 +425,7 @@
             // FacTextBox3
             // 
             this.FacTextBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FacTextBox3.Location = new System.Drawing.Point(379, 94);
+            this.FacTextBox3.Location = new System.Drawing.Point(379, 91);
             this.FacTextBox3.Name = "FacTextBox3";
             this.FacTextBox3.Size = new System.Drawing.Size(165, 25);
             this.FacTextBox3.TabIndex = 1;
@@ -460,7 +436,7 @@
             this.FacBtnSave.ForeColor = System.Drawing.Color.Black;
             this.FacBtnSave.Image = ((System.Drawing.Image)(resources.GetObject("FacBtnSave.Image")));
             this.FacBtnSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.FacBtnSave.Location = new System.Drawing.Point(565, 122);
+            this.FacBtnSave.Location = new System.Drawing.Point(655, 57);
             this.FacBtnSave.Name = "FacBtnSave";
             this.FacBtnSave.Size = new System.Drawing.Size(78, 66);
             this.FacBtnSave.TabIndex = 3;
@@ -477,7 +453,7 @@
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(6, 323);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(907, 257);
+            this.groupBox4.Size = new System.Drawing.Size(837, 257);
             this.groupBox4.TabIndex = 237;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "                                                                            ";
@@ -488,7 +464,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(33, 29);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(857, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(784, 214);
             this.dataGridView1.TabIndex = 22;
             // 
             // label18
@@ -521,19 +497,32 @@
             this.groupBox9.Controls.Add(this.browse_btn);
             this.groupBox9.Controls.Add(this.importFileName_txtBox);
             this.groupBox9.Controls.Add(this.label21);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(473, 19);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.Location = new System.Drawing.Point(473, 13);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(423, 94);
+            this.groupBox9.Size = new System.Drawing.Size(370, 100);
             this.groupBox9.TabIndex = 238;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "นำเข้าข้อมูล";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(300, 58);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 34);
+            this.button1.TabIndex = 334;
+            this.button1.Text = "นำเข้า";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // browse_btn
             // 
-            this.browse_btn.Location = new System.Drawing.Point(373, 17);
+            this.browse_btn.Location = new System.Drawing.Point(300, 19);
             this.browse_btn.Name = "browse_btn";
-            this.browse_btn.Size = new System.Drawing.Size(36, 22);
+            this.browse_btn.Size = new System.Drawing.Size(51, 22);
             this.browse_btn.TabIndex = 2;
             this.browse_btn.Text = "...";
             this.browse_btn.UseVisualStyleBackColor = true;
@@ -543,7 +532,7 @@
             // 
             this.importFileName_txtBox.Location = new System.Drawing.Point(102, 19);
             this.importFileName_txtBox.Name = "importFileName_txtBox";
-            this.importFileName_txtBox.Size = new System.Drawing.Size(265, 20);
+            this.importFileName_txtBox.Size = new System.Drawing.Size(192, 22);
             this.importFileName_txtBox.TabIndex = 1;
             // 
             // label21
@@ -551,22 +540,9 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(20, 22);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 13);
+            this.label21.Size = new System.Drawing.Size(57, 16);
             this.label21.TabIndex = 0;
             this.label21.Text = "เปิดข้อมูล :";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(359, 44);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 34);
-            this.button1.TabIndex = 334;
-            this.button1.Text = "นำเข้า";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // openFileDialog1
             // 
@@ -582,13 +558,12 @@
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
             this.Name = "FactorMngControl";
-            this.Size = new System.Drawing.Size(850, 478);
+            this.Size = new System.Drawing.Size(748, 376);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.GroupBox2.ResumeLayout(false);
             this.GroupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
@@ -611,12 +586,6 @@
         internal System.Windows.Forms.ComboBox FacSComboBox;
         internal System.Windows.Forms.TextBox FacSTextBox;
         internal System.Windows.Forms.GroupBox GroupBox2;
-        internal System.Windows.Forms.TextBox FacYearTextBox;
-        internal System.Windows.Forms.ComboBox FacComboBox1;
-        internal System.Windows.Forms.PictureBox PictureBox6;
-        internal System.Windows.Forms.PictureBox PictureBox7;
-        internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.TextBox FacTextBox1;
         internal System.Windows.Forms.TextBox FacTextBox2;
         internal System.Windows.Forms.PictureBox PictureBox5;
@@ -648,5 +617,8 @@
         private System.Windows.Forms.TextBox importFileName_txtBox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        internal System.Windows.Forms.DateTimePicker SaleDate;
+        internal System.Windows.Forms.PictureBox PictureBox9;
+        internal System.Windows.Forms.Label Label14;
     }
 }

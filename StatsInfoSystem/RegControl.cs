@@ -11,6 +11,7 @@ namespace StatsInfoSystem
 {
     public partial class RegControl : UserControl
     {
+private  int descriptiveCount;
         public RegControl()
         {
             InitializeComponent();
@@ -102,12 +103,11 @@ GRAPH
                     pictureBox2.ImageLocation = img;
                 }
             }
-            if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
+            if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
             tabControl1.Visible = true;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
+            }
+          private void button6_Click(object sender, EventArgs e)
         {
             
         }
@@ -115,7 +115,6 @@ GRAPH
         private void button5_Click(object sender, EventArgs e)
         {
             textBox5.Clear();
-            textBox1.Clear();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -159,6 +158,25 @@ GRAPH
         }
 
         private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -32,7 +32,6 @@ namespace StatsInfoSystem
         private void RefreshCustomer(StsContext context)
         {
             customer_list.DataSource = context.Customers.ToArray();
-            customerCount_lbl.Text = context.Customers.Count().ToString();
         }
 
         private void browse_btn_Click(object sender, EventArgs e)
@@ -182,6 +181,21 @@ namespace StatsInfoSystem
             {
                 MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
             }
+        }
+
+        private void showProduct_btn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void showGrp_btn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
+        }
+
+        private void showCat_btn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 3;
         }
     }
 }

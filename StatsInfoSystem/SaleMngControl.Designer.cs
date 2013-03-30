@@ -843,7 +843,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(22, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(41, 42);
             this.pictureBox2.TabIndex = 167;
@@ -855,7 +855,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label8.Location = new System.Drawing.Point(69, 15);
+            this.label8.Location = new System.Drawing.Point(55, 15);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(61, 16);
             this.label8.TabIndex = 185;
@@ -872,9 +872,9 @@
             "เลขที่การขาย",
             "ชื่อลูกค้า",
             "วันที่ทำรายการ"});
-            this.SearchComboBox.Location = new System.Drawing.Point(129, 13);
+            this.SearchComboBox.Location = new System.Drawing.Point(119, 13);
             this.SearchComboBox.Name = "SearchComboBox";
-            this.SearchComboBox.Size = new System.Drawing.Size(159, 25);
+            this.SearchComboBox.Size = new System.Drawing.Size(180, 25);
             this.SearchComboBox.TabIndex = 8;
             // 
             // label10
@@ -978,10 +978,12 @@
             this.SaleDate.CalendarFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaleDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.SaleDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaleDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.SaleDate.Location = new System.Drawing.Point(141, 140);
             this.SaleDate.Name = "SaleDate";
             this.SaleDate.Size = new System.Drawing.Size(150, 25);
             this.SaleDate.TabIndex = 267;
+            this.SaleDate.ValueChanged += new System.EventHandler(this.SaleDate_ValueChanged);
             // 
             // PictureBox9
             // 
@@ -1131,7 +1133,7 @@
             // 
             // DataGridSale
             // 
-            this.DataGridSale.BackgroundColor = System.Drawing.Color.Honeydew;
+            this.DataGridSale.BackgroundColor = System.Drawing.Color.White;
             this.DataGridSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridSale.Location = new System.Drawing.Point(33, 29);
             this.DataGridSale.Name = "DataGridSale";

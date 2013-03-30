@@ -95,7 +95,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 127);
+            this.label4.Location = new System.Drawing.Point(7, 124);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(173, 16);
             this.label4.TabIndex = 0;
@@ -104,7 +104,7 @@
             // spssConnectLbl
             // 
             this.spssConnectLbl.AutoSize = true;
-            this.spssConnectLbl.Location = new System.Drawing.Point(10, 147);
+            this.spssConnectLbl.Location = new System.Drawing.Point(13, 144);
             this.spssConnectLbl.Name = "spssConnectLbl";
             this.spssConnectLbl.Size = new System.Drawing.Size(61, 13);
             this.spssConnectLbl.TabIndex = 4;
@@ -114,7 +114,7 @@
             // 
             this.turnOnSpssOutput.AutoSize = true;
             this.turnOnSpssOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.turnOnSpssOutput.Location = new System.Drawing.Point(7, 181);
+            this.turnOnSpssOutput.Location = new System.Drawing.Point(10, 178);
             this.turnOnSpssOutput.Name = "turnOnSpssOutput";
             this.turnOnSpssOutput.Size = new System.Drawing.Size(156, 20);
             this.turnOnSpssOutput.TabIndex = 5;
@@ -136,7 +136,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Name = "ConfigControl";
-            this.Size = new System.Drawing.Size(482, 363);
+            this.Size = new System.Drawing.Size(345, 217);
             this.ResumeLayout(false);
             this.PerformLayout();
 

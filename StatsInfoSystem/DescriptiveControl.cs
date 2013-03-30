@@ -162,8 +162,27 @@ CTABLES
                 }
             }
 
-            if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
+            if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
+            mainTab.Visible = true;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.Visible = radioButton2.Checked;
+            dateTimePicker2.Visible = radioButton2.Checked;
+            label1.Visible = radioButton2.Checked;
+            label2.Visible = radioButton2.Checked;
         }
     }
 }

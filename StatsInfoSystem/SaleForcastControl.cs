@@ -184,9 +184,8 @@ PREFIX='Model'
                         alpahLvLbl.Text = cells.ValueAt[0, 0].ToString();
                     }
                 }
-                if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+                if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
                 spss.Quit();
-                textBox1.Visible = true;
                 tabControl1.SelectedIndex = 2;
             }
             else if (holtRadio.Checked)
@@ -282,7 +281,7 @@ PREFIX='Model'
                         label34.Text = cells.ValueAt[1, 0].ToString();
                     }
                 }
-                if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+                if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
                 spss.Quit();
                 tabControl1.SelectedIndex = 3;
             }
@@ -367,7 +366,7 @@ PREFIX='Model'
                         label70.Text = cells.ValueAt[2, 0].ToString();
                     }
                 }
-                if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+                if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
                 spss.Quit();
                 tabControl1.SelectedIndex = 4;
             }
@@ -473,7 +472,7 @@ ACF VARIABLES=NResidual_amount_Model_1
                         pictureBox5.ImageLocation = img;
                     }
                 }
-                if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+                if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
                 spss.Quit();
                 tabControl1.SelectedIndex = 5;
             }
@@ -531,7 +530,7 @@ ACF VARIABLES=amount
                     pacfPic.ImageLocation = pacfImg;
                 }
             }
-            if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+            if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
         }
 
@@ -668,7 +667,7 @@ TSMODEL
                     }
                 }
             }
-            if (Config.SPSS_OUTPUT) MessageBox.Show("click to close SPSS.");
+            if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
             tabControl1.SelectedIndex = 7;
         }

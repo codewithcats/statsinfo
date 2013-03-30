@@ -258,7 +258,7 @@ SAVE OUTFILE='{1}'.
                 }
                 context.SaveChanges();
             }
-            if (Config.SPSS_OUTPUT) MessageBox.Show("press ok to close SPSS");
+            if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
             reportPCATableAdapter.Fill(reportPCA_DataSet1.ReportPCA);
         }
@@ -292,6 +292,28 @@ SAVE OUTFILE='{1}'.
         private void tabPage5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = true;
+            checkBox2.Checked = true;
+            checkBox3.Checked = true;
+            checkBox4.Checked = true;
+            checkBox5.Checked = true;
+            checkBox6.Checked = true;
+            checkBox7.Checked = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
+            checkBox7.Checked = false;
         }
     }
 }

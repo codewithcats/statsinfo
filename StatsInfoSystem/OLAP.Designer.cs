@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.c1OlapPage1 = new C1.Win.Olap.C1OlapPage();
-            this._StatsInfoSystem_StsContextDataSet = new StatsInfoSystem._StatsInfoSystem_StsContextDataSet();
             this.saleAnalysisFactBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._StatsInfoSystem_StsContextDataSet = new StatsInfoSystem._StatsInfoSystem_StsContextDataSet();
             this.saleAnalysisFactTableAdapter = new StatsInfoSystem._StatsInfoSystem_StsContextDataSetTableAdapters.SaleAnalysisFactTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.c1OlapPage1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._StatsInfoSystem_StsContextDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleAnalysisFactBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._StatsInfoSystem_StsContextDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // c1OlapPage1
@@ -48,15 +48,15 @@
             this.c1OlapPage1.Size = new System.Drawing.Size(573, 427);
             this.c1OlapPage1.TabIndex = 0;
             // 
-            // _StatsInfoSystem_StsContextDataSet
-            // 
-            this._StatsInfoSystem_StsContextDataSet.DataSetName = "_StatsInfoSystem_StsContextDataSet";
-            this._StatsInfoSystem_StsContextDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // saleAnalysisFactBindingSource
             // 
             this.saleAnalysisFactBindingSource.DataMember = "SaleAnalysisFact";
             this.saleAnalysisFactBindingSource.DataSource = this._StatsInfoSystem_StsContextDataSet;
+            // 
+            // _StatsInfoSystem_StsContextDataSet
+            // 
+            this._StatsInfoSystem_StsContextDataSet.DataSetName = "_StatsInfoSystem_StsContextDataSet";
+            this._StatsInfoSystem_StsContextDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // saleAnalysisFactTableAdapter
             // 
@@ -66,14 +66,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(573, 427);
             this.Controls.Add(this.c1OlapPage1);
             this.Name = "OLAP";
-            this.Text = "OLAP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ระบบสอบถามและแสดงสารสนเทศสำหรับผู้บริหาร";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OLAP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1OlapPage1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._StatsInfoSystem_StsContextDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleAnalysisFactBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._StatsInfoSystem_StsContextDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

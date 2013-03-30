@@ -25,9 +25,13 @@ namespace StatsInfoSystem
         private RegControl regControl;
         private OLAP olapForm;
         private FactorMngControl factorControl;
+        private LoginMngControl loginControl;
+        private AuthenMgnControl authControl;
         public Form1()
         {
             InitializeComponent();
+            loginControl = new LoginMngControl(this);
+            DisplayControl(loginControl);
         }
 
         private void customerMenuItem_Click(object sender, EventArgs e)
@@ -176,7 +180,7 @@ TSMODEL
 ";
             spss.ExecuteCommands(syntax2, true);
             spss.GetDesignatedOutputDoc().Visible = true;
-            MessageBox.Show("press ok to close SPSS");
+            MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
             
         }
@@ -234,6 +238,39 @@ TSMODEL
             DisplayControl(loadingIndicator);
             if (factorControl == null) factorControl = new FactorMngControl();
             DisplayControl(factorControl);
+        }
+
+        private void userMenu_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loadingIndicator);
+            if (authControl == null) authControl = new AuthenMgnControl();
+            DisplayControl(authControl);
+        }
+
+        public void loginSuccess(Employee emp)
+        {
+            mainPanel.Controls.Clear();
+            menuStrip1.Enabled = true;
+        }
+
+        private void logounMenu_Click(object sender, EventArgs e)
+        {
+            DisplayControl(loginControl);
+        }
+
+        private void homeMenu_Click(object sender, EventArgs e)
+        {
+            mainPanel.Controls.Clear();
+        }
+
+        internal void setCurrentUser(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ระบบเกบรวบรวมและปรบปรงขอมลToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

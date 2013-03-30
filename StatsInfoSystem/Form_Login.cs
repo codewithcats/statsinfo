@@ -11,8 +11,8 @@ namespace StatsInfoSystem
 {
     public partial class Form_Login : Form
     {
-        private Form_Main main;
-        public Form_Login(Form_Main fm)
+        private Form1 main;
+        public Form_Login(Form1 fm)
         {
             InitializeComponent();
             main = fm;

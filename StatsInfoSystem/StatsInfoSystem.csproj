@@ -104,6 +104,12 @@
       <DependentUpon>ClusterControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Config.cs" />
+    <Compile Include="LoginMngControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginMngControl.Designer.cs">
+      <DependentUpon>LoginMngControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerMngControl.cs">
       <SubType>UserControl</SubType>
@@ -130,35 +136,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Customer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Form_Customer.designer.cs">
-      <DependentUpon>Form_Customer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_Employee.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Form_Employee.designer.cs">
-      <DependentUpon>Form_Employee.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Login.designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Main.designer.cs">
-      <DependentUpon>Form_Main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_Product.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Form_Product.designer.cs">
-      <DependentUpon>Form_Product.cs</DependentUpon>
     </Compile>
     <Compile Include="OLAP.cs">
       <SubType>Form</SubType>
@@ -166,23 +148,11 @@
     <Compile Include="OLAP.Designer.cs">
       <DependentUpon>OLAP.cs</DependentUpon>
     </Compile>
-    <Compile Include="OlapControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="OlapControl.Designer.cs">
-      <DependentUpon>OlapControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="RegControl.designer.cs">
       <DependentUpon>RegControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm10_4PCA.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Frm10_4PCA.designer.cs">
-      <DependentUpon>Frm10_4PCA.cs</DependentUpon>
     </Compile>
     <Compile Include="DescriptiveControl.cs">
       <SubType>UserControl</SubType>
@@ -270,6 +240,9 @@
     <EmbeddedResource Include="ClusterControl.resx">
       <DependentUpon>ClusterControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginMngControl.resx">
+      <DependentUpon>LoginMngControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerMngControl.resx">
       <DependentUpon>CustomerMngControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,32 +255,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Customer.resx">
-      <DependentUpon>Form_Customer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_Employee.resx">
-      <DependentUpon>Form_Employee.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_Main.resx">
-      <DependentUpon>Form_Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_Product.resx">
-      <DependentUpon>Form_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OLAP.resx">
       <DependentUpon>OLAP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OlapControl.resx">
-      <DependentUpon>OlapControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegControl.resx">
       <DependentUpon>RegControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm10_4PCA.resx">
-      <DependentUpon>Frm10_4PCA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DescriptiveControl.resx">
       <DependentUpon>DescriptiveControl.cs</DependentUpon>
@@ -556,6 +511,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Check_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG PRO-2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

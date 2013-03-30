@@ -45,7 +45,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.name_txt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.code_txt = new System.Windows.Forms.TextBox();
             this.prict_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.description_txt = new System.Windows.Forms.TextBox();
@@ -58,7 +57,6 @@
             this.addGrp_btn = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.grpName_txt = new System.Windows.Forms.TextBox();
-            this.grpCode_txt = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button17 = new System.Windows.Forms.Button();
@@ -75,7 +73,6 @@
             this.addProductCat_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.productCatName_txtBox = new System.Windows.Forms.TextBox();
-            this.productCatCode_txtBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.productCatSearchCancel_btn = new System.Windows.Forms.Button();
@@ -95,6 +92,9 @@
             this.showCat_btn = new System.Windows.Forms.Button();
             this.showGrp_btn = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.grpCode_txt = new System.Windows.Forms.Label();
+            this.productCatCode_txtBox = new System.Windows.Forms.Label();
+            this.code_txt = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.product_tabpage.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -158,6 +158,7 @@
             this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox7.Controls.Add(this.code_txt);
             this.groupBox7.Controls.Add(this.button13);
             this.groupBox7.Controls.Add(this.button12);
             this.groupBox7.Controls.Add(this.button11);
@@ -170,7 +171,6 @@
             this.groupBox7.Controls.Add(this.label3);
             this.groupBox7.Controls.Add(this.name_txt);
             this.groupBox7.Controls.Add(this.label5);
-            this.groupBox7.Controls.Add(this.code_txt);
             this.groupBox7.Controls.Add(this.prict_txt);
             this.groupBox7.Controls.Add(this.label4);
             this.groupBox7.Controls.Add(this.description_txt);
@@ -309,14 +309,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "ราคาขายสินค้า";
             // 
-            // code_txt
-            // 
-            this.code_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code_txt.Location = new System.Drawing.Point(110, 18);
-            this.code_txt.Name = "code_txt";
-            this.code_txt.Size = new System.Drawing.Size(183, 20);
-            this.code_txt.TabIndex = 3;
-            // 
             // prict_txt
             // 
             this.prict_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -376,24 +368,24 @@
             this.productGrp_list.DisplayMember = "DisplayName";
             this.productGrp_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productGrp_list.FormattingEnabled = true;
-            this.productGrp_list.Location = new System.Drawing.Point(7, 167);
+            this.productGrp_list.Location = new System.Drawing.Point(3, 158);
             this.productGrp_list.Name = "productGrp_list";
-            this.productGrp_list.Size = new System.Drawing.Size(545, 199);
+            this.productGrp_list.Size = new System.Drawing.Size(468, 199);
             this.productGrp_list.TabIndex = 17;
             this.productGrp_list.ValueMember = "Id";
             this.productGrp_list.SelectedIndexChanged += new System.EventHandler(this.productGrp_list_SelectedIndexChanged);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.grpCode_txt);
             this.groupBox3.Controls.Add(this.delGrp_btn);
             this.groupBox3.Controls.Add(this.editGrp_btn);
             this.groupBox3.Controls.Add(this.addGrp_btn);
             this.groupBox3.Controls.Add(this.label41);
             this.groupBox3.Controls.Add(this.grpName_txt);
-            this.groupBox3.Controls.Add(this.grpCode_txt);
             this.groupBox3.Controls.Add(this.label43);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(213, 12);
+            this.groupBox3.Location = new System.Drawing.Point(209, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(262, 149);
             this.groupBox3.TabIndex = 16;
@@ -457,14 +449,6 @@
             this.grpName_txt.Size = new System.Drawing.Size(152, 20);
             this.grpName_txt.TabIndex = 5;
             // 
-            // grpCode_txt
-            // 
-            this.grpCode_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCode_txt.Location = new System.Drawing.Point(101, 27);
-            this.grpCode_txt.Name = "grpCode_txt";
-            this.grpCode_txt.Size = new System.Drawing.Size(152, 20);
-            this.grpCode_txt.TabIndex = 3;
-            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -484,7 +468,7 @@
             this.groupBox4.Controls.Add(this.textBox37);
             this.groupBox4.Controls.Add(this.label45);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(7, 12);
+            this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 149);
             this.groupBox4.TabIndex = 15;
@@ -509,9 +493,9 @@
             this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
-            "กลุ่มลูกค้าทั้งหมด",
-            "รหัสกลุ่มลูกค้า",
-            "ชื่อกลุ่มลูกค้า"});
+            "กลุ่มสินค้าทั้งหมด",
+            "รหัสกลุ่มสินค้า",
+            "ชื่อกลุ่มสินค้า"});
             this.comboBox6.Location = new System.Drawing.Point(72, 18);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(120, 21);
@@ -581,19 +565,19 @@
             this.productCat_listBox.FormattingEnabled = true;
             this.productCat_listBox.Location = new System.Drawing.Point(6, 163);
             this.productCat_listBox.Name = "productCat_listBox";
-            this.productCat_listBox.Size = new System.Drawing.Size(566, 212);
+            this.productCat_listBox.Size = new System.Drawing.Size(465, 212);
             this.productCat_listBox.TabIndex = 0;
             this.productCat_listBox.ValueMember = "Id";
             this.productCat_listBox.SelectedIndexChanged += new System.EventHandler(this.productCat_listBox_SelectedIndexChanged);
             // 
             // groupBox14
             // 
+            this.groupBox14.Controls.Add(this.productCatCode_txtBox);
             this.groupBox14.Controls.Add(this.deleteProductCat_btn);
             this.groupBox14.Controls.Add(this.updateProductCat_btn);
             this.groupBox14.Controls.Add(this.addProductCat_btn);
             this.groupBox14.Controls.Add(this.label7);
             this.groupBox14.Controls.Add(this.productCatName_txtBox);
-            this.groupBox14.Controls.Add(this.productCatCode_txtBox);
             this.groupBox14.Controls.Add(this.label8);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(209, 6);
@@ -657,14 +641,6 @@
             this.productCatName_txtBox.Name = "productCatName_txtBox";
             this.productCatName_txtBox.Size = new System.Drawing.Size(134, 20);
             this.productCatName_txtBox.TabIndex = 5;
-            // 
-            // productCatCode_txtBox
-            // 
-            this.productCatCode_txtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productCatCode_txtBox.Location = new System.Drawing.Point(119, 27);
-            this.productCatCode_txtBox.Name = "productCatCode_txtBox";
-            this.productCatCode_txtBox.Size = new System.Drawing.Size(134, 20);
-            this.productCatCode_txtBox.TabIndex = 3;
             // 
             // label8
             // 
@@ -884,6 +860,33 @@
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
+            // grpCode_txt
+            // 
+            this.grpCode_txt.AutoSize = true;
+            this.grpCode_txt.Location = new System.Drawing.Point(101, 30);
+            this.grpCode_txt.Name = "grpCode_txt";
+            this.grpCode_txt.Size = new System.Drawing.Size(10, 13);
+            this.grpCode_txt.TabIndex = 40;
+            this.grpCode_txt.Text = "-";
+            // 
+            // productCatCode_txtBox
+            // 
+            this.productCatCode_txtBox.AutoSize = true;
+            this.productCatCode_txtBox.Location = new System.Drawing.Point(119, 30);
+            this.productCatCode_txtBox.Name = "productCatCode_txtBox";
+            this.productCatCode_txtBox.Size = new System.Drawing.Size(10, 13);
+            this.productCatCode_txtBox.TabIndex = 40;
+            this.productCatCode_txtBox.Text = "-";
+            // 
+            // code_txt
+            // 
+            this.code_txt.AutoSize = true;
+            this.code_txt.Location = new System.Drawing.Point(110, 21);
+            this.code_txt.Name = "code_txt";
+            this.code_txt.Size = new System.Drawing.Size(10, 13);
+            this.code_txt.TabIndex = 41;
+            this.code_txt.Text = "-";
+            // 
             // ProductMngControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -933,7 +936,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox name_txt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox code_txt;
         private System.Windows.Forms.TextBox prict_txt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox description_txt;
@@ -952,7 +954,6 @@
         private System.Windows.Forms.Button addGrp_btn;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox grpName_txt;
-        private System.Windows.Forms.TextBox grpCode_txt;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button17;
@@ -973,7 +974,6 @@
         private System.Windows.Forms.Button addProductCat_btn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox productCatName_txtBox;
-        private System.Windows.Forms.TextBox productCatCode_txtBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.Button productCatSearchCancel_btn;
@@ -983,6 +983,9 @@
         private System.Windows.Forms.TextBox productCatSearchKey_txtBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Label grpCode_txt;
+        private System.Windows.Forms.Label productCatCode_txtBox;
+        private System.Windows.Forms.Label code_txt;
 
     }
 }
