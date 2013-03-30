@@ -41,11 +41,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.end_year_cmb = new System.Windows.Forms.ComboBox();
+            this.end_month_cmb = new System.Windows.Forms.ComboBox();
+            this.start_year_cmb = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.start_month_cmb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label174 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -458,7 +458,7 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.run_regression);
             // 
             // groupBox2
             // 
@@ -473,11 +473,11 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.comboBox4);
-            this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.end_year_cmb);
+            this.panel2.Controls.Add(this.end_month_cmb);
+            this.panel2.Controls.Add(this.start_year_cmb);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.start_month_cmb);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label174);
             this.panel2.Controls.Add(this.label6);
@@ -487,25 +487,25 @@
             this.panel2.Size = new System.Drawing.Size(200, 153);
             this.panel2.TabIndex = 0;
             // 
-            // comboBox4
+            // end_year_cmb
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.end_year_cmb.FormattingEnabled = true;
+            this.end_year_cmb.Items.AddRange(new object[] {
             "2007",
             "2008",
             "2009",
             "2010",
             "2011",
             "2012"});
-            this.comboBox4.Location = new System.Drawing.Point(47, 115);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(82, 24);
-            this.comboBox4.TabIndex = 5;
+            this.end_year_cmb.Location = new System.Drawing.Point(47, 115);
+            this.end_year_cmb.Name = "end_year_cmb";
+            this.end_year_cmb.Size = new System.Drawing.Size(82, 24);
+            this.end_year_cmb.TabIndex = 5;
             // 
-            // comboBox3
+            // end_month_cmb
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.end_month_cmb.FormattingEnabled = true;
+            this.end_month_cmb.Items.AddRange(new object[] {
             "January",
             "Febuary",
             "March",
@@ -518,25 +518,25 @@
             "October",
             "November",
             "December"});
-            this.comboBox3.Location = new System.Drawing.Point(47, 85);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(140, 24);
-            this.comboBox3.TabIndex = 4;
+            this.end_month_cmb.Location = new System.Drawing.Point(47, 85);
+            this.end_month_cmb.Name = "end_month_cmb";
+            this.end_month_cmb.Size = new System.Drawing.Size(140, 24);
+            this.end_month_cmb.TabIndex = 4;
             // 
-            // comboBox2
+            // start_year_cmb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.start_year_cmb.FormattingEnabled = true;
+            this.start_year_cmb.Items.AddRange(new object[] {
             "2007",
             "2008",
             "2009",
             "2010",
             "2011",
             "2012"});
-            this.comboBox2.Location = new System.Drawing.Point(47, 41);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(82, 24);
-            this.comboBox2.TabIndex = 5;
+            this.start_year_cmb.Location = new System.Drawing.Point(47, 41);
+            this.start_year_cmb.Name = "start_year_cmb";
+            this.start_year_cmb.Size = new System.Drawing.Size(82, 24);
+            this.start_year_cmb.TabIndex = 5;
             // 
             // label5
             // 
@@ -547,10 +547,10 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "ปี";
             // 
-            // comboBox1
+            // start_month_cmb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.start_month_cmb.FormattingEnabled = true;
+            this.start_month_cmb.Items.AddRange(new object[] {
             "January",
             "Febuary",
             "March",
@@ -563,10 +563,10 @@
             "October",
             "November",
             "December"});
-            this.comboBox1.Location = new System.Drawing.Point(47, 14);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 24);
-            this.comboBox1.TabIndex = 4;
+            this.start_month_cmb.Location = new System.Drawing.Point(47, 14);
+            this.start_month_cmb.Name = "start_month_cmb";
+            this.start_month_cmb.Size = new System.Drawing.Size(140, 24);
+            this.start_month_cmb.TabIndex = 4;
             // 
             // label1
             // 
@@ -3361,12 +3361,12 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox start_year_cmb;
+        private System.Windows.Forms.ComboBox start_month_cmb;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox end_year_cmb;
+        private System.Windows.Forms.ComboBox end_month_cmb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label174;

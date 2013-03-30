@@ -11,10 +11,13 @@ namespace StatsInfoSystem
 {
     public partial class RegControl : UserControl
     {
-private  int descriptiveCount;
         public RegControl()
         {
             InitializeComponent();
+            start_month_cmb.SelectedIndex = 0;
+            start_year_cmb.SelectedIndex = 0;
+            end_month_cmb.SelectedIndex = 11;
+            end_year_cmb.SelectedIndex = end_year_cmb.Items.Count - 1;
         }
 
         private void label17_Click(object sender, EventArgs e)
@@ -36,13 +39,27 @@ private  int descriptiveCount;
             checkBox5.Checked = true;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void run_regression(object sender, EventArgs e)
         {
             SpssBridge.SpssBridge bridge = new SpssBridge.SpssBridge();
             spsswinLib.Application16 spss = (spsswinLib.Application16)bridge.GetSpss();
             var key = System.DateTime.Now.Ticks.ToString();
-            string output = AppDomain.CurrentDomain.BaseDirectory + "reg_1-" + key + ".sav";
+            string output = AppDomain.CurrentDomain.BaseDirectory + "reg_step_1-" + key + ".sav";
             string syntax = @"
+GET DATA 
+/TYPE=ODBC 
+/CONNECT= {0}
+/SQL = "" SELECT * FROM [StatsInfoSystem.StsContext].[dbo].[RegStep] WHERE month >= '{2}-{3}-1' AND month <= '{4}-{5}-1'"".
+SAVE OUTFILE='{1}'.
+";
+            var startMonth = start_month_cmb.SelectedIndex + 1;
+            var startYear = start_year_cmb.SelectedItem;
+            var endMonth = end_month_cmb.SelectedIndex + 1;
+            var endYear = end_year_cmb.SelectedItem;
+            syntax = String.Format(syntax, Config.SPSS_CONNECT, output, startYear, startMonth, endYear, endMonth);
+            spss.ExecuteCommands(syntax, true);
+            spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
+            syntax = @"
 GET
     FILE='{0}'.
 
@@ -61,12 +78,12 @@ REGRESSION
 SAVE OUTFILE='{1}'.
 
 ";
-            string input = AppDomain.CurrentDomain.BaseDirectory + "Regstep.sav";
-            syntax = String.Format(syntax, input, output);
+            string output2 = AppDomain.CurrentDomain.BaseDirectory + "reg_step_2-" + key + ".sav";
+            syntax = String.Format(syntax, output, output2);
             spss.ExecuteCommands(syntax, true);
             spss.GetDesignatedOutputDoc().Visible = Config.SPSS_OUTPUT;
 
-            string syntax2 = @"
+            syntax = @"
 GET
     FILE='{0}'.
 EXAMINE VARIABLES=RES_1
@@ -82,8 +99,8 @@ GRAPH
   /MISSING=LISTWISE.
 
 ";
-            syntax2 = string.Format(syntax2, input);
-            spss.ExecuteCommands(syntax2, true);
+            syntax = string.Format(syntax, output2);
+            spss.ExecuteCommands(syntax, true);
             var outputItems = spss.GetDesignatedOutputDoc().Items;
             for (int i = 0; i < outputItems.Count; i++)
             {
@@ -106,7 +123,8 @@ GRAPH
             if (Config.SPSS_OUTPUT) MessageBox.Show("Press OK to Close SPSS");
             spss.Quit();
             tabControl1.Visible = true;
-            }
+        }
+
           private void button6_Click(object sender, EventArgs e)
         {
             
