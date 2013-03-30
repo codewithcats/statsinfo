@@ -87,19 +87,19 @@ SAVE OUTFILE='{1}'.
                     label18.Text = dataCells.ValueAt[0, 1];
                     label19.Text = dataCells.ValueAt[0, 2];
                     label20.Text = dataCells.ValueAt[0, 3];
-                    label21.Text = string.Format("{0:N2}", Convert.ToDecimal(dataCells.ValueAt[0, 4]));
+                    label21.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 4]));
 
                     label24.Text = dataCells.ValueAt[1, 0];
                     label31.Text = dataCells.ValueAt[1, 1];
                     label38.Text = dataCells.ValueAt[1, 2];
                     label45.Text = dataCells.ValueAt[1, 3];
-                    label52.Text = dataCells.ValueAt[1, 4];
+                    label52.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 4]));
 
                     label25.Text = dataCells.ValueAt[2, 0];
                     label32.Text = dataCells.ValueAt[2, 1];
                     label39.Text = dataCells.ValueAt[2, 2];
                     label46.Text = dataCells.ValueAt[2, 3];
-                    label21.Text = dataCells.ValueAt[2, 4];
+                    label53.Text = dataCells.ValueAt[2, 4];
 
                     label26.Text = dataCells.ValueAt[3, 0];
                     label33.Text = dataCells.ValueAt[3, 1];
