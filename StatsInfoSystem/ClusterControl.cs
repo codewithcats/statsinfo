@@ -357,5 +357,10 @@ GRAPH
             checkBox6.Checked = false;
             checkBox7.Checked = false;
         }
+
+        private void label258_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
