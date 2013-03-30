@@ -362,5 +362,10 @@ GRAPH
         {
 
         }
+
+        private void label818_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
