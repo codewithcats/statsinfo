@@ -61,6 +61,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -256,10 +259,10 @@
             this.label189 = new System.Windows.Forms.Label();
             this.label185 = new System.Windows.Forms.Label();
             this.label186 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label200 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.customerList = new System.Windows.Forms.ListBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -275,13 +278,15 @@
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -669,18 +674,50 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(648, 540);
             this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.tabControl2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(640, 514);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "ผลลัพธ์ของเทคนิค K-Means";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(640, 514);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "ผลลัพธ์ของเทคนิค Hierarchical";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(3, 3);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(634, 508);
+            this.tabControl2.TabIndex = 1;
             // 
             // tabPage4
             // 
@@ -743,7 +780,7 @@
             this.tabPage4.Controls.Add(this.label60);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(640, 514);
+            this.tabPage4.Size = new System.Drawing.Size(626, 482);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "แสดงข้อมูลที่ใช้ในการวิเคราะห์";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -846,7 +883,6 @@
             this.label49.Size = new System.Drawing.Size(10, 13);
             this.label49.TabIndex = 41;
             this.label49.Text = "-";
-            this.label49.Click += new System.EventHandler(this.label49_Click);
             // 
             // label37
             // 
@@ -865,7 +901,6 @@
             this.label55.Size = new System.Drawing.Size(10, 13);
             this.label55.TabIndex = 43;
             this.label55.Text = "-";
-            this.label55.Click += new System.EventHandler(this.label55_Click);
             // 
             // label42
             // 
@@ -956,7 +991,6 @@
             this.label46.Size = new System.Drawing.Size(10, 13);
             this.label46.TabIndex = 53;
             this.label46.Text = "-";
-            this.label46.Click += new System.EventHandler(this.label46_Click);
             // 
             // label34
             // 
@@ -1321,7 +1355,7 @@
             this.tabPage5.Controls.Add(this.label87);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(640, 514);
+            this.tabPage5.Size = new System.Drawing.Size(626, 482);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ตารางแสดงค่าเฉลี่ยของตัวแปรในแต่ละกลุ่ม";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1335,7 +1369,6 @@
             this.label83.Size = new System.Drawing.Size(161, 13);
             this.label83.TabIndex = 98;
             this.label83.Text = "ตาราง Final Cluster Centers";
-            this.label83.Click += new System.EventHandler(this.label83_Click);
             // 
             // label78
             // 
@@ -1784,7 +1817,7 @@
             this.tabPage6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(640, 514);
+            this.tabPage6.Size = new System.Drawing.Size(626, 482);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "ตารางแสดงระยะห่างระหว่างค่ากลางของแต่ละกลุ่ม";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1838,7 +1871,6 @@
             this.label110.Size = new System.Drawing.Size(236, 13);
             this.label110.TabIndex = 144;
             this.label110.Text = "Distances between Final Cluster Centers";
-            this.label110.Click += new System.EventHandler(this.label110_Click);
             // 
             // label109
             // 
@@ -2555,7 +2587,6 @@
             this.label198.TabIndex = 59;
             this.label198.Text = "df";
             this.label198.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label198.Click += new System.EventHandler(this.label168_Click);
             // 
             // label168
             // 
@@ -2567,7 +2598,6 @@
             this.label168.TabIndex = 59;
             this.label168.Text = "df";
             this.label168.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label168.Click += new System.EventHandler(this.label168_Click);
             // 
             // label197
             // 
@@ -2755,7 +2785,6 @@
             this.label188.TabIndex = 55;
             this.label188.Text = "Mean Square";
             this.label188.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label188.Click += new System.EventHandler(this.label185_Click);
             // 
             // label189
             // 
@@ -2767,7 +2796,6 @@
             this.label189.TabIndex = 55;
             this.label189.Text = "Eror";
             this.label189.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label189.Click += new System.EventHandler(this.label185_Click);
             // 
             // label185
             // 
@@ -2779,7 +2807,6 @@
             this.label185.TabIndex = 55;
             this.label185.Text = "Cluster";
             this.label185.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label185.Click += new System.EventHandler(this.label185_Click);
             // 
             // label186
             // 
@@ -2791,18 +2818,18 @@
             this.label186.TabIndex = 54;
             this.label186.Text = "ตาราง ANOVA";
             // 
-            // tabPage2
+            // tabPage3
             // 
-            this.tabPage2.AutoScroll = true;
-            this.tabPage2.Controls.Add(this.label200);
-            this.tabPage2.Controls.Add(this.pictureBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(640, 514);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "กราฟแสดงผลการจัดกลุ่มลูกค้า";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.label200);
+            this.tabPage3.Controls.Add(this.pictureBox1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(640, 514);
+            this.tabPage3.TabIndex = 1;
+            this.tabPage3.Text = "กราฟแสดงผลการจัดกลุ่มลูกค้า";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // label200
             // 
@@ -2823,19 +2850,19 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // tabPage3
+            // tabPage8
             // 
-            this.tabPage3.AutoScroll = true;
-            this.tabPage3.Controls.Add(this.customerList);
-            this.tabPage3.Controls.Add(this.comboBox6);
-            this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(640, 514);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "ตารางแสดงข้อมูลผลการจัดกลุ่มลูกค้า";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage8.AutoScroll = true;
+            this.tabPage8.Controls.Add(this.customerList);
+            this.tabPage8.Controls.Add(this.comboBox6);
+            this.tabPage8.Controls.Add(this.label6);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(640, 514);
+            this.tabPage8.TabIndex = 2;
+            this.tabPage8.Text = "ตารางแสดงข้อมูลผลการจัดกลุ่มลูกค้า";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // customerList
             // 
@@ -2858,7 +2885,6 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(121, 21);
             this.comboBox6.TabIndex = 1;
-            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -2893,6 +2919,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
@@ -2901,11 +2929,11 @@
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2936,82 +2964,17 @@
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Label label170;
+        private System.Windows.Forms.RadioButton holtRadio;
+        private System.Windows.Forms.RadioButton simpleRadio;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ListBox customerList;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.Label label126;
-        private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.Label label131;
-        private System.Windows.Forms.Label label132;
-        private System.Windows.Forms.Label label133;
-        private System.Windows.Forms.Label label134;
-        private System.Windows.Forms.Label label135;
-        private System.Windows.Forms.Label label136;
-        private System.Windows.Forms.Label label137;
-        private System.Windows.Forms.Label label138;
-        private System.Windows.Forms.Label label139;
-        private System.Windows.Forms.Label label142;
-        private System.Windows.Forms.Label label143;
-        private System.Windows.Forms.Label label144;
-        private System.Windows.Forms.Label label145;
-        private System.Windows.Forms.Label label146;
-        private System.Windows.Forms.Label label155;
-        private System.Windows.Forms.Label label149;
-        private System.Windows.Forms.Label label150;
-        private System.Windows.Forms.Label label152;
-        private System.Windows.Forms.Label label153;
-        private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.Label label187;
-        private System.Windows.Forms.Label label165;
-        private System.Windows.Forms.Label label166;
-        private System.Windows.Forms.Label label167;
-        private System.Windows.Forms.Label label168;
-        private System.Windows.Forms.Label label185;
-        private System.Windows.Forms.Label label186;
-        private System.Windows.Forms.Label label188;
-        private System.Windows.Forms.Label label198;
-        private System.Windows.Forms.Label label189;
-        private System.Windows.Forms.Label label200;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.Label label103;
-        private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
@@ -3044,6 +3007,20 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
@@ -3052,6 +3029,10 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label68;
@@ -3074,8 +3055,22 @@
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label106;
@@ -3083,6 +3078,31 @@
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Label label149;
+        private System.Windows.Forms.Label label150;
+        private System.Windows.Forms.Label label152;
+        private System.Windows.Forms.Label label153;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label label128;
+        private System.Windows.Forms.Label label131;
+        private System.Windows.Forms.Label label132;
+        private System.Windows.Forms.Label label133;
+        private System.Windows.Forms.Label label134;
+        private System.Windows.Forms.Label label135;
+        private System.Windows.Forms.Label label136;
+        private System.Windows.Forms.Label label137;
+        private System.Windows.Forms.Label label138;
+        private System.Windows.Forms.Label label139;
+        private System.Windows.Forms.Label label142;
+        private System.Windows.Forms.Label label143;
+        private System.Windows.Forms.Label label144;
+        private System.Windows.Forms.Label label145;
+        private System.Windows.Forms.Label label146;
+        private System.Windows.Forms.Label label155;
+        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label169;
         private System.Windows.Forms.Label label201;
@@ -3091,6 +3111,7 @@
         private System.Windows.Forms.Label label204;
         private System.Windows.Forms.Label label205;
         private System.Windows.Forms.Label label206;
+        private System.Windows.Forms.Label label187;
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Label label114;
@@ -3123,6 +3144,11 @@
         private System.Windows.Forms.Label label177;
         private System.Windows.Forms.Label label160;
         private System.Windows.Forms.Label label162;
+        private System.Windows.Forms.Label label165;
+        private System.Windows.Forms.Label label166;
+        private System.Windows.Forms.Label label167;
+        private System.Windows.Forms.Label label198;
+        private System.Windows.Forms.Label label168;
         private System.Windows.Forms.Label label197;
         private System.Windows.Forms.Label label196;
         private System.Windows.Forms.Label label164;
@@ -3139,12 +3165,17 @@
         private System.Windows.Forms.Label label190;
         private System.Windows.Forms.Label label124;
         private System.Windows.Forms.Label label120;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.Label label170;
-        private System.Windows.Forms.RadioButton holtRadio;
-        private System.Windows.Forms.RadioButton simpleRadio;
+        private System.Windows.Forms.Label label188;
+        private System.Windows.Forms.Label label189;
+        private System.Windows.Forms.Label label185;
+        private System.Windows.Forms.Label label186;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label200;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.ListBox customerList;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
