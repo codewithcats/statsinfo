@@ -77,7 +77,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label171 = new System.Windows.Forms.Label();
             this.label184 = new System.Windows.Forms.Label();
             this.label183 = new System.Windows.Forms.Label();
             this.label228 = new System.Windows.Forms.Label();
@@ -128,7 +127,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label187 = new System.Windows.Forms.Label();
             this.label182 = new System.Windows.Forms.Label();
-            this.label195 = new System.Windows.Forms.Label();
             this.label199 = new System.Windows.Forms.Label();
             this.label192 = new System.Windows.Forms.Label();
             this.label175 = new System.Windows.Forms.Label();
@@ -287,6 +285,7 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.sale_eq_label = new System.Windows.Forms.Label();
             this.GroupBox12 = new System.Windows.Forms.GroupBox();
             this.label229 = new System.Windows.Forms.Label();
             this.label231 = new System.Windows.Forms.Label();
@@ -308,7 +307,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label163 = new System.Windows.Forms.Label();
-            this.sale_eq_label = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -859,7 +857,6 @@
             // tabPage5
             // 
             this.tabPage5.AutoScroll = true;
-            this.tabPage5.Controls.Add(this.label171);
             this.tabPage5.Controls.Add(this.label184);
             this.tabPage5.Controls.Add(this.label183);
             this.tabPage5.Controls.Add(this.label228);
@@ -894,21 +891,11 @@
             this.tabPage5.Text = "ตรวจสอบเงื่อนไข (3)";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // label171
-            // 
-            this.label171.AutoSize = true;
-            this.label171.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label171.Location = new System.Drawing.Point(326, 78);
-            this.label171.Name = "label171";
-            this.label171.Size = new System.Drawing.Size(60, 16);
-            this.label171.TabIndex = 195;
-            this.label171.Text = "ANOVA";
-            // 
             // label184
             // 
             this.label184.AutoSize = true;
             this.label184.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label184.Location = new System.Drawing.Point(446, 156);
+            this.label184.Location = new System.Drawing.Point(472, 156);
             this.label184.Name = "label184";
             this.label184.Size = new System.Drawing.Size(40, 16);
             this.label184.TabIndex = 193;
@@ -930,7 +917,7 @@
             // 
             this.label228.AutoSize = true;
             this.label228.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label228.Location = new System.Drawing.Point(422, 112);
+            this.label228.Location = new System.Drawing.Point(448, 112);
             this.label228.Name = "label228";
             this.label228.Size = new System.Drawing.Size(104, 32);
             this.label228.TabIndex = 193;
@@ -941,7 +928,7 @@
             // 
             this.label227.AutoSize = true;
             this.label227.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label227.Location = new System.Drawing.Point(247, 156);
+            this.label227.Location = new System.Drawing.Point(243, 156);
             this.label227.Name = "label227";
             this.label227.Size = new System.Drawing.Size(18, 16);
             this.label227.TabIndex = 193;
@@ -951,7 +938,7 @@
             // 
             this.label172.AutoSize = true;
             this.label172.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label172.Location = new System.Drawing.Point(206, 133);
+            this.label172.Location = new System.Drawing.Point(220, 133);
             this.label172.Name = "label172";
             this.label172.Size = new System.Drawing.Size(202, 16);
             this.label172.TabIndex = 193;
@@ -960,7 +947,7 @@
             // label176
             // 
             this.label176.AutoSize = true;
-            this.label176.Location = new System.Drawing.Point(328, 202);
+            this.label176.Location = new System.Drawing.Point(345, 202);
             this.label176.Name = "label176";
             this.label176.Size = new System.Drawing.Size(12, 16);
             this.label176.TabIndex = 179;
@@ -969,7 +956,7 @@
             // label202
             // 
             this.label202.AutoSize = true;
-            this.label202.Location = new System.Drawing.Point(222, 202);
+            this.label202.Location = new System.Drawing.Point(246, 202);
             this.label202.Name = "label202";
             this.label202.Size = new System.Drawing.Size(12, 16);
             this.label202.TabIndex = 179;
@@ -978,7 +965,7 @@
             // label206
             // 
             this.label206.AutoSize = true;
-            this.label206.Location = new System.Drawing.Point(442, 202);
+            this.label206.Location = new System.Drawing.Point(472, 202);
             this.label206.Name = "label206";
             this.label206.Size = new System.Drawing.Size(12, 16);
             this.label206.TabIndex = 183;
@@ -987,7 +974,7 @@
             // label173
             // 
             this.label173.AutoSize = true;
-            this.label173.Location = new System.Drawing.Point(315, 179);
+            this.label173.Location = new System.Drawing.Point(345, 179);
             this.label173.Name = "label173";
             this.label173.Size = new System.Drawing.Size(12, 16);
             this.label173.TabIndex = 183;
@@ -996,7 +983,7 @@
             // label204
             // 
             this.label204.AutoSize = true;
-            this.label204.Location = new System.Drawing.Point(212, 179);
+            this.label204.Location = new System.Drawing.Point(246, 179);
             this.label204.Name = "label204";
             this.label204.Size = new System.Drawing.Size(12, 16);
             this.label204.TabIndex = 183;
@@ -1005,7 +992,7 @@
             // label223
             // 
             this.label223.AutoSize = true;
-            this.label223.Location = new System.Drawing.Point(522, 202);
+            this.label223.Location = new System.Drawing.Point(569, 202);
             this.label223.Name = "label223";
             this.label223.Size = new System.Drawing.Size(12, 16);
             this.label223.TabIndex = 189;
@@ -1014,7 +1001,7 @@
             // label207
             // 
             this.label207.AutoSize = true;
-            this.label207.Location = new System.Drawing.Point(601, 202);
+            this.label207.Location = new System.Drawing.Point(648, 202);
             this.label207.Name = "label207";
             this.label207.Size = new System.Drawing.Size(12, 16);
             this.label207.TabIndex = 189;
@@ -1023,7 +1010,7 @@
             // label203
             // 
             this.label203.AutoSize = true;
-            this.label203.Location = new System.Drawing.Point(772, 202);
+            this.label203.Location = new System.Drawing.Point(817, 202);
             this.label203.Name = "label203";
             this.label203.Size = new System.Drawing.Size(12, 16);
             this.label203.TabIndex = 188;
@@ -1032,7 +1019,7 @@
             // label208
             // 
             this.label208.AutoSize = true;
-            this.label208.Location = new System.Drawing.Point(691, 202);
+            this.label208.Location = new System.Drawing.Point(734, 202);
             this.label208.Name = "label208";
             this.label208.Size = new System.Drawing.Size(12, 16);
             this.label208.TabIndex = 188;
@@ -1051,7 +1038,7 @@
             // label222
             // 
             this.label222.AutoSize = true;
-            this.label222.Location = new System.Drawing.Point(526, 179);
+            this.label222.Location = new System.Drawing.Point(569, 179);
             this.label222.Name = "label222";
             this.label222.Size = new System.Drawing.Size(12, 16);
             this.label222.TabIndex = 184;
@@ -1060,7 +1047,7 @@
             // label210
             // 
             this.label210.AutoSize = true;
-            this.label210.Location = new System.Drawing.Point(601, 179);
+            this.label210.Location = new System.Drawing.Point(648, 179);
             this.label210.Name = "label210";
             this.label210.Size = new System.Drawing.Size(12, 16);
             this.label210.TabIndex = 184;
@@ -1080,7 +1067,7 @@
             // 
             this.label213.AutoSize = true;
             this.label213.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label213.Location = new System.Drawing.Point(612, 156);
+            this.label213.Location = new System.Drawing.Point(638, 156);
             this.label213.Name = "label213";
             this.label213.Size = new System.Drawing.Size(35, 16);
             this.label213.TabIndex = 170;
@@ -1091,7 +1078,7 @@
             // 
             this.label224.AutoSize = true;
             this.label224.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label224.Location = new System.Drawing.Point(679, 156);
+            this.label224.Location = new System.Drawing.Point(705, 156);
             this.label224.Name = "label224";
             this.label224.Size = new System.Drawing.Size(79, 16);
             this.label224.TabIndex = 171;
@@ -1102,7 +1089,7 @@
             // 
             this.label215.AutoSize = true;
             this.label215.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label215.Location = new System.Drawing.Point(782, 156);
+            this.label215.Location = new System.Drawing.Point(808, 156);
             this.label215.Name = "label215";
             this.label215.Size = new System.Drawing.Size(31, 16);
             this.label215.TabIndex = 171;
@@ -1113,7 +1100,7 @@
             // 
             this.label219.AutoSize = true;
             this.label219.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label219.Location = new System.Drawing.Point(685, 133);
+            this.label219.Location = new System.Drawing.Point(711, 133);
             this.label219.Name = "label219";
             this.label219.Size = new System.Drawing.Size(153, 16);
             this.label219.TabIndex = 172;
@@ -1124,7 +1111,7 @@
             // 
             this.label221.AutoSize = true;
             this.label221.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label221.Location = new System.Drawing.Point(543, 156);
+            this.label221.Location = new System.Drawing.Point(569, 156);
             this.label221.Name = "label221";
             this.label221.Size = new System.Drawing.Size(12, 16);
             this.label221.TabIndex = 173;
@@ -1375,7 +1362,6 @@
             this.tabPage3.AutoScroll = true;
             this.tabPage3.Controls.Add(this.label187);
             this.tabPage3.Controls.Add(this.label182);
-            this.tabPage3.Controls.Add(this.label195);
             this.tabPage3.Controls.Add(this.label199);
             this.tabPage3.Controls.Add(this.label192);
             this.tabPage3.Controls.Add(this.label175);
@@ -1423,15 +1409,6 @@
             this.label182.Size = new System.Drawing.Size(66, 32);
             this.label182.TabIndex = 161;
             this.label182.Text = "Sum of \r\nSquares";
-            // 
-            // label195
-            // 
-            this.label195.AutoSize = true;
-            this.label195.Location = new System.Drawing.Point(468, 206);
-            this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(12, 16);
-            this.label195.TabIndex = 136;
-            this.label195.Text = "-";
             // 
             // label199
             // 
@@ -3056,6 +3033,15 @@
             this.tabPage4.Text = "สมการแสดงความสัมพันธ์";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // sale_eq_label
+            // 
+            this.sale_eq_label.AutoSize = true;
+            this.sale_eq_label.Location = new System.Drawing.Point(353, 85);
+            this.sale_eq_label.Name = "sale_eq_label";
+            this.sale_eq_label.Size = new System.Drawing.Size(17, 16);
+            this.sale_eq_label.TabIndex = 25;
+            this.sale_eq_label.Text = "...";
+            // 
             // GroupBox12
             // 
             this.GroupBox12.Controls.Add(this.label229);
@@ -3280,15 +3266,6 @@
             this.label163.Size = new System.Drawing.Size(0, 16);
             this.label163.TabIndex = 4;
             // 
-            // sale_eq_label
-            // 
-            this.sale_eq_label.AutoSize = true;
-            this.sale_eq_label.Location = new System.Drawing.Point(353, 85);
-            this.sale_eq_label.Name = "sale_eq_label";
-            this.sale_eq_label.Size = new System.Drawing.Size(17, 16);
-            this.sale_eq_label.TabIndex = 25;
-            this.sale_eq_label.Text = "...";
-            // 
             // RegControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3394,7 +3371,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label171;
         private System.Windows.Forms.Label label184;
         private System.Windows.Forms.Label label183;
         private System.Windows.Forms.Label label228;
@@ -3445,7 +3421,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label187;
         private System.Windows.Forms.Label label182;
-        private System.Windows.Forms.Label label195;
         private System.Windows.Forms.Label label199;
         private System.Windows.Forms.Label label192;
         private System.Windows.Forms.Label label175;
