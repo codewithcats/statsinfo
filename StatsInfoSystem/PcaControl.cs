@@ -84,46 +84,46 @@ SAVE OUTFILE='{1}'.
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                     var dataCells = table.DataCellArray();
                     label11.Text = dataCells.ValueAt[0, 0];
-                    label18.Text = dataCells.ValueAt[0, 1];
-                    label19.Text = dataCells.ValueAt[0, 2];
-                    label20.Text = dataCells.ValueAt[0, 3];
+                    label18.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 1]));
+                    label19.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 2]));
+                    label20.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 3]));
                     label21.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 4]));
 
                     label24.Text = dataCells.ValueAt[1, 0];
-                    label31.Text = dataCells.ValueAt[1, 1];
-                    label38.Text = dataCells.ValueAt[1, 2];
-                    label45.Text = dataCells.ValueAt[1, 3];
+                    label31.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 1]));
+                    label38.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 2]));
+                    label45.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 3]));
                     label52.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 4]));
 
                     label25.Text = dataCells.ValueAt[2, 0];
-                    label32.Text = dataCells.ValueAt[2, 1];
-                    label39.Text = dataCells.ValueAt[2, 2];
-                    label46.Text = dataCells.ValueAt[2, 3];
-                    label53.Text = dataCells.ValueAt[2, 4];
+                    label32.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 1]));
+                    label39.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 2]));
+                    label46.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 3]));
+                    label53.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 4]));
 
                     label26.Text = dataCells.ValueAt[3, 0];
-                    label33.Text = dataCells.ValueAt[3, 1];
-                    label40.Text = dataCells.ValueAt[3, 2];
-                    label47.Text = dataCells.ValueAt[3, 3];
-                    label54.Text = dataCells.ValueAt[3, 4];
+                    label33.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 1]));
+                    label40.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 2]));
+                    label47.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 3]));
+                    label54.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 4]));
 
                     label27.Text = dataCells.ValueAt[4, 0];
-                    label34.Text = dataCells.ValueAt[4, 1];
-                    label41.Text = dataCells.ValueAt[4, 2];
-                    label48.Text = dataCells.ValueAt[4, 3];
-                    label55.Text = dataCells.ValueAt[4, 4];
+                    label34.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 1]));
+                    label41.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 2]));
+                    label48.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 3]));
+                    label55.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 4]));
 
                     label28.Text = dataCells.ValueAt[5, 0];
-                    label35.Text = dataCells.ValueAt[5, 1];
-                    label42.Text = dataCells.ValueAt[5, 2];
-                    label49.Text = dataCells.ValueAt[5, 3];
-                    label56.Text = dataCells.ValueAt[5, 4];
+                    label35.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 1]));
+                    label42.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 2]));
+                    label49.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 3]));
+                    label56.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 4]));
 
                     label29.Text = dataCells.ValueAt[6, 0];
-                    label36.Text = dataCells.ValueAt[6, 1];
-                    label43.Text = dataCells.ValueAt[6, 2];
-                    label50.Text = dataCells.ValueAt[6, 3];
-                    label57.Text = dataCells.ValueAt[6, 4];
+                    label36.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 1]));
+                    label43.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 2]));
+                    label50.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 3]));
+                    label57.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 4]));
 
                     label6.Text = dataCells.ValueAt[7, 0];
                 }
@@ -131,118 +131,119 @@ SAVE OUTFILE='{1}'.
                 {
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                     var dataCells = table.DataCellArray();
-                    label112.Text = dataCells.ValueAt[0, 0];
-                    label92.Text = dataCells.ValueAt[0, 1];
-                    label61.Text = dataCells.ValueAt[0, 2];
-                    label69.Text = dataCells.ValueAt[0, 3];
-                    label79.Text = dataCells.ValueAt[0, 4];
-                    label170.Text = dataCells.ValueAt[0, 5];
-                    label172.Text = dataCells.ValueAt[0, 6];
+                    label112.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 0]));
+                    label92.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 1]));
+                    label61.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 2]));
+                    label69.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 3]));
+                    label79.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 4]));
+                    label170.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 5]));
+                    label172.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 6]));
 
-                    label111.Text = dataCells.ValueAt[1, 0];
-                    label91.Text = dataCells.ValueAt[1, 1];
-                    label62.Text = dataCells.ValueAt[1, 2];
-                    label70.Text = dataCells.ValueAt[1, 3];
-                    label81.Text = dataCells.ValueAt[1, 4];
-                    label174.Text = dataCells.ValueAt[1, 5];
-                    label176.Text = dataCells.ValueAt[1, 6];
+                    label111.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 0]));
+                    label91.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 1]));
+                    label62.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 2]));
+                    label70.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 3]));
+                    label81.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 4]));
+                    label174.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 5]));
+                    label176.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 6]));
 
-                    label110.Text = dataCells.ValueAt[2, 0];
-                    label90.Text = dataCells.ValueAt[2, 1];
-                    label63.Text = dataCells.ValueAt[2, 2];
-                    label71.Text = dataCells.ValueAt[2, 3];
-                    label82.Text = dataCells.ValueAt[2, 4];
-                    label178.Text = dataCells.ValueAt[2, 5];
-                    label183.Text = dataCells.ValueAt[2, 6];
+                    label110.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 0]));
+                    label90.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 1]));
+                    label63.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 2]));
+                    label71.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 3]));
+                    label82.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 4]));
+                    label178.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 5]));
+                    label183.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 6]));
 
-                    label109.Text = dataCells.ValueAt[3, 0];
-                    label88.Text = dataCells.ValueAt[3, 1];
-                    label64.Text = dataCells.ValueAt[3, 2];
-                    label73.Text = dataCells.ValueAt[3, 3];
-                    label83.Text = dataCells.ValueAt[3, 4];
-                    label191.Text = dataCells.ValueAt[3, 5];
-                    label192.Text = dataCells.ValueAt[3, 6];
+                    label109.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 0]));
+                    label88.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 1]));
+                    label64.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 2]));
+                    label73.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 3]));
+                    label83.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 4]));
+                    label191.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 5]));
+                    label192.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 6]));
 
-                    label108.Text = dataCells.ValueAt[4, 0];
-                    label84.Text = dataCells.ValueAt[4, 1];
-                    label65.Text = dataCells.ValueAt[4, 2];
-                    label74.Text = dataCells.ValueAt[4, 3];
-                    label85.Text = dataCells.ValueAt[4, 4];
-                    label193.Text = dataCells.ValueAt[4, 5];
-                    label194.Text = dataCells.ValueAt[4, 6];
+                    label108.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 0]));
+                    label84.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 1]));
+                    label65.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 2]));
+                    label74.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 3]));
+                    label85.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 4]));
+                    label193.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 5]));
+                    label194.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 6]));
 
-                    label107.Text = dataCells.ValueAt[5, 0];
-                    label80.Text = dataCells.ValueAt[5, 1];
-                    label66.Text = dataCells.ValueAt[5, 2];
-                    label75.Text = dataCells.ValueAt[5, 3];
-                    label86.Text = dataCells.ValueAt[5, 4];
-                    label195.Text = dataCells.ValueAt[5, 5];
-                    label196.Text = dataCells.ValueAt[5, 6];
+                    label107.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 0]));
+                    label80.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 1]));
+                    label66.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 2]));
+                    label75.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 3]));
+                    label86.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 4]));
+                    label195.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 5]));
+                    label196.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 6]));
 
-                    label106.Text = dataCells.ValueAt[6, 0];
-                    label76.Text = dataCells.ValueAt[6, 1];
-                    label67.Text = dataCells.ValueAt[6, 2];
-                    label77.Text = dataCells.ValueAt[6, 3];
-                    label87.Text = dataCells.ValueAt[6, 4];
-                    label197.Text = dataCells.ValueAt[6, 5];
-                    label201.Text = dataCells.ValueAt[6, 6];
+                    label106.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 0]));
+                    label76.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 1]));
+                    label67.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 2]));
+                    label77.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 3]));
+                    label87.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 4]));
+                    label197.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 5]));
+                    label201.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 6]));
 
                 }
                 else if (item.Label.Equals("KMO and Bartlett's Test"))
                 {
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                     var dataCells = table.DataCellArray();
-                    label115.Text = dataCells.ValueAt[0, 0];
-                    label116.Text = dataCells.ValueAt[1, 0];
-                    label117.Text = dataCells.ValueAt[2, 0];
-                    label118.Text = dataCells.ValueAt[3, 0];
+                    label115.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 0]));
+                    label116.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 0]));
+                    label117.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 0]));
+                    label118.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 0]));
                 }
                 else if (item.Label.Equals("Total Variance Explained"))
                 {
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                     var dataCells = table.DataCellArray();
-                    label120.Text = dataCells.ValueAt[0, 0];
-                    label124.Text = dataCells.ValueAt[0, 1];
-                    label151.Text = dataCells.ValueAt[0, 2];
-                    label162.Text = dataCells.ValueAt[0, 3];
-                    label163.Text = dataCells.ValueAt[0, 4];
-                    label165.Text = dataCells.ValueAt[0, 5];
+                    label120.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 0]));
+                    label124.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 1]));
+                    label151.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 2]));
+                    label162.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 3]));
+                    label163.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 4]));
+                    label165.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 5]));
 
-                    label121.Text = dataCells.ValueAt[1, 0];
-                    label145.Text = dataCells.ValueAt[1, 1];
-                    label152.Text = dataCells.ValueAt[1, 2];
+                    label121.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 0]));
+                    label145.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 1]));
+                    label152.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 2]));
 
-                    label123.Text = dataCells.ValueAt[2, 0];
-                    label147.Text = dataCells.ValueAt[2, 1];
-                    label154.Text = dataCells.ValueAt[2, 2];
+                    label123.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 0]));
+                    label147.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 1]));
+                    label154.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 2]));
 
-                    label142.Text = dataCells.ValueAt[3, 0];
-                    label148.Text = dataCells.ValueAt[3, 1];
-                    label155.Text = dataCells.ValueAt[3, 2];
+                    label142.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 0]));
+                    label148.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 1]));
+                    label155.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 2]));
 
-                    label122.Text = dataCells.ValueAt[4, 0];
-                    label146.Text = dataCells.ValueAt[4, 1];
-                    label153.Text = dataCells.ValueAt[4, 2];
+                    label122.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 0]));
+                    label146.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 1]));
+                    label153.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 2]));
 
-                    label143.Text = dataCells.ValueAt[5, 0];
-                    label149.Text = dataCells.ValueAt[5, 1];
-                    label156.Text = dataCells.ValueAt[5, 2];
+                    label143.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 0]));
+                    label149.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 1]));
+                    label156.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 2]));
 
-                    label144.Text = dataCells.ValueAt[6, 0];
-                    label150.Text = dataCells.ValueAt[6, 1];
-                    label157.Text = dataCells.ValueAt[6, 2];
+                    label144.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 0]));
+                    label150.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 1]));
+                    label157.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 2]));
+
                 }
                 else if (item.Label.Equals("Component Matrix"))
                 {
                     var table = (spsspvt.PivotTable)item.GetTableOleObject();
                     var dataCells = table.DataCellArray();
-                    label180.Text = dataCells.ValueAt[0, 0];
-                    label179.Text = dataCells.ValueAt[1, 0];
-                    label177.Text = dataCells.ValueAt[2, 0];
-                    label175.Text = dataCells.ValueAt[3, 0];
-                    label173.Text = dataCells.ValueAt[4, 0];
-                    label171.Text = dataCells.ValueAt[5, 0];
-                    label169.Text = dataCells.ValueAt[6, 0];
+                    label180.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[0, 0]));
+                    label179.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[1, 0]));
+                    label177.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[2, 0]));
+                    label175.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[3, 0]));
+                    label173.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[4, 0]));
+                    label171.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[5, 0]));
+                    label169.Text = string.Format("{0:N}", Convert.ToDecimal(dataCells.ValueAt[6, 0]));
                 }
             }
             spsswin.ISpssDataDoc dataDoc = spss.OpenDataDoc(output3);
